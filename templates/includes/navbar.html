@@ -1,0 +1,96 @@
+{% load static %}
+<!-- Navigation -->
+<nav class="fixed top-0 left-0 right-0 bg-white z-50">
+	<div class="lg:px-[60px] px-5 py-[24px] mx-auto">
+		<div class="flex items-center justify-between h-18">
+			<a
+				href="/"
+				class="flex items-center gap-2 text-xl font-bold text-black hover:scale-105 transition-transform duration-300"
+			>
+				<img src="{% static 'assets/image/logo.png' %}" alt="Logo" />
+			</a>
+
+			<div class="hidden lg:flex items-center gap-8">
+				<a
+					href="/howitworks"
+					class="relative font-medium text-[#000] hover:text-gray-900 transition-colors duration-300 group"
+				>
+					How It Works
+					<span
+						class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-700 group-hover:w-3/4 transition-all duration-300"
+					></span>
+				</a>
+
+				<a
+					href="/pricing"
+					class="relative font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 group"
+				>
+					Pricing
+					<span
+						class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-700 group-hover:w-3/4 transition-all duration-300"
+					></span>
+				</a>
+				<a
+					href="/why"
+					class="relative font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 group"
+				>
+					Why Penwise
+					<span
+						class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-700 group-hover:w-3/4 transition-all duration-300"
+					></span>
+				</a>
+				<a
+					href="/affiliates"
+					class="relative font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 group"
+				>
+					Affiliates
+					<span
+						class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-700 group-hover:w-3/4 transition-all duration-300"
+					></span>
+				</a>
+				<a
+					href="/faq"
+					class="relative font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 group"
+				>
+					FAQ
+					<span
+						class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-700 group-hover:w-3/4 transition-all duration-300"
+					></span>
+				</a>
+				<a
+					href="/blog"
+					class="relative font-medium text-gray-600 hover:text-gray-900 transition-colors duration-300 group"
+				>
+					Blog
+					<span
+						class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-gray-900 to-gray-700 group-hover:w-3/4 transition-all duration-300"
+					></span>
+				</a>
+			</div>
+
+			<div class="hidden lg:flex items-center gap-3">
+				<a
+					href="/login"
+					class="px-6 py-2.5 font-semibold text-white bg-black rounded-full hover:bg-gray-900 hover:text-white"
+				>
+					Log In
+				</a>
+			</div>
+
+			<button
+				id="mobileMenuBtn"
+				class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
+			>
+				<span
+					class="w-6 h-0.5 bg-gray-900 transition-all duration-300 rounded-full pointer-events-none"
+				></span>
+				<span
+					class="w-6 h-0.5 bg-gray-900 transition-all duration-300 rounded-full pointer-events-none"
+				></span>
+				<span
+					class="w-6 h-0.5 bg-gray-900 transition-all duration-300 rounded-full pointer-events-none"
+				></span>
+			</button>
+		</div>
+	</div>
+</nav>

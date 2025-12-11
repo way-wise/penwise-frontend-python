@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Penwise - Write Smart
+
+er, Faster, and Better</title>
+	<meta name="description" content="Penwise-powered writing assistant that helps you write better content faster." />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet" />
+	<script src="https://cdn.tailwindcss.com"></script> 
+ <link rel="stylesheet" href="style.css">	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					fontFamily: {
+						sans: ["Inter", "sans-serif"],
+					},
+				},
+			},
+		};
+	</script>
+	<style>
+		/* Fix overflow without breaking AOS */
+		html {
+			overflow-x: clip;
+		}
+		
+		body {
+			max-width: 100vw;
+		}
+		
+		/* Ensure navigation is never affected by A
+
+OS */
+		nav, nav *, #mobileMenu, #mobileMenu * {
+			pointer-events: auto !important;
+		}
+		
+		/* Ensure proper stacking */
+		nav {
+			isolation: isolate;
+		}
+	</style>
+</head>
+
+<body class="font-sans antialiased">
+	<!-- Rest of the file remains the same -->
+</body>
+</html>

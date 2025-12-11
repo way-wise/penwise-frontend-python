@@ -1,0 +1,330 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Penwise - Write Smarter, Faster, and Better{% endblock %}
+
+{% block meta_description %}Penwise-powered writing assistant that helps you write better content faster.{% endblock %}
+
+{% block content %}
+Navigation 
+
+ Mobile Menu 
+
+ Hero Section 
+<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
+				background-image: url('{% static 'assets/image/hero/hero2.png' %}');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			">
+<!-- Container for content with profile badges -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+<!-- Center Content -->
+<div class="z-20 space-y-6" data-aos="fade-right">
+<h1 class="text-3xl text-center lg:text-left md:text-[56px] font-semibold leading-tight tracking-tight">
+					Turn Every Idea Into a <br/>Finished Story
+				</h1>
+<p class="text-base lg:text-[16px] text-gray-300 text-center lg:text-left max-w-3xl leading-relaxed">
+					Discover how Penwise simplifies your entire writing process — from brainstorming ideas to polishing
+					your final draft effortlessly.
+				</p>
+<div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+<button class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2">
+						Start Writing For Free <span class="text-lg"><svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg></span>
+</button>
+</div>
+</div>
+<div class="lg:w-[50%] mx-auto w-full" data-aos="fade-left">
+<div class="">
+<img alt="" class="object-cover w-full" src="{% static 'assets/image/hero/groupside.png' %}"/>
+</div>
+</div>
+</div>
+</section>
+ From Idea to Published Novel in 3 easy steps Section 
+<section class="mt-[60px] py-5 lg:py-16 bg-[url('/assets/image/howitwork/pattern.png')] bg-cover bg-center relative bg-white overflow-hidden">
+<!-- Starry Background Pattern -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10" data-aos="fade-right">
+<!-- Section Header -->
+<div class="text-start mb-12 md:mb-16">
+<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+					From Idea to Published Novel in 3 easy steps
+				</h2>
+<p class="text-gray-700 text-base md:text-[14px] max-w-3xl">
+					Penwise streamlines your entire writing journey — from brainstorming and structuring to refining and
+					finalizing your story effortlessly.
+				</p>
+</div>
+<!-- Workflow Steps -->
+<div class="relative">
+<!-- Desktop: Horizontal Layout -->
+<div class="hidden lg:flex items-start justify-between gap-8 relative">
+<!-- Step 1: Generate Ideas -->
+<div class="flex-1 relative" data-aos="fade-right" duration="600">
+<div class="inline-block !bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 01
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Generate<br/>Ideas
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.6778 4.01907L24 8.00148C17.3726 8.00148 12.0001 13.3741 12 20.0015C12 22.7699 12.9355 25.3843 14.6289 27.4977C14.7997 27.7107 16.2405 29.2029 16.4629 29.4449C18.4551 31.6141 19.6812 33.5983 19.9453 36.0015H28.0546C28.3188 33.5985 29.5442 31.6145 31.5352 29.4469C31.7592 29.2029 33.1954 27.7155 33.3672 27.5015C35.0626 25.3875 36 22.7715 36 20.0015L39.9804 19.3218C39.9898 19.5472 40 19.7737 40 20.0015C40 23.7863 38.6852 27.2639 36.4882 30.0035C35.2476 31.5503 32 34.0015 32 37.0015V42.0015C32 44.2107 30.2092 46.0015 28 46.0015H20C17.7909 46.0015 16 44.2107 16 42.0015V37.0015C15.9999 34.0015 12.7491 31.5483 11.5078 29.9995C9.31294 27.2607 8 23.7845 8 20.0015C8.00006 11.165 15.1635 4.00149 24 4.00149C24.227 4.00149 24.453 4.00969 24.6778 4.01907ZM20 42.0015H28V40.0015H20V42.0015ZM35.0586 0.658203C35.4118 -0.193347 36.5884 -0.193371 36.9414 0.658203L37.4472 1.88086C38.3112 3.96644 39.9232 5.63189 41.9492 6.53321L43.3848 7.17189C44.2052 7.53753 44.2052 8.7319 43.3848 9.09766L41.8652 9.77345C39.8898 10.652 38.3068 12.2584 37.4278 14.2754L36.9336 15.4062C36.5728 16.2345 35.4274 16.2345 35.0664 15.4062L34.5742 14.2754C33.6952 12.2581 32.1104 10.6521 30.1348 9.77345L28.6152 9.09766C27.795 8.73195 27.7948 7.53749 28.6152 7.17189L30.0508 6.53321C32.077 5.63189 33.689 3.96646 34.5528 1.88086L35.0586 0.658203Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Turn your rough concepts into clear outlines with Penwise-powered
+								creative suggestions.
+							</p>
+<div class="hidden lg:block absolute -bottom-16 -right-5">
+<img alt="" src="{% static 'assets/image/howitwork/arrow.png' %}"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Build Structure -->
+<div class="flex-1 relative lg:mt-48" data-aos="fade-left" duration="800">
+<div class="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 02
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Build<br/>Structure
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 42V46H22V42H6C4.89544 42 4 41.1046 4 40V8C4 6.89544 4.89544 6 6 6H18C20.3894 6 22.5342 7.0475 24 8.70836C25.4658 7.0475 27.6106 6 30 6H42C43.1046 6 44 6.89544 44 8V40C44 41.1046 43.1046 42 42 42H26ZM40 38V10H30C27.7908 10 26 11.7909 26 14V38H40ZM22 38V14C22 11.7909 20.2092 10 18 10H8V38H22Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Organize chapters, arcs, and characters using intuitive
+								drag-and-drop mapping tools.
+							</p>
+</div>
+<div class="hidden lg:block absolute -bottom-16 -right-5">
+<img alt="" src="{% static 'assets/image/howitwork/arrow.png' %}"/>
+</div>
+</div>
+<!-- Step 3: Refine & Publish -->
+<div class="flex-1 relative lg:mt-96" data-aos="fade-left" duration="1000">
+<div class="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 03
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Refine<br/>&amp; Publish
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4268 16.2562L11.9336 17.3876C11.5727 18.2158 10.4271 18.2158 10.0662 17.3876L9.57312 16.2562C8.69412 14.2389 7.1109 12.6328 5.13534 11.7542L3.61609 11.0784C2.79464 10.7131 2.79464 9.51762 3.61609 9.15224L5.0504 8.51428C7.07676 7.61302 8.68834 5.94746 9.55224 3.86166L10.0586 2.63907C10.4116 1.78698 11.5883 1.78698 11.9413 2.63907L12.4476 3.86166C13.3115 5.94746 14.9232 7.61302 16.9496 8.51428L18.3838 9.15224C19.2054 9.51762 19.2054 10.7131 18.3838 11.0784L16.8646 11.7542C14.889 12.6328 13.3058 14.2389 12.4268 16.2562ZM15.6684 33.6308C16.0206 32.466 16.4144 31.3124 16.8782 30.0654C20.9897 19.0127 27.8394 12.1634 39.0258 10.4296C38 12.7168 37.0302 14.306 36.1716 15.1647C35.5042 15.8321 34.837 16.4999 34.1696 17.1681L31.3442 19.9976L34.2558 22.907C31.9952 27.0768 27.5304 30.3958 22.5039 31.024C19.8709 31.3532 17.5869 32.2376 15.6684 33.6308ZM39 21.9932L37 19.9946C37.6662 19.3274 38.3324 18.6608 39.0054 17.9878C41.0036 15.9861 43.0018 11.9878 45 5.99316C15.6221 5.99316 11.1771 32.844 9.12722 45.2264C9.0838 45.4886 9.04148 45.7444 9 45.9932H12.9965C14.3284 39.327 17.6629 35.6602 23 34.9932C31 33.9932 37 27.9932 39 21.9932Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Polish tone, pacing, and clarity, then export your masterpiece
+								in your preferred format.
+							</p>
+</div>
+</div>
+</div>
+<!-- Mobile & Tablet: Vertical Layout -->
+<div class="lg:hidden space-y-8">
+<!-- Step 1 -->
+<div class="relative">
+<div class="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 01
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Generate Ideas
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 5L22 15H18L20 5Z" fill="black"></path>
+<circle cx="20" cy="22" fill="none" r="8" stroke="black" stroke-width="2"></circle>
+<path d="M20 14V18M20 26V30M26 22H30M10 22H14" stroke="black" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+								Generate ideas for your next masterpiece using Penwise-powered creative suggestions.
+							</p>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 relative mt-16">
+<div class="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+								STEP 02
+							</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+										Build<br/>Structure
+									</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 42V46H22V42H6C4.89544 42 4 41.1046 4 40V8C4 6.89544 4.89544 6 6 6H18C20.3894 6 22.5342 7.0475 24 8.70836C25.4658 7.0475 27.6106 6 30 6H42C43.1046 6 44 6.89544 44 8V40C44 41.1046 43.1046 42 42 42H26ZM40 38V10H30C27.7908 10 26 11.7909 26 14V38H40ZM22 38V14C22 11.7909 20.2092 10 18 10H8V38H22Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+									Organize chapters, arcs, and characters using intuitive drag-and-drop mapping tools.
+								</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 relative mt-16">
+<div class="inline-block bg-black text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+								STEP 03
+							</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+										Refine<br/>&amp; Publish
+									</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path black"="" d="M12.4268 16.2562L11.9336 17.3876C11.5727 18.2158 10.4271 18.2158 10.0662 17.3876L9.57312 16.2562C8.69412 14.2389 7.1109 12.6328 5.13534 11.7542L3.61609 11.0784C2.79464 10.7131 2.79464 9.51762 3.61609 9.15224L5.0504 8.51428C7.07676 7.61302 8.68834 5.94746 9.55224 3.86166L10.0586 2.63907C10.4116
+												stroke=" fill="none" stroke-width="2"></path>
+<path d="M20 14V18M20 26V30M26 22H30M10 22H14" stroke="black" stroke-linecap="round" stroke-width="2"></path>
+<path d="M25 27L27 29M13 27L11 29M25 17L27 15M13 17L11 15" stroke="black" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<p class="text-sm text-gray-600 leading-relaxed">
+									Turn your rough concepts into clear outlines with Penwise-powered
+									creative suggestions.
+								</p>
+</div>
+<!-- Connecting Arrow -->
+<div class="flex justify-center my-4">
+<svg class="w-8 h-8 text-white opacity-30" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 3a1 1 0 011 1v10.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+ Grid Section  
+<section class="py-5 lg:py-16 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
+<!-- Card  1 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+<div class="">
+<svg fill="none" height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 8C10 8.47352 10.0814 8.92368 10.2294 9.33998C10.4537 9.97118 10.3471 10.6728 9.94552 11.2089C9.54388 11.745 8.90052 12.0444 8.2317 12.0065C8.1552 12.0022 8.07796 12 8 12C5.79086 12 4 13.7909 4 16C4 17.0258 4.38348 17.9572 5.01806 18.6662C5.6977 19.4256 5.6977 20.5744 5.01806 21.3338C4.38348 22.0428 4 22.9742 4 24C4 25.7684 5.14894 27.2738 6.74654 27.8002C7.69848 28.114 8.2712 29.0838 8.08616 30.069C8.02978 30.3692 8 30.6802 8 31C8 33.7614 10.2386 36 13 36C15.5172 36 17.603 34.138 17.9492 31.7166C17.9612 31.633 17.9782 31.5512 18 31.4716V8C18 5.79086 16.2092 4 14 4C11.7909 4 10 5.79086 10 8ZM22 31.4716C22.0218 31.5512 22.0388 31.633 22.0508 31.7166C22.397 34.138 24.4828 36 27 36C29.7614 36 32 33.7614 32 31C32 30.6802 31.9702 30.3692 31.9138 30.069C31.7288 29.0838 32.3016 28.114 33.2534 27.8002C34.851 27.2738 36 25.7684 36 24C36 22.9742 35.6166 22.0428 34.982 21.3338C34.3022 20.5744 34.3022 19.4256 34.982 18.6662C35.6166 17.9572 36 17.0258 36 16C36 13.7909 34.2092 12 32 12C31.922 12 31.8448 12.0022 31.7682 12.0065C31.0994 12.0444 30.4562 11.745 30.0544 11.2089C29.6528 10.6728 29.5462 9.97118 29.7706 9.33998C29.9186 8.92368 30 8.47352 30 8C30 5.79086 28.2092 4 26 4C23.7908 4 22 5.79086 22 8V31.4716ZM14 0C16.3894 0 18.5342 1.04752 20 2.70836C21.4658 1.04752 23.6106 0 26 0C30.4182 0 34 3.58172 34 8C34 8.08396 33.9988 8.16764 33.9962 8.25104C37.4486 9.13778 40 12.2709 40 16C40 17.456 39.6098 18.8232 38.9292 20C39.6098 21.1768 40 22.544 40 24C40 26.9634 38.3898 29.5468 35.9998 30.9292L36 31C36 35.9706 31.9706 40 27 40C24.1718 40 21.6496 38.6962 20 36.657C18.3504 38.6962 15.8281 40 13 40C8.02944 40 4 35.9706 4 31L4.00028 30.9292C1.61024 29.5468 0 26.9634 0 24C0 22.544 0.39026 21.1768 1.07072 20C0.39026 18.8232 0 17.456 0 16C0 12.2709 2.55146 9.13778 6.00388 8.25104C6.0013 8.16764 6 8.08396 6 8C6 3.58172 9.58172 0 14 0Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Write Smarter,<br/>Not Harder
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Penwise’s AI refines tone, grammar, and pacing so you can focus purely on creativity.
+				</p>
+</div>
+<!-- Card  2 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+<div class="">
+<svg fill="none" height="40" viewbox="0 0 32 40" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 4H0V0H32V4H28V8C28 11.2309 26.3676 13.8294 24.3122 15.9533C22.9064 17.406 21.196 18.744 19.4618 20C21.196 21.256 22.9064 22.594 24.3122 24.0466C26.3676 26.1706 28 28.7692 28 32V36H32V40H0V36H4V32C4 28.7692 5.63232 26.1706 7.6878 24.0466C9.09364 22.594 10.804 21.256 12.5382 20C10.804 18.744 9.09364 17.406 7.6878 15.9533C5.63232 13.8294 4 11.2309 4 8V4ZM8 4V8C8 9.76914 8.86768 11.4206 10.5622 13.1717C12.016 14.674 13.9096 16.0796 16 17.5562C18.0904 16.0796 19.984 14.674 21.4378 13.1717C23.1324 11.4206 24 9.76914 24 8V4H8ZM16 22.4438C13.9096 23.9204 12.016 25.326 10.5622 26.8284C8.86768 28.5794 8 30.2308 8 32V36H24V32C24 30.2308 23.1324 28.5794 21.4378 26.8284C19.984 25.326 18.0904 23.9204 16 22.4438Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Save Time at<br/>Every Step
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Automated structuring, editing, and feedback features help you finish projects faster.
+				</p>
+</div>
+<!-- Card  3 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+<div class="">
+<svg fill="none" height="40" viewbox="0 0 36 40" width="36" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.87824 24.0722C7.4144 25.3192 7.02064 26.4728 6.66842 27.6376C8.5869 26.2444 10.8709 25.36 13.5039 25.0308C18.5304 24.4026 22.9952 21.0836 25.2558 16.914L22.3442 14.0044L25.1696 11.175C25.837 10.5067 26.5042 9.8389 27.1716 9.17158C28.0302 8.31286 29 6.7236 30.0258 4.43642C18.8394 6.17026 11.9897 13.0196 7.87824 24.0722ZM28 14.0014L30 16C28 22 22 28 14 29C8.66292 29.6672 5.32842 33.3338 3.99648 40H0C2 28 6 0 36 0C34.0018 5.99466 32.0036 9.99288 30.0054 11.9947C29.3324 12.6676 28.6662 13.3343 28 14.0014Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Keep Your<br/>Voice Authentic
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					AI suggestions enhance your writing without losing your unique storytelling style.
+				</p>
+</div>
+<!-- Card  4 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+<div class="">
+<svg fill="none" height="40" viewbox="0 0 40 40" width="40" xmlns="http://www.w3.org/2000/svg">
+<path d="M20 36C28.8366 36 36 28.8366 36 20C36 11.1634 28.8366 4 20 4C11.1634 4 4 11.1634 4 20C4 28.8366 11.1634 36 20 36ZM20 40C8.9543 40 0 31.0456 0 20C0 8.9543 8.9543 0 20 0C31.0456 0 40 8.9543 40 20C40 31.0456 31.0456 40 20 40ZM20 28C24.4182 28 28 24.4182 28 20C28 15.5817 24.4182 12 20 12C15.5817 12 12 15.5817 12 20C12 24.4182 15.5817 28 20 28ZM20 32C13.3726 32 8 26.6274 8 20C8 13.3726 13.3726 8 20 8C26.6274 8 32 13.3726 32 20C32 26.6274 26.6274 32 20 32ZM20 24C17.7908 24 16 22.2092 16 20C16 17.7908 17.7908 16 20 16C22.2092 16 24 17.7908 24 20C24 22.2092 22.2092 24 20 24Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Stay Focused and<br/>Organized
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Distraction-free workspace with clean UI and synced notes keeps everything in flow.
+				</p>
+</div>
+<!-- Card  5 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+<div class="">
+<svg fill="none" height="38" viewbox="0 0 44 38" width="44" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 0C29.732 0 36 6.26802 36 14C36 14.227 35.9946 14.4528 35.984 14.6771C40.653 16.32 44 20.7692 44 26C44 32.6274 38.6274 38 32 38H12C5.37258 38 0 32.6274 0 26C0 20.7692 3.34692 16.32 8.01608 14.6771C8.0054 14.4528 8 14.227 8 14C8 6.26802 14.268 0 22 0ZM22 4C16.4772 4 12 8.47716 12 14C12 14.1629 12.0039 14.3253 12.0116 14.4869L12.1532 17.4618L9.34366 18.4504C6.1688 19.5674 4 22.5778 4 26C4 30.4182 7.58172 34 12 34H32C36.4182 34 40 30.4182 40 26C40 21.58 36.42 18 32 18C28.466 18 25.4674 20.2914 24.4084 23.4694L20.6128 22.2042C22.201 17.437 26.7 14 32 14C32 8.47716 27.5228 4 22 4Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Access Anytime,<br/>Anywhere
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Penwise learns your writing style and adapts to your voice over time.
+				</p>
+</div>
+<!-- Card  6 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+<div class="">
+<svg fill="none" height="42" viewbox="0 0 36 42" width="36" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 14V12C6 5.37258 11.3726 0 18 0C24.6274 0 30 5.37258 30 12V14H34C35.1046 14 36 14.8954 36 16V40C36 41.1046 35.1046 42 34 42H2C0.89544 42 0 41.1046 0 40V16C0 14.8954 0.89544 14 2 14H6ZM32 18H4V38H32V18ZM16 29.4648C14.8044 28.7732 14 27.4806 14 26C14 23.7908 15.7908 22 18 22C20.2092 22 22 23.7908 22 26C22 27.4806 21.1956 28.7732 20 29.4648V34H16V29.4648ZM10 14H26V12C26 7.58172 22.4182 4 18 4C13.5817 4 10 7.58172 10 12V14Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Write with Total<br/>Confidence
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					End-to-end encryption and private storage protect your stories and creative ideas.
+				</p>
+</div>
+</div>
+</section>
+ CTA Section 
+<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}');">
+<!-- Dark Overlay -->
+<div class="absolute inset-0 bg-black bg-opacity-60"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+<!-- Heading -->
+<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+				Bring your Novel to Life - Let<br/>Penwise Be Your Writing Partner
+			</h2>
+<!-- Subtext -->
+<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
+				Start writing your novel today with Penwise — get Penwise-powered assistance for plotting, drafting, and
+				refining every chapter effortlessly.
+			</p>
+<!-- CTA Button -->
+<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
+				Start My Novel For Free
+				<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+</section>
+ Footer Section
+{% endblock %}

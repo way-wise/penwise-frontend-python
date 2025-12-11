@@ -1,0 +1,332 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Technical & Support | Penwise{% endblock %}
+
+{% block meta_description %}Get help with Penwise. Check system status, browse FAQs, or contact our support team.{% endblock %}
+
+{% block content %}
+Navigation 
+
+ Mobile Menu 
+
+ Hero Section 
+<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
+				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			">
+<div class="max-w-7xl mx-auto">
+<!-- Center Content -->
+<div class="w-full z-20 space-y-6 mx-auto text-center">
+<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in">
+						✨ Support Center
+					</div>
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up">
+						Technical &amp; Support
+					</h1>
+<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
+						Help Center • Documentation • Contact
+					</p>
+</div>
+</div>
+</section>
+ System Status Section 
+<section class="mt-[60px] py-5 lg:py-16 bg-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+						System Status
+					</h2>
+</div>
+<div class="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+<div class="grid grid-cols-1 divide-y divide-gray-100">
+<!-- Item 1 -->
+<div class="p-5 flex items-center justify-between hover:bg-gray-50 transition-colors">
+<span class="font-medium text-gray-900">Platform Services</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-green-600 font-medium">Operational</span>
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-5 flex items-center justify-between hover:bg-gray-50 transition-colors">
+<span class="font-medium text-gray-900">API Services</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-green-600 font-medium">Operational</span>
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-5 flex items-center justify-between hover:bg-gray-50 transition-colors">
+<span class="font-medium text-gray-900">Email Notifications</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-green-600 font-medium">Operational</span>
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="p-5 flex items-center justify-between hover:bg-gray-50 transition-colors">
+<span class="font-medium text-gray-900">Data Sync</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-green-600 font-medium">Operational</span>
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="p-5 flex items-center justify-between hover:bg-gray-50 transition-colors">
+<span class="font-medium text-gray-900">Authentication</span>
+<div class="flex items-center gap-2">
+<span class="text-sm text-green-600 font-medium">Operational</span>
+<span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+ FAQ Section 
+<section class="py-5 lg:py-16 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+						Frequently Asked Questions
+					</h2>
+</div>
+<div class="space-y-4">
+<!-- FAQ Item 1 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>Is Penwise.ai available on mobile devices?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								Yes, Penwise is fully responsive and works great on mobile
+								phones and tablets.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>How secure is my data and writing?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								We use industry-standard encryption to protect your data. Your
+								writing is private and secure.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>Do I need an internet connection to use it?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								Yes, an internet connection is required to access Penwise and
+								its AI features.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 4 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>What happens if the AI makes mistakes in writing?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								You have full control to edit, rewrite, or regenerate any
+								content produced by the AI.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 5 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>How can I contact Penwise.ai support?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								You can use the contact form below or email us directly at
+								support@penwise.ai.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 6 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>How do I choose between different AI writing platforms?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								Consider features, ease of use, pricing, and specific needs.
+								Penwise focuses on storytelling and novel writing.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 7 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>Do I need to install Penwise.ai?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								No installation required. Penwise is a web-based platform
+								accessible from any browser.
+							</div>
+</div>
+</div>
+<!-- FAQ Item 8 -->
+<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
+<span>Can I use Penwise.ai offline?</span>
+<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+<div class="p-6 pt-0 text-gray-600 text-sm">
+								Currently, Penwise requires an internet connection. Offline
+								capabilities are on our roadmap.
+							</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+ Contact Support Section 
+<section class="py-16 md:py-24 bg-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
+						Contact Support
+					</h2>
+<p class="text-[#64748B] text-sm md:text-base">
+						Fill out the form below and our support team will get back to you.
+					</p>
+</div>
+<div class="bg-white rounded-3xl shadow-lg border border-gray-100 p-8 md:p-12">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Support Type Select -->
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 mb-2">Support Type</label>
+<select class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all appearance-none cursor-pointer">
+<option disabled="" selected="" value="">
+										Select support type...
+									</option>
+<option value="technical">Technical Issue</option>
+<option value="billing">Billing &amp; Account</option>
+<option value="feature">Feature Request</option>
+<option value="other">Other</option>
+</select>
+<div class="absolute right-3 top-[42px] -translate-y-1/2 text-[#94A3B8] pointer-events-none">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<!-- Priority Level Select -->
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 mb-2">Priority Level</label>
+<select class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all appearance-none cursor-pointer">
+<option disabled="" selected="" value="">Select priority...</option>
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+<option value="critical">Critical</option>
+</select>
+<div class="absolute right-3 top-[42px] -translate-y-1/2 text-[#94A3B8] pointer-events-none">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+</div>
+<!-- Email Input -->
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+<input class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all" placeholder="your.email@domain.com" type="email"/>
+</div>
+<!-- Subject Input -->
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+<input class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all" placeholder="Brief description of your issue" type="text"/>
+</div>
+<!-- Message Textarea -->
+<div class="relative">
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all resize-none" placeholder="Please provide detailed information about your issue, including steps to reproduce if applicable..." rows="6"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full py-4 bg-[#1E1E1E] text-white font-medium rounded-lg hover:bg-black transition-colors flex items-center justify-center gap-2 group" type="submit">
+							Submit Support Request
+							<svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</form>
+</div>
+</div>
+</section>
+ Footer Section 
+
+<script>
+			// Mobile menu toggle
+			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+			const mobileMenu = document.getElementById("mobileMenu");
+			const closeMenuBtn = document.getElementById("closeMenuBtn");
+
+			mobileMenuBtn.addEventListener("click", () => {
+				mobileMenu.classList.remove("translate-x-full");
+			});
+
+			closeMenuBtn.addEventListener("click", () => {
+				mobileMenu.classList.add("translate-x-full");
+			});
+
+			// FAQ Accordion
+			const faqQuestions = document.querySelectorAll(".faq-question");
+
+			faqQuestions.forEach((question) => {
+				question.addEventListener("click", () => {
+					const faqItem = question.parentElement;
+					const answer = question.nextElementSibling;
+					const icon = question.querySelector(".faq-icon");
+
+					// Toggle answer
+					if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+						answer.style.maxHeight = "0px";
+						icon.style.transform = "rotate(0deg)";
+					} else {
+						answer.style.maxHeight = answer.scrollHeight + "px";
+						icon.style.transform = "rotate(180deg)";
+					}
+				});
+			});
+		</script>
+{% endblock %}

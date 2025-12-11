@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Penwise - Write Smarter, Faster, and Better{% endblock %}
+
+{% block meta_description %}Penwise-powered writing tool that helps you write smarter, faster, and better with intelligent features and seamless collaboration.{% endblock %}
+
+{% block content %}
+Navigation 
+
+ Mobile Menu Overlay 
+<div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden" id="mobileMenuOverlay"></div>
+ Mobile Menu 
+
+ Hero Section 
+<section class="pt-32 pb-24 bg-gradient-to-b from-white to-gray-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="flex justify-center mb-6 animate-fade-in-down">
+<span class="inline-flex items-center gap-2 px-4 py-2 bg-black text-white rounded-full text-sm font-medium">✨ AI Powered</span>
+</div>
+<h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-center mb-6 leading-tight animate-fade-in-up">
+					Write Smarter, Faster,<br/>and Better
+				</h1>
+<p class="text-xl md:text-2xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+					Transform your writing with Penwise-powered tools designed to enhance
+					productivity,<br class="hidden md:block"/>
+					creativity, and collaboration. Experience the future of writing today.
+				</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+<button class="px-8 py-4 text-lg font-semibold bg-black text-white rounded-full hover:bg-gray-800 transition shadow-lg">
+						Get Started Free
+					</button>
+<button class="px-8 py-4 text-lg font-semibold border-2 border-black rounded-full hover:bg-black hover:text-white transition">
+						Watch Demo
+					</button>
+</div>
+<div class="relative max-w-5xl mx-auto">
+<div class="rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Dashboard Preview" class="w-full" src="https://via.placeholder.com/1200x700/1a1a1a/ffffff?text=Dashboard+Preview"/>
+</div>
+</div>
+</div>
+</section>
+ Stats Section 
+<section class="py-24 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+<div>
+<div class="text-5xl md:text-6xl font-black mb-2">28,647</div>
+<div class="text-lg text-gray-600 font-medium">Active Users</div>
+</div>
+<div>
+<div class="text-5xl md:text-6xl font-black mb-2">98%</div>
+<div class="text-lg text-gray-600 font-medium">
+							Satisfaction Rate
+						</div>
+</div>
+<div>
+<div class="text-5xl md:text-6xl font-black mb-2">24/7</div>
+<div class="text-lg text-gray-600 font-medium">
+							Support Available
+						</div>
+</div>
+</div>
+</div>
+</section>
+ Tagline 
+<section class="py-12 bg-gray-50 text-center">
+<h2 class="text-lg text-gray-600 font-medium uppercase tracking-wide">
+				Everything you need to write
+			</h2>
+</section>
+ Features Section 
+<section class="py-24 bg-gray-50" id="features">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 space-y-24">
+<!-- Feature 1 -->
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="bg-white rounded-3xl p-8 shadow-xl">
+<img alt="AI Writing" class="w-full rounded-2xl" src="https://via.placeholder.com/600x800/f5f5f5/333333?text=AI+Writing+Assistant"/>
+</div>
+<div>
+<h3 class="text-3xl md:text-4xl font-bold mb-6">
+							Smarter Assisted Writing: AI-Driven
+						</h3>
+<p class="text-lg text-gray-600 mb-6">
+							Our advanced AI writing assistant helps you craft compelling
+							content with intelligent suggestions, grammar corrections, and
+							style improvements in real-time.
+						</p>
+<ul class="space-y-3 text-lg">
+<li>✓ Real-time grammar and style suggestions</li>
+<li>✓ Context-aware content generation</li>
+<li>✓ Multi-language support</li>
+<li>✓ Tone and voice customization</li>
+<li>✓ Plagiarism detection</li>
+</ul>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="md:order-2 bg-white rounded-3xl p-8 shadow-xl">
+<img alt="Smart Formatting" class="w-full rounded-2xl" src="https://via.placeholder.com/600x800/f5f5f5/333333?text=Smart+Formatting"/>
+</div>
+<div class="md:order-1">
+<h3 class="text-3xl md:text-4xl font-bold mb-6">
+							Make it neat like a sheet
+						</h3>
+<p class="text-lg text-gray-600 mb-6">
+							Experience clean, organized writing with our smart formatting
+							tools. Keep your documents structured and professional with
+							minimal effort.
+						</p>
+<ul class="space-y-3 text-lg">
+<li>✓ Auto-formatting and templates</li>
+<li>✓ Document organization tools</li>
+<li>✓ Custom styling options</li>
+<li>✓ Export to multiple formats</li>
+<li>✓ Version control and history</li>
+</ul>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="bg-white rounded-3xl p-8 shadow-xl max-w-md mx-auto">
+<img alt="Mobile Writing" class="w-full rounded-2xl" src="https://via.placeholder.com/400x800/f5f5f5/333333?text=Mobile+Writing"/>
+</div>
+<div>
+<h3 class="text-3xl md:text-4xl font-bold mb-6">
+							Write on - Text Management
+						</h3>
+<p class="text-lg text-gray-600 mb-6">
+							Seamlessly manage all your writing projects in one place. Access
+							your work from anywhere, on any device, with cloud
+							synchronization.
+						</p>
+<ul class="space-y-3 text-lg">
+<li>✓ Cloud-based storage</li>
+<li>✓ Cross-device synchronization</li>
+<li>✓ Offline mode support</li>
+<li>✓ Collaborative editing</li>
+<li>✓ Advanced search and filters</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+ Comparison Table 
+<section class="py-24 bg-white">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<h2 class="text-4xl font-bold text-center mb-12">
+					Why Made Penso Portable &amp; ?
+				</h2>
+<div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+<div class="grid grid-cols-3 bg-black text-white font-bold text-center">
+<div class="p-4">Features</div>
+<div class="p-4">The Others</div>
+<div class="p-4">Penwise</div>
+</div>
+<div class="grid grid-cols-3 border-b border-gray-200">
+<div class="p-4 font-medium">AI Writing Assistant</div>
+<div class="p-4 text-center">
+<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Limited</span>
+</div>
+<div class="p-4 text-center bg-gray-50">
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✓ Advanced AI</span>
+</div>
+</div>
+<div class="grid grid-cols-3 border-b border-gray-200">
+<div class="p-4 font-medium">Cloud Sync</div>
+<div class="p-4 text-center">
+<span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">Partial</span>
+</div>
+<div class="p-4 text-center bg-gray-50">
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✓ Real-time</span>
+</div>
+</div>
+<div class="grid grid-cols-3 border-b border-gray-200">
+<div class="p-4 font-medium">Collaboration Tools</div>
+<div class="p-4 text-center">
+<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Basic</span>
+</div>
+<div class="p-4 text-center bg-gray-50">
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✓ Advanced</span>
+</div>
+</div>
+<div class="grid grid-cols-3 border-b border-gray-200">
+<div class="p-4 font-medium">Offline Mode</div>
+<div class="p-4 text-center">
+<span class="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm">✗ Not Available</span>
+</div>
+<div class="p-4 text-center bg-gray-50">
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✓ Full Support</span>
+</div>
+</div>
+<div class="grid grid-cols-3 border-b border-gray-200">
+<div class="p-4 font-medium">Custom Templates</div>
+<div class="p-4 text-center">
+<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Limited</span>
+</div>
+<div class="p-4 text-center bg-gray-50">
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✓ Unlimited</span>
+</div>
+</div>
+<div class="grid grid-cols-3">
+<div class="p-4 font-medium">Export Formats</div>
+<div class="p-4 text-center">
+<span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">2-3 Formats</span>
+</div>
+<div class="p-4 text-center bg-gray-50">
+<span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">✓ 10+ Formats</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+ Pricing Section 
+<section class="py-24 bg-gray-50" id="pricing">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<h2 class="text-4xl font-bold text-center mb-4">
+					Choose Just Plan That Fits You
+				</h2>
+<p class="text-xl text-gray-600 text-center mb-12">
+					Simple, transparent pricing that grows with you
+				</p>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Free Plan -->
+<div class="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:shadow-2xl transition">
+<h3 class="text-2xl font-bold mb-4">Free</h3>
+<div class="flex items-start mb-2">
+<span class="text-2xl font-bold mt-2">$</span>
+<span class="text-6xl font-black">0</span>
+<span class="text-gray-600 mt-8">/mo</span>
+</div>
+<p class="text-gray-600 mb-6">Perfect for getting started</p>
+<ul class="space-y-3 mb-8">
+<li>✓ Up to 5 documents</li>
+<li>✓ Basic AI assistance</li>
+<li>✓ 1GB cloud storage</li>
+<li>✓ 3 export formats</li>
+<li class="text-gray-400">✗ Collaboration tools</li>
+<li class="text-gray-400">✗ Advanced AI features</li>
+</ul>
+<button class="w-full px-6 py-3 font-semibold border-2 border-black rounded-full hover:bg-black hover:text-white transition">
+							Get Started
+						</button>
+</div>
+<!-- Pro Plan -->
+<div class="bg-white border-2 border-black rounded-3xl p-8 relative shadow-xl hover:shadow-2xl transition">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-white px-4 py-1 rounded-full text-xs font-bold uppercase">
+							Most Popular
+						</div>
+<h3 class="text-2xl font-bold mb-4">Professional</h3>
+<div class="flex items-start mb-2">
+<span class="text-2xl font-bold mt-2">$</span>
+<span class="text-6xl font-black">5</span>
+<span class="text-gray-600 mt-8">/mo</span>
+</div>
+<p class="text-gray-600 mb-6">For serious writers</p>
+<ul class="space-y-3 mb-8">
+<li>✓ Unlimited documents</li>
+<li>✓ Advanced AI assistance</li>
+<li>✓ 50GB cloud storage</li>
+<li>✓ All export formats</li>
+<li>✓ Collaboration tools</li>
+<li>✓ Custom templates</li>
+</ul>
+<button class="w-full px-6 py-3 font-semibold bg-black text-white rounded-full hover:bg-gray-800 transition">
+							Get Started
+						</button>
+</div>
+<!-- Team Plan -->
+<div class="bg-white border-2 border-gray-200 rounded-3xl p-8 hover:shadow-2xl transition">
+<h3 class="text-2xl font-bold mb-4">Team</h3>
+<div class="flex items-start mb-2">
+<span class="text-2xl font-bold mt-2">$</span>
+<span class="text-6xl font-black">7</span>
+<span class="text-gray-600 mt-8">/user/mo</span>
+</div>
+<p class="text-gray-600 mb-6">Perfect for teams</p>
+<ul class="space-y-3 mb-8">
+<li>✓ Everything in Pro</li>
+<li>✓ Team workspace</li>
+<li>✓ 100GB cloud storage</li>
+<li>✓ Admin controls</li>
+<li>✓ Advanced analytics</li>
+<li>✓ API access</li>
+</ul>
+<button class="w-full px-6 py-3 font-semibold border-2 border-black rounded-full hover:bg-black hover:text-white transition">
+							Contact Sales
+						</button>
+</div>
+</div>
+</div>
+</section>
+ CTA Section 
+<section class="py-24 bg-gradient-to-br from-black to-gray-800 text-white">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+<h2 class="text-4xl md:text-5xl font-bold mb-6">
+					It is simple, Predictable,<br/>Pricing for EVERY BODY, Today
+				</h2>
+<p class="text-xl text-gray-300 mb-8">
+					Join thousands of writers who have already transformed their writing
+					workflow with Penwise. Start your free trial today, no credit card
+					required.
+				</p>
+<button class="px-8 py-4 text-lg font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition shadow-lg">
+					Get Started Now - It's Free
+				</button>
+</div>
+</section>
+ Footer Section 
+
+<script src="home.js"></script>
+{% endblock %}

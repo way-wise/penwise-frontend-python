@@ -1,0 +1,449 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Penwise - Write Smarter, Faster, and Better{% endblock %}
+
+{% block meta_description %}Penwise-powered writing assistant that helps you write better content faster.{% endblock %}
+
+{% block content %}
+Navigation 
+
+ Mobile Menu 
+
+ Hero Section 
+<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
+				background-image: url('{% static 'assets/image/hero/hero2.png' %}');
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			">
+<!-- Container for content with profile badges -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+<!-- Center Content -->
+<div class="z-20 space-y-6" data-aos="fade-right">
+<h1 class="text-3xl text-center lg:text-left md:text-[56px] font-semibold leading-tight tracking-tight">
+					Earn While You Share <br/> Great Stories
+				</h1>
+<p class="text-base lg:text-[16px] text-gray-300 text-center lg:text-left max-w-3xl leading-relaxed">
+					Join creators earning 25% commission sharing Penwise's revolutionary custom-built AI novel writing companion
+				</p>
+<div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+<button class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2">
+						Join the Affiliate Program <span class="text-lg"><svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg></span>
+</button>
+</div>
+</div>
+<div class="lg:w-[50%] w-full" data-aos="fade-left">
+<div class="">
+<img alt="" class="lg:w-[60%] w-[80%] mx-auto object-contain" src="{% static 'assets/image/affiliates/affiliates.png' %}"/>
+</div>
+</div>
+</div>
+</section>
+ Tagline 
+<section class="mt-4 md:mt-[80px] flex flex-col justify-center items-center space-y-2 p-4 lg:p-0" data-aos="fade-up">
+<!-- <div
+				class="px-[16px] py-[8px] align-center bg-[#F2F2F2] text-center flex items-center gap-2 justify-center rounded-full border border-black"
+			>
+				<div class="flex items-center">
+					<svg
+						width="18"
+						height="18"
+						viewBox="0 0 18 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_90_449)">
+							<path
+								d="M5.81403 6.88771L4.43945 8.26229L8.69371 12.5165L17.8826 3.3277L16.508 1.95312L8.69371 9.76738L5.81403 6.88771Z"
+								fill="black"
+							/>
+							<path
+								d="M17.9029 7.67541L15.9785 7.95866C16.0284 8.30022 16.0534 8.65289 16.0534 9.00001C16.0534 12.8905 12.8877 16.0562 8.99726 16.0562C5.10678 16.0562 1.94385 12.8905 1.94385 9.00001C1.94385 5.10954 5.10955 1.94385 9.00003 1.94385C10.3163 1.94385 11.5992 2.30763 12.71 2.9963L13.7347 1.34404C12.3126 0.463538 10.6727 -0.0019812 9.00003 6.33777e-06C4.03766 6.33777e-06 0 4.03765 0 9.00001C0 13.9624 4.03766 18 9.00003 18C13.9624 18 18.0001 13.9624 18.0001 9.00001C18.0001 8.5557 17.9667 8.11139 17.9029 7.67541Z"
+								fill="black"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_90_449">
+								<rect width="18.0001" height="18" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<h3 class="text-sm font-normal">Our Core Feature</h3>
+			</div> -->
+<h2 class="text-[30px] tracking-wide text-black font-semibold text-center">
+			Why Join Our Affiliate Program?
+		</h2>
+<p class="text-[16px] text-[#47566C] font-normal text-center">
+			Partner with us and access one of the most rewarding affiliate programs for writing and productivity tools.
+		</p>
+</section>
+ Grid Section  
+<section class="py-5 lg:py-16 relative bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+<!-- Card  1 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-5 border" data-aos="fade-right">
+<div class="">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M34.0075 32.0039H38.0075V8.00391H18.0074V12.0039H34.0075V32.0039ZM34.0075 36.0039V42.0021C34.0075 43.1077 33.1075 44.0039 31.9937 44.0039H8.02113C6.90901 44.0039 6.00781 43.1147 6.00781 42.0021L6.01301 14.0056C6.01323 12.9001 6.91309 12.0039 8.02665 12.0039H14.0074V6.00391C14.0074 4.89933 14.9029 4.00391 16.0074 4.00391H40.0075C41.1121 4.00391 42.0075 4.89933 42.0075 6.00391V34.0039C42.0075 35.1085 41.1121 36.0039 40.0075 36.0039H34.0075ZM10.0127 16.0039L10.0082 40.0039H30.0075V16.0039H10.0127ZM14.0074 32.0039H23.0075C23.5597 32.0039 24.0075 31.5561 24.0075 31.0039C24.0075 30.4517 23.5597 30.0039 23.0075 30.0039H17.0074C14.246 30.0039 12.0074 27.7653 12.0074 25.0039C12.0074 22.2425 14.246 20.0039 17.0074 20.0039H18.0074V18.0039H22.0075V20.0039H26.0075V24.0039H17.0074C16.4551 24.0039 16.0074 24.4517 16.0074 25.0039C16.0074 25.5561 16.4551 26.0039 17.0074 26.0039H23.0075C25.7689 26.0039 28.0075 28.2425 28.0075 31.0039C28.0075 33.7653 25.7689 36.0039 23.0075 36.0039H22.0075V38.0039H18.0074V36.0039H14.0074V32.0039Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					High Commission Rates
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Earn up to 30% recurring commissions on every active subscriber you successfully refer to our
+					program.
+				</p>
+</div>
+<!-- Card  2 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-5 border" data-aos="fade-left">
+<div class="">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 18H42L22 48V30H8L26 0V18ZM22 22V14.4413L15.0648 26H26V34.7888L34.526 22H22Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Fast Payouts
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Get monthly payouts directly to your preferred payment method without any delays or complications.
+				</p>
+</div>
+<!-- Card  3 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-5 border" data-aos="fade-right">
+<div class="">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 4.9156V9.16304C12.1363 11.5366 8 17.2852 8 24C8 32.8366 15.1634 40 24 40C30.7148 40 36.4634 35.8636 38.837 30H43.0844C40.5358 38.1142 32.9552 44 24 44C12.9543 44 4 35.0456 4 24C4 15.0447 9.88578 7.46414 18 4.9156ZM24 4C35.0456 4 44 12.9543 44 24C44 24.675 43.9666 25.3422 43.9012 26H22V4.09876C22.6578 4.03344 23.325 4 24 4ZM26 8.12378V22H39.8762C38.9738 14.7626 33.2374 9.02628 26 8.12378Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Real-Time Dashboard
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Track clicks, signups, and earnings effortlessly from a clean, easy-to-use affiliate dashboard that
+					provides insights.
+				</p>
+</div>
+<!-- Card  4 -->
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-5 border" data-aos="fade-left">
+<div class="">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 34C18 34 32 36 38 42H40C41.1046 42 42 41.1046 42 40V27.874C43.7252 27.43 45 25.8638 45 24C45 22.1362 43.7252 20.57 42 20.126V8C42 6.89544 41.1046 6 40 6H38C32 12 18 14 18 14H10C7.79086 14 6 15.7909 6 18V30C6 32.2092 7.79086 34 10 34H12L14 44H18V34ZM22 17.3224C23.3666 17.0292 25.055 16.6239 26.8786 16.0875C30.235 15.1003 34.5 13.5452 38 11.1492V36.8508C34.5 34.4548 30.235 32.8998 26.8786 31.9126C25.055 31.3762 23.3666 30.9708 22 30.6776V17.3224ZM10 18H18V30H10V18Z" fill="black"></path>
+</svg>
+</div>
+<h3 class="text-xl font-bold text-black flex-1">
+					Promotional Assets Included
+				</h3>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+					Access banners, copy templates, product screenshots, and email scripts to help you convert more.
+				</p>
+</div>
+</div>
+</section>
+ From Idea to Published Novel in 3 easy steps Section 
+<section class="bg-[url('/assets/image/step/hero.png')] bg-cover bg-center relative py-16 md:py-24 bg-black overflow-hidden">
+<!-- Starry Background Pattern -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10" data-aos="fade-right">
+<!-- Section Header -->
+<div class="text-start mb-12 md:mb-16">
+<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
+					From Idea to Published Novel in 3 easy steps
+				</h2>
+<p class="text-gray-300 text-base md:text-[14px] max-w-3xl">
+					Penwise streamlines your entire writing journey — from brainstorming and structuring to refining and
+					finalizing your story effortlessly.
+				</p>
+</div>
+<!-- Workflow Steps -->
+<div class="relative">
+<!-- Desktop: Horizontal Layout -->
+<div class="hidden lg:flex items-start justify-between gap-8 relative">
+<!-- Step 1: Generate Ideas -->
+<div class="flex-1 relative" data-aos="fade-right">
+<div class="inline-block bg-white text-black text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 01
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Generate<br/>Ideas
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.6778 4.01907L24 8.00148C17.3726 8.00148 12.0001 13.3741 12 20.0015C12 22.7699 12.9355 25.3843 14.6289 27.4977C14.7997 27.7107 16.2405 29.2029 16.4629 29.4449C18.4551 31.6141 19.6812 33.5983 19.9453 36.0015H28.0546C28.3188 33.5985 29.5442 31.6145 31.5352 29.4469C31.7592 29.2029 33.1954 27.7155 33.3672 27.5015C35.0626 25.3875 36 22.7715 36 20.0015L39.9804 19.3218C39.9898 19.5472 40 19.7737 40 20.0015C40 23.7863 38.6852 27.2639 36.4882 30.0035C35.2476 31.5503 32 34.0015 32 37.0015V42.0015C32 44.2107 30.2092 46.0015 28 46.0015H20C17.7909 46.0015 16 44.2107 16 42.0015V37.0015C15.9999 34.0015 12.7491 31.5483 11.5078 29.9995C9.31294 27.2607 8 23.7845 8 20.0015C8.00006 11.165 15.1635 4.00149 24 4.00149C24.227 4.00149 24.453 4.00969 24.6778 4.01907ZM20 42.0015H28V40.0015H20V42.0015ZM35.0586 0.658203C35.4118 -0.193347 36.5884 -0.193371 36.9414 0.658203L37.4472 1.88086C38.3112 3.96644 39.9232 5.63189 41.9492 6.53321L43.3848 7.17189C44.2052 7.53753 44.2052 8.7319 43.3848 9.09766L41.8652 9.77345C39.8898 10.652 38.3068 12.2584 37.4278 14.2754L36.9336 15.4062C36.5728 16.2345 35.4274 16.2345 35.0664 15.4062L34.5742 14.2754C33.6952 12.2581 32.1104 10.6521 30.1348 9.77345L28.6152 9.09766C27.795 8.73195 27.7948 7.53749 28.6152 7.17189L30.0508 6.53321C32.077 5.63189 33.689 3.96646 34.5528 1.88086L35.0586 0.658203Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Turn your rough concepts into clear outlines with Penwise-powered
+								creative suggestions.
+							</p>
+<div class="hidden lg:block absolute -bottom-16 -right-5">
+<img alt="" src="{% static 'assets/image/step/arrow.png' %}"/>
+</div>
+</div>
+</div>
+<!-- Step 2: Build Structure -->
+<div class="flex-1 relative lg:mt-48" data-aos="fade-up">
+<div class="inline-block bg-white text-black text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 02
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Build<br/>Structure
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 42V46H22V42H6C4.89544 42 4 41.1046 4 40V8C4 6.89544 4.89544 6 6 6H18C20.3894 6 22.5342 7.0475 24 8.70836C25.4658 7.0475 27.6106 6 30 6H42C43.1046 6 44 6.89544 44 8V40C44 41.1046 43.1046 42 42 42H26ZM40 38V10H30C27.7908 10 26 11.7909 26 14V38H40ZM22 38V14C22 11.7909 20.2092 10 18 10H8V38H22Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Organize chapters, arcs, and characters using intuitive
+								drag-and-drop mapping tools.
+							</p>
+</div>
+<div class="hidden lg:block absolute -bottom-16 -right-5">
+<img alt="" src="{% static 'assets/image/step/arrow.png' %}"/>
+</div>
+</div>
+<!-- Step 3: Refine & Publish -->
+<div class="flex-1 relative lg:mt-96" data-aos="fade-left">
+<div class="inline-block bg-white text-black text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 03
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Refine<br/>&amp; Publish
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4268 16.2562L11.9336 17.3876C11.5727 18.2158 10.4271 18.2158 10.0662 17.3876L9.57312 16.2562C8.69412 14.2389 7.1109 12.6328 5.13534 11.7542L3.61609 11.0784C2.79464 10.7131 2.79464 9.51762 3.61609 9.15224L5.0504 8.51428C7.07676 7.61302 8.68834 5.94746 9.55224 3.86166L10.0586 2.63907C10.4116 1.78698 11.5883 1.78698 11.9413 2.63907L12.4476 3.86166C13.3115 5.94746 14.9232 7.61302 16.9496 8.51428L18.3838 9.15224C19.2054 9.51762 19.2054 10.7131 18.3838 11.0784L16.8646 11.7542C14.889 12.6328 13.3058 14.2389 12.4268 16.2562ZM15.6684 33.6308C16.0206 32.466 16.4144 31.3124 16.8782 30.0654C20.9897 19.0127 27.8394 12.1634 39.0258 10.4296C38 12.7168 37.0302 14.306 36.1716 15.1647C35.5042 15.8321 34.837 16.4999 34.1696 17.1681L31.3442 19.9976L34.2558 22.907C31.9952 27.0768 27.5304 30.3958 22.5039 31.024C19.8709 31.3532 17.5869 32.2376 15.6684 33.6308ZM39 21.9932L37 19.9946C37.6662 19.3274 38.3324 18.6608 39.0054 17.9878C41.0036 15.9861 43.0018 11.9878 45 5.99316C15.6221 5.99316 11.1771 32.844 9.12722 45.2264C9.0838 45.4886 9.04148 45.7444 9 45.9932H12.9965C14.3284 39.327 17.6629 35.6602 23 34.9932C31 33.9932 37 27.9932 39 21.9932Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Polish tone, pacing, and clarity, then export your masterpiece
+								in your preferred format.
+							</p>
+</div>
+</div>
+</div>
+<!-- Mobile & Tablet: Vertical Layout -->
+<div class="lg:hidden space-y-8">
+<!-- Step 1 -->
+<div class="relative" data-aos="fade-up">
+<div class="inline-block bg-white text-black text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+							STEP 01
+						</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+									Generate<br/>Ideas
+								</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24.6778 4.01907L24 8.00148C17.3726 8.00148 12.0001 13.3741 12 20.0015C12 22.7699 12.9355 25.3843 14.6289 27.4977C14.7997 27.7107 16.2405 29.2029 16.4629 29.4449C18.4551 31.6141 19.6812 33.5983 19.9453 36.0015H28.0546C28.3188 33.5985 29.5442 31.6145 31.5352 29.4469C31.7592 29.2029 33.1954 27.7155 33.3672 27.5015C35.0626 25.3875 36 22.7715 36 20.0015L39.9804 19.3218C39.9898 19.5472 40 19.7737 40 20.0015C40 23.7863 38.6852 27.2639 36.4882 30.0035C35.2476 31.5503 32 34.0015 32 37.0015V42.0015C32 44.2107 30.2092 46.0015 28 46.0015H20C17.7909 46.0015 16 44.2107 16 42.0015V37.0015C15.9999 34.0015 12.7491 31.5483 11.5078 29.9995C9.31294 27.2607 8 23.7845 8 20.0015C8.00006 11.165 15.1635 4.00149 24 4.00149C24.227 4.00149 24.453 4.00969 24.6778 4.01907ZM20 42.0015H28V40.0015H20V42.0015ZM35.0586 0.658203C35.4118 -0.193347 36.5884 -0.193371 36.9414 0.658203L37.4472 1.88086C38.3112 3.96644 39.9232 5.63189 41.9492 6.53321L43.3848 7.17189C44.2052 7.53753 44.2052 8.7319 43.3848 9.09766L41.8652 9.77345C39.8898 10.652 38.3068 12.2584 37.4278 14.2754L36.9336 15.4062C36.5728 16.2345 35.4274 16.2345 35.0664 15.4062L34.5742 14.2754C33.6952 12.2581 32.1104 10.6521 30.1348 9.77345L28.6152 9.09766C27.795 8.73195 27.7948 7.53749 28.6152 7.17189L30.0508 6.53321C32.077 5.63189 33.689 3.96646 34.5528 1.88086L35.0586 0.658203Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+								Turn your rough concepts into clear outlines with Penwise-powered
+								creative suggestions.
+							</p>
+</div>
+<!-- Connecting Arrow -->
+<div class="flex justify-center">
+<svg class="w-8 h-8 text-white opacity-30" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 3a1 1 0 011 1v10.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<!-- Step 2 -->
+<div class="flex-1 relative mt-6" data-aos="fade-up">
+<div class="inline-block bg-white text-black text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+								STEP 02
+							</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+										Build<br/>Structure
+									</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M26 42V46H22V42H6C4.89544 42 4 41.1046 4 40V8C4 6.89544 4.89544 6 6 6H18C20.3894 6 22.5342 7.0475 24 8.70836C25.4658 7.0475 27.6106 6 30 6H42C43.1046 6 44 6.89544 44 8V40C44 41.1046 43.1046 42 42 42H26ZM40 38V10H30C27.7908 10 26 11.7909 26 14V38H40ZM22 38V14C22 11.7909 20.2092 10 18 10H8V38H22Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+									Organize chapters, arcs, and characters using intuitive
+									drag-and-drop mapping tools.
+								</p>
+</div>
+</div>
+<!-- Connecting Arrow -->
+<div class="flex justify-center my-4">
+<svg class="w-8 h-8 text-white opacity-30" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10 3a1 1 0 011 1v10.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<!-- Step 3 -->
+<div class="flex-1 relative mt-6" data-aos="fade-up">
+<div class="inline-block bg-white text-black text-xs font-semibold px-4 py-1.5 rounded-full mb-4">
+								STEP 03
+							</div>
+<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10">
+<div class="flex items-start gap-4 mb-3">
+<h3 class="text-xl font-bold text-black flex-1">
+										Refine<br/>&amp; Publish
+									</h3>
+<div class="flex-shrink-0">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4268 16.2562L11.9336 17.3876C11.5727 18.2158 10.4271 18.2158 10.0662 17.3876L9.57312 16.2562C8.69412 14.2389 7.1109 12.6328 5.13534 11.7542L3.61609 11.0784C2.79464 10.7131 2.79464 9.51762 3.61609 9.15224L5.0504 8.51428C7.07676 7.61302 8.68834 5.94746 9.55224 3.86166L10.0586 2.63907C10.4116 1.78698 11.5883 1.78698 11.9413 2.63907L12.4476 3.86166C13.3115 5.94746 14.9232 7.61302 16.9496 8.51428L18.3838 9.15224C19.2054 9.51762 19.2054 10.7131 18.3838 11.0784L16.8646 11.7542C14.889 12.6328 13.3058 14.2389 12.4268 16.2562ZM15.6684 33.6308C16.0206 32.466 16.4144 31.3124 16.8782 30.0654C20.9897 19.0127 27.8394 12.1634 39.0258 10.4296C38 12.7168 37.0302 14.306 36.1716 15.1647C35.5042 15.8321 34.837 16.4999 34.1696 17.1681L31.3442 19.9976L34.2558 22.907C31.9952 27.0768 27.5304 30.3958 22.5039 31.024C19.8709 31.3532 17.5869 32.2376 15.6684 33.6308ZM39 21.9932L37 19.9946C37.6662 19.3274 38.3324 18.6608 39.0054 17.9878C41.0036 15.9861 43.0018 11.9878 45 5.99316C15.6221 5.99316 11.1771 32.844 9.12722 45.2264C9.0838 45.4886 9.04148 45.7444 9 45.9932H12.9965C14.3284 39.327 17.6629 35.6602 23 34.9932C31 33.9932 37 27.9932 39 21.9932Z" fill="black"></path>
+</svg>
+</div>
+</div>
+<p class="w-[80%] text-sm text-gray-600 leading-relaxed">
+									Polish tone, pacing, and clarity, then export your masterpiece
+									in your preferred format.
+								</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+ Pricing Section 
+<section class="py-16 md:py-24 bg-white" data-aos="fade-up" id="pricing">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="text-center">
+<h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4">
+					Choose Your Path
+				</h2>
+<p class="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
+					Choose Your Path: Explore various options and make decisions that shape your journey. Each choice
+					leads to unique experiences and opportunities for growth.
+				</p>
+</div>
+<!-- Pricing Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-4 sm:p-6 md:p-8 lg:p-12">
+<!-- Starter Book Plan -->
+<div class="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-6 md:p-12 hover:shadow-xl transition-shadow duration-300" data-aos="fade-right">
+<!-- Decorative Dots -->
+<img alt="" class="absolute top-4 right-0 w-8 h-auto sm:w-10 md:w-20 opacity-100" src="{% static 'assets/image/price/elements.png' %}"/>
+<!-- Plan Name -->
+<!-- Price -->
+<div class="mb-2">
+<span class="text-4xl md:text-[38px] font-bold text-black">Ambassador Program</span>
+</div>
+<!-- Description -->
+<p class="text-sm text-[#7B8189]">
+						Perfect for: Personal networks &amp; social media
+					</p>
+<hr class="my-6"/>
+<!-- Features List -->
+<ul class="space-y-4 mb-8 text-[16px] text-[#7B8189]">
+<li class="flex items-start">
+							Share a simple promo code
+						</li>
+<li class="flex items-start">
+							Track with promo code system
+						</li>
+<li class="flex items-start">
+							Ideal for friends, family &amp; followers
+						</li>
+<li class="flex items-start">
+							No website needed
+						</li>
+</ul>
+<div class="bg-[#F3F2F6] py-4 px-7 rounded-2xl my-8 text-center space-y-1">
+<h3 class="text-xl font-semibold text-black">25% Per Sale</h3>
+<p class="text-[16px] text-black font-normal">$100 minimum payout • Monthly payments</p>
+</div>
+<div class="my-8">
+<label class="block text-[16px] text-[#7B8189] font-normal mb-2" for="email">Email
+							Address</label>
+<input class="w-full py-4 px-7 border border-[#CDD7E5] text-[#7B8189] font-semibold rounded-2xl focus:outline-none outline-none duration-300 placeholder-[#7B8189] placeholder:font-normal" id="email" placeholder="Enter your email address" type="email"/>
+</div>
+<!-- Button -->
+<button class="w-full py-3 px-6 border-2 border-black text-white bg-black font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300">
+						Get my promo code
+					</button>
+</div>
+<!-- Starter Book Plan -->
+<div class="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-6 md:p-12 hover:shadow-xl transition-shadow duration-300" data-aos="fade-left">
+<!-- Decorative Dots -->
+<img alt="" class="absolute top-4 right-0 w-8 h-auto sm:w-10 md:w-20 opacity-100" src="{% static 'assets/image/price/elements.png' %}"/>
+<!-- Plan Name -->
+<!-- Price -->
+<div class="mb-2">
+<span class="text-4xl md:text-[38px] font-bold text-black">Affiliate Program</span>
+</div>
+<!-- Description -->
+<p class="text-sm text-[#7B8189]">
+						Perfect for: Website owners &amp; bloggers
+					</p>
+<hr class="my-6"/>
+<!-- Features List -->
+<ul class="space-y-4 mb-8 text-[16px] text-[#7B8189]">
+<li class="flex items-start">
+							Professional marketing materials
+						</li>
+<li class="flex items-start">
+							Banners, text links &amp; tools
+						</li>
+<li class="flex items-start">
+							Real-time analytics dashboard
+						</li>
+<li class="flex items-start">
+							Advanced tracking
+						</li>
+</ul>
+<div class="bg-[#F3F2F6] py-4 px-7 rounded-2xl my-8 text-center space-y-1">
+<h3 class="text-xl font-semibold text-black">25% Per Sale</h3>
+<p class="text-[16px] text-black font-normal">$100 minimum payout • Monthly payments</p>
+</div>
+<div class="my-8">
+<label class="block text-[16px] text-[#7B8189] font-normal mb-2" for="email">Email
+							Address</label>
+<input class="w-full py-4 px-7 border border-[#CDD7E5] text-[#7B8189] font-semibold rounded-2xl focus:outline-none outline-none duration-300 placeholder-[#7B8189] placeholder:font-normal" id="email" placeholder="Enter your email address" type="email"/>
+</div>
+<!-- Button -->
+<button class="w-full py-3 px-6 border-2 border-black text-white bg-black font-semibold rounded-full hover:bg-white hover:text-black transition-all duration-300">
+						Get my promo code
+					</button>
+</div>
+</div>
+</div>
+</section>
+ CTA Section 
+<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}');">
+<!-- Dark Overlay -->
+<div class="absolute inset-0 bg-black bg-opacity-60"></div>
+<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+<!-- Heading -->
+<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+				Bring your Novel to Life - Let<br/>Penwise Be Your Writing Partner
+			</h2>
+<!-- Subtext -->
+<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
+				Start writing your novel today with Penwise — get Penwise-powered assistance for plotting, drafting, and
+				refining every chapter effortlessly.
+			</p>
+<!-- CTA Button -->
+<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
+				Start My Novel For Free
+				<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
+<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+</section>
+ Footer Section
+{% endblock %}

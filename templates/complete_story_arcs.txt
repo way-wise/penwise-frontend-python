@@ -1,0 +1,266 @@
+>
+                                            <div>
+                                                <h4 class="font-bold text-amber-900 mb-2 mt-0">Professor's Advanced Tip</h4>
+                                                <p class="text-gray-700 mb-0">The five ingredients don't just exist independently—they interact with and influence each other throughout the story. Goals create obstacles, obstacles raise stakes, stakes lead to reversals, and reversals force change. Understanding these interactions allows you to create stories where every element reinforces every other element.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore More Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+                    Explore More
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Understand Story Arcs Clearly: Break down narrative structures and learn how arcs shape powerful storytelling
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#chapter1" class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200">
+                    <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-black">Understanding Story Arcs</h3>
+                    <p class="text-sm text-gray-600">Learn how story arcs shape narratives from start to finish.</p>
+                </a>
+
+                <a href="#chapter2" class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200">
+                    <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-black">Key Literary Devices</h3>
+                    <p class="text-sm text-gray-600">Explore tools that strengthen story arcs and reader impact.</p>
+                </a>
+
+                <a href="#chapter3" class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200">
+                    <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-black">Tips for Strong Arcs</h3>
+                    <p class="text-sm text-gray-600">Practical advice for structuring compelling story arcs.</p>
+                </a>
+
+                <a href="#chapter4" class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200">
+                    <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-black">Genre-Specific Arcs</h3>
+                    <p class="text-sm text-gray-600">Discover how story arcs vary across different genres.</p>
+                </a>
+
+                <a href="./literary-glossary.html" class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200">
+                    <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-black">Editing Story Flow</h3>
+                    <p class="text-sm text-gray-600">Refine pacing and consistency within your arcs.</p>
+                </a>
+
+                <a href="./blog.html" class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200">
+                    <div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 group-hover:text-black">Beat Writer's Block</h3>
+                    <p class="text-sm text-gray-600">Use story arc frameworks to spark new ideas.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+	<!-- Footer Section -->
+	<footer class="rounded-b-2xl py-12 md:py-16">
+		<div class="max-w-7xl mx-auto px-4 sm:px-6">
+			<!-- Footer Content Grid -->
+			<div
+				class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 lg:gap-8 mb-8 md:mb-12">
+				<!-- Penwise Brand Column -->
+				<div class="sm:col-span-2 md:col-span-1 lg:col-span-1">
+					<div class="flex items-center gap-2 mb-4">
+						<img src="./assets/image/logo.png" alt="Penwise">
+					</div>
+					<p class="text-[16px] text-[#7B8189] leading-relaxed max-w-xs mb-6">
+						Penwise is an Penwise-powered writing platform designed to help storytellers, authors, and teams
+						create, edit, and organize their work effortlessly.
+					</p>
+					<div class="flex gap-4">
+						<a href="#" class="text-black hover:text-black transition-colors" aria-label="Facebook">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+							</svg>
+						</a>
+						<a href="#" class="text-black hover:text-black transition-colors" aria-label="Instagram">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+							</svg>
+						</a>
+						<a href="#" class="text-black hover:text-black transition-colors" aria-label="Twitter">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+							</svg>
+						</a>
+						<a href="#" class="text-black hover:text-black transition-colors" aria-label="YouTube">
+							<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+								<path
+									d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- Product Column -->
+				<div>
+					<h3 class="text-[16px] font-semibold text-black mb-4">Product</h3>
+					<ul class="space-y-2.5 list-none text-sm text-[#7B8189]">
+						<li><a href="./contactus.html" class="hover:text-black transition-colors">Contact Us</a></li>
+						<li><a href="./howitworks.html" class="hover:text-black transition-colors">How it works</a>
+						</li>
+						<li><a href="./pricing.html" class="hover:text-black transition-colors">Pricing</a></li>
+						
+						<li><a href="./blog.html" class="hover:text-black transition-colors">Blog</a></li>
+						<li><a href="/about.html" class="hover:text-black transition-colors">About</a></li>
+						<li><a href="./educators-and-schools.html" class="hover:text-black transition-colors">For Educators & Schools</a></li>
+						<li><a href="./why.html" class="hover:text-black transition-colors">Why penwise</a></li>
+						<li><a href="./ambassadors-program.html" class="hover:text-black transition-colors">Ambassador & Affiliate Program</a></li>
+						<li><a href="./book-title-generator.html" class="hover:text-black transition-colors">Book Titles
+								Generator</a></li>
+						<li><a href="./story-title-generator.html" class="hover:text-black transition-colors">Story Title
+								Generator</a></li>
+						<li><a href="./plot-generator.html" class="hover:text-black transition-colors">Generate Story Arcs</a></li>
+					</ul>
+				</div>
+
+				<!-- Free AI Tools Column -->
+				<div>
+
+					<h3 class="text-[16px] font-semibold text-black mb-4">Resources</h3>
+					<ul class="space-y-2.5 list-none text-sm text-[#7B8189]">
+						<li><a href="./for-parents.html" class="hover:text-black transition-colors">For Parents</a>
+						</li>
+						<li><a href="./writing-tips-and-techniques.html"
+								class="hover:text-black transition-colors">Writing Tips & Techniques</a></li>
+						<li><a href="./the-complete-publishing-mastery-course.html"
+								class="hover:text-black transition-colors">Publishing Mastery Course</a></li>
+						<li><a href="./self-publishing-guide.html"
+								class="hover:text-black transition-colors">Self-Publishing Guide</a></li>
+						<li><a href="./literary-devices.html" class="hover:text-black transition-colors">Literary
+								Devices Masterclass</a></li>
+						<li><a href="./editing-and-proofreading-tips.html"
+								class="hover:text-black transition-colors">Editing & Proofreading Tips</a></li>
+						<li><a href="./guide-to-literary-genres.html" class="hover:text-black transition-colors">Guide
+								to Literary Genres</a></li>
+						<li><a href="./story_arcs-explained.html" class="hover:text-black transition-colors">Story
+								Arcs Explained</a></li>
+						<li><a href="./ideation-and-votes.html" class="hover:text-black transition-colors">Ideation
+								& Votes</a></li>
+						<li><a href="./literary-glossary.html" class="hover:text-black transition-colors">Literary
+								Glossary</a></li>
+						<li><a href="./platforms-and-comparisons.html"
+								class="hover:text-black transition-colors">Platforms & Comparisons</a></li>
+						<li><a href="./our-mission-and-vision.html" class="hover:text-black transition-colors">Our
+								Mission & Vision</a></li>
+						<li><a href="./pricing-and-value.html" class="hover:text-black transition-colors">Pricing &
+								Value</a></li>
+						<li><a href="./future-oriented.html" class="hover:text-black transition-colors">Future
+								Oriented</a></li>
+					</ul>
+				</div>
+
+				<!-- Use-Case Specific Column -->
+				<div>
+					<h3 class="text-[16px] font-semibold text-black mb-4">Use-Case Specific</h3>
+					<ul class="space-y-2.5 list-none text-sm text-[#7B8189]">
+						<li><a href="./use-case.html" class="hover:text-black transition-colors">Use Cases</a></li>
+						<li><a href="./publishing-copyright.html" class="hover:text-black transition-colors">Publishing
+								& Copyright</a></li>
+						<li><a href="./originality-and-plagiarism.html"
+								class="hover:text-black transition-colors">Originality & Plagiarism</a></li>
+						<li><a href="./quality-and-professional.html" class="hover:text-black transition-colors">Quality
+								& Professional Use</a></li>
+						<li><a href="./end-writers-block.html" class="hover:text-black transition-colors">End
+								Writer's Block</a></li>
+						<li><a href="./trust-and-safety.html" class="hover:text-black transition-colors">Trust &
+								Safety</a></li>
+						<li><a href="./speed-and-efficiency.html" class="hover:text-black transition-colors">Speed &
+								Efficiency</a></li>
+						<li><a href="./performance-analytics.html"
+								class="hover:text-black transition-colors">Performance Analytics</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Copyright -->
+			<div class="pt-8 border-t border-gray-200">
+				<div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+					<p class="text-[14px] text-[#7B8189]">
+						© 2025 Penwise. All rights reserved.
+					</p>
+					<div class="flex gap-6">
+						<a href="./privacy-policy.html" class="text-[14px] text-[#7B8189] hover:text-black">Privacy</a>
+						<a href="./terms-and-conditions.html"
+							class="text-[14px] text-[#7B8189] hover:text-black">Terms</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / windowHeight) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
+
+        // Active chapter navigation
+        const observerOptions = {
+            root: null,
+            rootMargin: '-20% 0px -75% 0px',
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    document.querySelectorAll('.chapter-nav a').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.chapter-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

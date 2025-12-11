@@ -1,0 +1,700 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Penwise - Write
+Smarter, Faster, and Better{% endblock %} {% block meta_description
+%}Penwise-powered writing assistant that helps you write better content
+faster.{% endblock %} {% block content %} Navigation Mobile Menu Hero Section
+<section class="">
+	<div
+		class="lg:max-h-[600px] lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl xl:p-28 p-5 py-10 bg-black text-white"
+		style="
+			background-image: url('{% static 'assets/image/hero/hero2.png' %}');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		"
+	>
+		<div class="w-full xl:max-w-7xl mx-auto">
+			<!-- Center Content -->
+			<div class="max-w-5xl z-20 space-y-6 mx-auto" data-aos="fade-up">
+				<h1
+					class="text-center text-4xl lg:text-[56px] font-semibold leading-tight tracking-tight"
+				>
+					Choose the Perfect Plan for You
+				</h1>
+				<p
+					class="text-base lg:text-[16px] text-gray-300 text-center max-w-3xl lg:max-w-full leading-relaxed"
+				>
+					Find the plan that fits your writing goals — from casual creators to
+					professional authors,<br />
+					Penwise grows with your storytelling journey.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<button
+						class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2"
+					>
+						Start Writing For Free
+						<span class="text-lg"
+							><svg
+								class="w-4 h-4 sm:w-5 sm:h-5"
+								fill="currentColor"
+								viewbox="0 0 20 20"
+							>
+								<path
+									clip-rule="evenodd"
+									d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+									fill-rule="evenodd"
+								></path>
+							</svg>
+						</span>
+					</button>
+				</div>
+				<!-- Value Props / Grid Section Moved Here -->
+				<div class="mt-16 mb-12" data-aos="fade-up">
+					<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+						<!-- Card 1 -->
+						<div
+							class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300"
+						>
+							<div
+								class="mb-4 bg-white rounded-full w-12 h-12 flex items-center justify-center"
+							>
+								<svg
+									fill="none"
+									height="24"
+									viewbox="0 0 48 48"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<g clip-path="url(#clip0_191_1737_hero)">
+										<path
+											d="M24.6778 4.01907L24 8.00148C17.3726 8.00148 12.0001 13.3741 12 20.0015C12 22.7699 12.9355 25.3843 14.6289 27.4977C14.7997 27.7107 16.2405 29.2029 16.4629 29.4449C18.4551 31.6141 19.6812 33.5983 19.9453 36.0015H28.0546C28.3188 33.5985 29.5442 31.6145 31.5352 29.4469C31.7592 29.2029 33.1954 27.7155 33.3672 27.5015C35.0626 25.3875 36 22.7715 36 20.0015L39.9804 19.3218C39.9898 19.5472 40 19.7737 40 20.0015C40 23.7863 38.6852 27.2639 36.4882 30.0035C35.2476 31.5503 32 34.0015 32 37.0015V42.0015C32 44.2107 30.2092 46.0015 28 46.0015H20C17.7909 46.0015 16 44.2107 16 42.0015V37.0015C15.9999 34.0015 12.7491 31.5483 11.5078 29.9995C9.31294 27.2607 8 23.7845 8 20.0015C8.00006 11.165 15.1635 4.00149 24 4.00149C24.227 4.00149 24.453 4.00969 24.6778 4.01907ZM20 42.0015H28V40.0015H20V42.0015ZM35.0586 0.658203C35.4118 -0.193347 36.5884 -0.193371 36.9414 0.658203L37.4472 1.88086C38.3112 3.96644 39.9232 5.63189 41.9492 6.53321L43.3848 7.17189C44.2052 7.53753 44.2052 8.7319 43.3848 9.09766L41.8652 9.77345C39.8898 10.652 38.3068 12.2584 37.4278 14.2754L36.9336 15.4062C36.5728 16.2345 35.4274 16.2345 35.0664 15.4062L34.5742 14.2754C33.6952 12.2581 32.1104 10.6521 30.1348 9.77345L28.6152 9.09766C27.795 8.73195 27.7948 7.53749 28.6152 7.17189L30.0508 6.53321C32.077 5.63189 33.689 3.96646 34.5528 1.88086L35.0586 0.658203Z"
+											fill="black"
+										></path>
+									</g>
+									<defs>
+										<clippath id="clip0_191_1737_hero">
+											<rect fill="white" height="48" width="48"></rect>
+										</clippath>
+									</defs>
+								</svg>
+							</div>
+							<h3 class="text-lg font-bold text-white mb-2">
+								Transparent Billing
+							</h3>
+							<p class="text-sm text-gray-300 leading-relaxed">
+								What you see is what you pay, and it truly reflects the value
+								you receive.
+							</p>
+						</div>
+						<!-- Card 2 -->
+						<div
+							class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300"
+						>
+							<div
+								class="mb-4 bg-white rounded-full w-12 h-12 flex items-center justify-center"
+							>
+								<svg
+									fill="none"
+									height="24"
+									viewbox="0 0 48 48"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M6.67892 33.9994C5.81442 32.502 5.16554 30.9394 4.72266 29.3472C6.6676 28.3548 7.99944 26.3326 7.99944 23.9994C7.99944 21.668 6.6696 19.647 4.72706 18.6538C5.6205 15.432 7.31714 12.4316 9.72948 9.97904C11.5614 11.1673 13.9787 11.3097 15.9994 10.143C18.0202 8.97634 19.1055 6.81172 18.9924 4.6311C22.3226 3.76822 25.7694 3.7991 29.0062 4.63626C28.895 6.81514 29.9802 8.97726 31.9994 10.143C34.0202 11.3097 36.4374 11.1673 38.2692 9.97916C39.4266 11.1587 40.4554 12.502 41.32 13.9994C42.1844 15.4968 42.8334 17.0595 43.2762 18.6516C41.3312 19.644 39.9994 21.6662 39.9994 23.9994C39.9994 26.331 41.3292 28.3518 43.2718 29.345C42.3784 32.5668 40.6818 35.5672 38.2694 38.0198C36.4374 36.8316 34.0202 36.6892 31.9994 37.8558C29.9786 39.0224 28.8934 41.1872 29.0064 43.3678C25.6764 44.2306 22.2296 44.1998 18.9927 43.3626C19.1038 41.1836 18.0186 39.0216 15.9994 37.8558C13.9788 36.6892 11.5616 36.8314 9.72968 38.0196C8.57234 36.84 7.54344 35.4968 6.67892 33.9994ZM17.9994 34.3918C20.1822 35.652 21.7498 37.6444 22.5006 39.9308C23.4972 40.0256 24.5004 40.027 25.4972 39.934C26.2476 37.6464 27.8156 35.6526 29.9994 34.3918C32.1832 33.1308 34.694 32.77 37.0504 33.2638C37.6292 32.447 38.1296 31.5774 38.5458 30.667C36.9412 28.8736 35.9994 26.5198 35.9994 23.9994C35.9994 21.479 36.9412 19.1254 38.5458 17.332C38.3376 16.88 38.1076 16.4355 37.8558 15.9994C37.604 15.5634 37.334 15.142 37.0466 14.7359C34.6914 15.2285 32.1822 14.8673 29.9994 13.6071C27.8166 12.3469 26.2492 10.3544 25.4982 8.06812C24.5018 7.9733 23.4984 7.97194 22.5018 8.06486C21.7512 10.3524 20.1832 12.3463 17.9994 13.6071C15.8156 14.868 13.3049 15.2289 10.9486 14.7351C10.3697 15.5518 9.86926 16.4214 9.45312 17.3318C11.0576 19.1252 11.9994 21.479 11.9994 23.9994C11.9994 26.5198 11.0577 28.8734 9.45312 30.6668C9.66134 31.1188 9.89128 31.5634 10.143 31.9994C10.3948 32.4354 10.6648 32.8568 10.9522 33.263C13.3075 32.7704 15.8168 33.1316 17.9994 34.3918ZM23.9994 29.9994C20.6858 29.9994 17.9994 27.3132 17.9994 23.9994C17.9994 20.6858 20.6858 17.9994 23.9994 17.9994C27.3132 17.9994 29.9994 20.6858 29.9994 23.9994C29.9994 27.3132 27.3132 29.9994 23.9994 29.9994ZM23.9994 25.9994C25.104 25.9994 25.9994 25.104 25.9994 23.9994C25.9994 22.8948 25.104 21.9994 23.9994 21.9994C22.8948 21.9994 21.9994 22.8948 21.9994 23.9994C21.9994 25.104 22.8948 25.9994 23.9994 25.9994Z"
+										fill="black"
+									></path>
+								</svg>
+							</div>
+							<h3 class="text-lg font-bold text-white mb-2">Scalable Plans</h3>
+							<p class="text-sm text-gray-300 leading-relaxed">
+								Feel free to upgrade anytime as your needs expand and evolve
+								over time.
+							</p>
+						</div>
+						<!-- Card 3 -->
+						<div
+							class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 hover:bg-white/20 transition-all duration-300"
+						>
+							<div
+								class="mb-4 bg-white rounded-full w-12 h-12 flex items-center justify-center"
+							>
+								<svg
+									fill="none"
+									height="24"
+									viewbox="0 0 48 48"
+									width="24"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M23.7222 4.78114C25.699 3.46326 28.2672 3.43594 30.2716 4.71146L38.582 9.99988H41.9996C43.1042 9.99988 43.9996 10.8953 43.9996 11.9999V29.9998C43.9996 31.1044 43.1042 31.9998 41.9996 31.9998H38.9602C39.0792 33.8944 38.1866 35.8204 36.391 36.8978L26.2042 43.01C24.9182 43.7814 23.3218 43.7634 22.0628 42.9948C20.6622 44.2334 18.5062 44.3698 16.9421 43.1408L6.66056 35.0624C5.12774 33.8582 4.74012 31.8006 5.53158 30.1694C4.56496 29.4114 4 28.2508 4 27.0218V12C4 10.8954 4.89544 10 6 10H15.8939L23.7222 4.78114ZM8.34528 27.2904L9.72934 26.0794C12.1898 23.9264 15.9208 24.1396 18.12 26.5588L23.5244 32.5036C25.2634 34.4166 25.5806 37.227 24.3158 39.478L34.333 33.4678C34.8958 33.1302 35.0994 32.4552 34.8896 31.8866L26.0354 19.491C25.538 18.7947 24.6528 18.492 23.8332 18.7378L18.8627 20.229C16.7485 20.8632 14.4568 20.2854 12.896 18.7247L12.3104 18.1392C11.1744 17.0031 10.8806 15.3864 11.3587 14H8V27.0218L8.34528 27.2904ZM28.1242 8.08612C27.456 7.66094 26.6 7.67004 25.941 8.10934L15.1389 15.3107L15.7244 15.8963C16.2447 16.4165 17.0086 16.6091 17.7133 16.3977L22.6838 14.9065C25.1426 14.1689 27.7984 15.0772 29.2904 17.1661L37.0288 27.9998H39.9996V13.9999H38.582C37.8212 13.9999 37.0762 13.783 36.4344 13.3745L28.1242 8.08612ZM12.3634 29.0896L9.13186 31.9172L19.4134 39.9956L20.8212 37.5318C21.2512 36.7794 21.1476 35.8356 20.5646 35.1942L15.1603 29.2494C14.4272 28.443 13.1835 28.372 12.3634 29.0896Z"
+										fill="black"
+									></path>
+								</svg>
+							</div>
+							<h3 class="text-lg font-bold text-white mb-2">Human Support</h3>
+							<p class="text-sm text-gray-300 leading-relaxed">
+								Reach out to real people whenever you need assistance or
+								support.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container for content with profile badges -->
+</section>
+<!-- Pricing Section  -->
+<section class="z-[999] pt-10" id="pricing">
+	<div class="w-full xl:max-w-7xl mx-auto sm:px-6">
+		<!-- Pricing Cards -->
+		<div
+			class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 p-4 sm:p-6 md:p-4 lg:p-0 xl:p-12"
+		>
+			<!-- Starter Book Plan -->
+			<div
+				class="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-6 md:p-8 hover:shadow-xl transition-shadow duration-300"
+				data-aos="fade-right"
+			>
+				<!-- Decorative Dots -->
+				<img
+					alt=""
+					class="absolute top-4 right-0 w-8 h-auto sm:w-10 md:w-20 opacity-100"
+					src="{% static 'assets/image/price/elements.png' %}"
+				/>
+				<!-- Plan Name -->
+				<h3 class="text-sm font-semibold text-gray-600 mb-3">Starter Book</h3>
+				<!-- Price -->
+				<div class="mb-6">
+					<span class="text-4xl md:text-5xl font-bold text-black">$199</span>
+				</div>
+				<!-- Description -->
+				<p class="text-sm text-gray-600 leading-relaxed">
+					Book up to 200 pages with structured chapters and optimized
+					Penwise-powered storytelling.
+				</p>
+				<hr class="my-6" />
+				<!-- Features List -->
+				<ul class="space-y-3 mb-8 text-sm text-gray-700">
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Up to 200 pages</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span
+							>Structured chapters + optimized Penwise-powered
+							storytelling</span
+						>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>1 complimentary cover design</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Export to PDF, Docx, ePub</span>
+					</li>
+				</ul>
+				<!-- Button -->
+				<button
+					class="w-full py-3 px-6 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition-all duration-300"
+				>
+					Buy Now
+				</button>
+			</div>
+			<!-- Premium Book Plan (Featured) -->
+			<div
+				class="relative bg-white text-black border border-gray-400 rounded-2xl p-4 sm:p-6 md:p-8 shadow-2xl transform lg:scale-105 mt-4 lg:mt-0"
+				data-aos="fade-up"
+			>
+				<!-- Most Popular Badge -->
+				<div
+					class="absolute border border-gray-400 -top-4 left-1/2 transform -translate-x-1/2 bg-white text-black px-4 py-1 rounded-full text-sm font-semibold shadow-lg whitespace-nowrap z-10"
+				>
+					Most Popular
+				</div>
+				<!-- Decorative Dots -->
+				<img
+					alt=""
+					class="absolute top-4 right-0 w-8 h-auto sm:w-10 md:w-20 opacity-80 rounded-tr-2xl"
+					src="{% static 'assets/image/price/elements.png' %}"
+				/>
+				<!-- Plan Name -->
+				<h3 class="text-sm font-semibold text-black mb-3 relative z-10">
+					Premium Book
+				</h3>
+				<!-- Price -->
+				<div class="mb-6">
+					<span class="text-4xl md:text-5xl font-bold text-black">$399</span>
+				</div>
+				<!-- Description -->
+				<p class="text-sm text-gray-600 mb-8 leading-relaxed">
+					Complete book + Penwise-powered enhancements: deeper story arcs,
+					refined dialogue, enhanced style.
+				</p>
+				<hr class="my-6" />
+				<!-- Features List -->
+				<ul class="space-y-3 mb-8 text-sm text-gray-700">
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Up to 600 high-quality pages</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Penwise AI model performer</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>3 Complimentary Cover Designs</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Export to PDF, Docx, ePub</span>
+					</li>
+				</ul>
+				<!-- Button -->
+				<button
+					class="w-full py-3 px-6 bg-black text-white font-semibold rounded-full hover:bg-gray-900 transition-all duration-300"
+				>
+					Buy Now
+				</button>
+			</div>
+			<!-- Expert Book Plan -->
+			<div
+				class="relative bg-white border border-gray-200 rounded-2xl p-4 sm:p-6 md:p-8 hover:shadow-xl transition-shadow duration-300"
+				data-aos="fade-left"
+			>
+				<!-- Decorative Dots -->
+				<img
+					alt=""
+					class="absolute top-4 right-0 w-8 h-auto sm:w-10 md:w-20 opacity-100"
+					src="{% static 'assets/image/price/elements.png' %}"
+				/>
+				<!-- Plan Name -->
+				<h3 class="text-sm font-semibold text-gray-600 mb-3">Expert Book</h3>
+				<!-- Price -->
+				<div class="mb-6">
+					<span class="text-4xl md:text-5xl font-bold text-black">$599</span>
+				</div>
+				<!-- Description -->
+				<p class="text-sm text-gray-600 leading-relaxed">
+					Book + Penwise-powered restructuring: scenes recreated, narrative
+					rhythm reimagined.
+				</p>
+				<hr class="my-6" />
+				<!-- Features List -->
+				<ul class="space-y-3 mb-8 text-sm text-gray-700">
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Up to 800 high-quality pages</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Penwise AI model signature</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>5 Complimentary Cover Designs</span>
+					</li>
+					<li class="flex items-start">
+						<span class="mr-2">•</span>
+						<span>Export to PDF, Docx, ePub</span>
+					</li>
+				</ul>
+				<!-- Button -->
+				<button
+					class="w-full py-3 px-6 border-2 border-black text-black font-semibold rounded-full hover:bg-black hover:text-white transition-all duration-300"
+				>
+					Buy Now
+				</button>
+			</div>
+		</div>
+	</div>
+</section>
+Tagline
+<section
+	class="mt-4 flex flex-col justify-center items-center space-y-2 p-4 md:p-0"
+	data-aos="fade-up"
+>
+	<!-- <div
+				class="px-[16px] py-[8px] align-center bg-[#F2F2F2] text-center flex items-center gap-2 justify-center rounded-full border border-black"
+			>
+				<div class="flex items-center">
+					<svg
+						width="18"
+						height="18"
+						viewBox="0 0 18 18"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<g clip-path="url(#clip0_90_449)">
+							<path
+								d="M5.81403 6.88771L4.43945 8.26229L8.69371 12.5165L17.8826 3.3277L16.508 1.95312L8.69371 9.76738L5.81403 6.88771Z"
+								fill="black"
+							/>
+							<path
+								d="M17.9029 7.67541L15.9785 7.95866C16.0284 8.30022 16.0534 8.65289 16.0534 9.00001C16.0534 12.8905 12.8877 16.0562 8.99726 16.0562C5.10678 16.0562 1.94385 12.8905 1.94385 9.00001C1.94385 5.10954 5.10955 1.94385 9.00003 1.94385C10.3163 1.94385 11.5992 2.30763 12.71 2.9963L13.7347 1.34404C12.3126 0.463538 10.6727 -0.0019812 9.00003 6.33777e-06C4.03766 6.33777e-06 0 4.03765 0 9.00001C0 13.9624 4.03766 18 9.00003 18C13.9624 18 18.0001 13.9624 18.0001 9.00001C18.0001 8.5557 17.9667 8.11139 17.9029 7.67541Z"
+								fill="black"
+							/>
+						</g>
+						<defs>
+							<clipPath id="clip0_90_449">
+								<rect width="18.0001" height="18" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<h3 class="text-sm font-normal">Our Core Feature</h3>
+			</div> -->
+	<h2 class="text-[30px] tracking-wide text-black font-semibold text-center">
+		Why Writers Prefer Penwise
+	</h2>
+	<p class="text-[16px] text-[#47566C] font-normal text-center">
+		An intelligent AI platform that adapts to your writing style, structures
+		ideas, and ensures clear, <br />polished content every time.
+	</p>
+</section>
+Comparison Table
+<section class="py-10" data-aos="fade-right">
+	<div class="max-w-7xl mx-auto px-5 sm:px-6">
+		<div class="w-full overflow-x-auto">
+			<div
+				class="w-full inline-block min-w-full sm:min-w-0 rounded-none sm:rounded-3xl overflow-hidden rounded-xl"
+				style="min-width: 320px"
+			>
+				<!-- Header Row -->
+				<div class="grid grid-cols-3 text-sm md:text-base">
+					<!-- Feature Column Header -->
+					<div
+						class="bg-[#BDBDBD] text-black font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-xs sm:text-sm md:text-base">Feature</span>
+					</div>
+					<!-- Penwise Column Header -->
+					<div
+						class="bg-black text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-xs sm:text-sm md:text-base">Penwise</span>
+					</div>
+					<!-- The Others Column Header -->
+					<div
+						class="bg-[#4A4A4A] text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-xs sm:text-sm md:text-base">The Others</span>
+					</div>
+				</div>
+				<!-- Row 1: Personalized AI Suggestions -->
+				<div
+					class="grid grid-cols-3 border-t border-white text-sm md:text-base"
+				>
+					<div
+						class="bg-[#BDBDBD] text-black font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Personalized AI Suggestions</span
+						>
+					</div>
+					<div
+						class="bg-black text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#00D47E" r="10"></circle>
+							<path
+								d="M6 10L8.5 12.5L14 7"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Adapts to your unique writing style</span
+						>
+					</div>
+					<div
+						class="bg-[#4A4A4A] text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#FF4D4D" r="10"></circle>
+							<path
+								d="M7 7L13 13M13 7L7 13"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Offers generic suggestions</span
+						>
+					</div>
+				</div>
+				<!-- Row 2: Story & Idea Structuring -->
+				<div
+					class="grid grid-cols-3 border-t border-white text-sm md:text-base"
+				>
+					<div
+						class="bg-[#BDBDBD] text-black font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Story &amp; Idea Structuring</span
+						>
+					</div>
+					<div
+						class="bg-black text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#00D47E" r="10"></circle>
+							<path
+								d="M6 10L8.5 12.5L14 7"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Visual chapter and plot mapping</span
+						>
+					</div>
+					<div
+						class="bg-[#4A4A4A] text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#FF4D4D" r="10"></circle>
+							<path
+								d="M7 7L13 13M13 7L7 13"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Mostly unstructured or text-only</span
+						>
+					</div>
+				</div>
+				<!-- Row 3: Distraction-Free Workspace -->
+				<div
+					class="grid grid-cols-3 border-t border-white text-sm md:text-base"
+				>
+					<div
+						class="bg-[#BDBDBD] text-black font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Distraction-Free Workspace</span
+						>
+					</div>
+					<div
+						class="bg-black text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#00D47E" r="10"></circle>
+							<path
+								d="M6 10L8.5 12.5L14 7"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Minimalist interface for focused writing</span
+						>
+					</div>
+					<div
+						class="bg-[#4A4A4A] text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#FF4D4D" r="10"></circle>
+							<path
+								d="M7 7L13 13M13 7L7 13"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Cluttered, distracting UI</span
+						>
+					</div>
+				</div>
+				<!-- Row 4: Tone & Emotion Control -->
+				<div
+					class="grid grid-cols-3 border-t border-white text-sm md:text-base"
+				>
+					<div
+						class="bg-[#BDBDBD] text-black font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center"
+					>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Tone &amp; Emotion Control</span
+						>
+					</div>
+					<div
+						class="bg-black text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#00D47E" r="10"></circle>
+							<path
+								d="M6 10L8.5 12.5L14 7"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Adjust tone, style, and emotional depth</span
+						>
+					</div>
+					<div
+						class="bg-[#4A4A4A] text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#FF4D4D" r="10"></circle>
+							<path
+								d="M7 7L13 13M13 7L7 13"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Fixed or limited tone options</span
+						>
+					</div>
+				</div>
+				<!-- Row 5: Penwise-powered Insights -->
+				<div
+					class="grid grid-cols-3 border-t border-white text-sm md:text-base"
+				>
+					<div
+						class="bg-[#BDBDBD] text-black font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center rounded-none sm:rounded-bl-3xl"
+					>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Penwise-powered Insights</span
+						>
+					</div>
+					<div
+						class="bg-black text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#00D47E" r="10"></circle>
+							<path
+								d="M6 10L8.5 12.5L14 7"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Improves readability, pacing, and flow</span
+						>
+					</div>
+					<div
+						class="bg-[#4A4A4A] text-white font-semibold px-2 py-3 sm:p-4 md:p-6 flex items-center gap-1 sm:gap-2 rounded-none sm:rounded-br-3xl"
+					>
+						<svg
+							class="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 flex-shrink-0"
+							fill="none"
+							viewbox="0 0 20 20"
+						>
+							<circle cx="10" cy="10" fill="#FF4D4D" r="10"></circle>
+							<path
+								d="M7 7L13 13M13 7L7 13"
+								stroke="white"
+								stroke-linecap="round"
+								stroke-width="2"
+							></path>
+						</svg>
+						<span class="text-[10px] sm:text-xs md:text-sm leading-tight"
+							>Basic grammar corrections only</span
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+Pricing Section CTA Section
+<section
+	class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+	style="background-image: url('{% static 'assets/image/footer/bg.png' %}')"
+>
+	<!-- Dark Overlay -->
+	<div class="absolute inset-0 bg-black bg-opacity-60"></div>
+	<div
+		class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
+		data-aos="fade-up"
+	>
+		<!-- Heading -->
+		<h2
+			class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+		>
+			Bring your Novel to Life - Let<br />Penwise Be Your Writing Partner
+		</h2>
+		<!-- Subtext -->
+		<p
+			class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+		>
+			Start writing your novel today with Penwise — get Penwise-powered
+			assistance for plotting, drafting, and refining every chapter
+			effortlessly.
+		</p>
+		<!-- CTA Button -->
+		<button
+			class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+		>
+			Start My Novel For Free
+			<svg
+				class="w-4 h-4 sm:w-5 sm:h-5"
+				fill="currentColor"
+				viewbox="0 0 20 20"
+			>
+				<path
+					clip-rule="evenodd"
+					d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+					fill-rule="evenodd"
+				></path>
+			</svg>
+		</button>
+	</div>
+</section>
+Footer Section {% endblock %}
