@@ -1,344 +1,506 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block title %}Free AI Story Title
+Generator – Get Ideas Instantly | Penwise{% endblock %} {% block
+meta_description %}Instantly create unique, professional, and engaging titles
+designed for short stories, essays, or anthology entries with Penwise's AI.{%
+endblock %} {% block content %}
 
-{% block title %}Free AI Story Title Generator – Get Ideas Instantly | Penwise{% endblock %}
-
-{% block meta_description %}Instantly create unique, professional, and engaging titles designed for short stories, essays, or anthology entries with Penwise's AI.{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto">
-<div class="w-full z-20 space-y-6 mx-auto text-center" data-aos="fade-up">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6">
-						✨ Free AI Tool
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight">
-						Free AI Story Title Generator<br/><span class="text-gray-400">Get Ideas Instantly</span>
-</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						Every story begins with a spark, and often that spark is the title.
-						A strong title captures attention, sets the tone, and invites
-						readers into your world. With Penwise's AI Story Title Generator,
-						you can instantly create unique, professional, and engaging titles
-						designed for short stories, essays, or anthology entries.
-					</p>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						Whether you're an aspiring writer, a student working on a creative
-						writing project, or a published author, you'll find the perfect
-						inspiration here to kickstart your next masterpiece.
-					</p>
-</div>
-</div>
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url('{% static \'assets/image/hero/herobackground.png\' %}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto">
+    <div class="w-full z-20 space-y-6 mx-auto text-center" data-aos="fade-up">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6"
+      >
+        ✨ Free AI Tool
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight"
+      >
+        Free AI Story Title Generator<br /><span class="text-gray-400"
+          >Get Ideas Instantly</span
+        >
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        Every story begins with a spark, and often that spark is the title. A
+        strong title captures attention, sets the tone, and invites readers into
+        your world. With Penwise's AI Story Title Generator, you can instantly
+        create unique, professional, and engaging titles designed for short
+        stories, essays, or anthology entries.
+      </p>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        Whether you're an aspiring writer, a student working on a creative
+        writing project, or a published author, you'll find the perfect
+        inspiration here to kickstart your next masterpiece.
+      </p>
+    </div>
+  </div>
 </section>
- Generator Tool Section 
+<!-- Generator Tool Section  -->
 <section class="py-12 lg:py-20 bg-white">
-<div class="max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
-<div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-<div class="p-8 md:p-10 bg-gray-50 border-b border-gray-100 text-center">
-<h2 class="text-2xl font-bold text-black mb-2">
-							Generate Your Perfect Story Title
-						</h2>
-<p class="text-gray-600">
-							Enter a theme, keyword, or mood, and our AI will produce creative
-							and original titles.
-						</p>
-</div>
-<div class="p-8 md:p-10 space-y-6">
-<div>
-<label class="block text-sm font-semibold text-gray-900 mb-2" for="story-prompt">Describe Your Story Theme or Concept</label>
-<textarea class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-black focus:border-black transition-colors resize-none" id="story-prompt" placeholder="Example: A melancholic story about childhood memories in a small town, mystery involving lost letters, romantic tale set in a bookstore..." rows="4"></textarea>
-<p class="mt-2 text-sm text-gray-500">
-								Include the genre, mood, setting, or main theme. You can also
-								mention keywords or feelings you want the title to convey.
-							</p>
-</div>
-<button class="w-full py-4 bg-black text-white font-bold rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
-<span>Generate Story Titles</span>
-<svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6" data-aos="fade-up">
+    <div
+      class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden"
+    >
+      <div class="p-8 md:p-10 bg-gray-50 border-b border-gray-100 text-center">
+        <h2 class="text-2xl font-bold text-black mb-2">
+          Generate Your Perfect Story Title
+        </h2>
+        <p class="text-gray-600">
+          Enter a theme, keyword, or mood, and our AI will produce creative and
+          original titles.
+        </p>
+      </div>
+      <div class="p-8 md:p-10 space-y-6">
+        <div>
+          <label
+            class="block text-sm font-semibold text-gray-900 mb-2"
+            for="story-prompt"
+            >Describe Your Story Theme or Concept</label
+          >
+          <textarea
+            class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-black focus:border-black transition-colors resize-none"
+            id="story-prompt"
+            placeholder="Example: A melancholic story about childhood memories in a small town, mystery involving lost letters, romantic tale set in a bookstore..."
+            rows="4"
+          ></textarea>
+          <p class="mt-2 text-sm text-gray-500">
+            Include the genre, mood, setting, or main theme. You can also
+            mention keywords or feelings you want the title to convey.
+          </p>
+        </div>
+        <button
+          class="w-full py-4 bg-black text-white font-bold rounded-xl hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center gap-2"
+        >
+          <span>Generate Story Titles</span>
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
- Why Use AI Section 
+
+<!-- Why Use AI Section -->
 <section class="py-16 lg:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-						Why Use an AI Story Title Generator?
-					</h2>
-<p class="text-gray-600 leading-relaxed">
-						Finding the right title can sometimes take longer than writing the
-						story itself. That's where AI comes in. Penwise uses advanced
-						language models to suggest creative story titles that match your
-						genre, theme, and tone. Instead of endless brainstorming, you get
-						instant ideas that feel polished and ready to use.
-					</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="100">
-<div class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-<div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 text-2xl">
-							📚
-						</div>
-<h3 class="text-xl font-bold text-black mb-4">For All Genres</h3>
-<p class="text-gray-600">
-							Writers across all genres—mystery, fantasy, romance, science
-							fiction, thriller, or literary fiction—can use Penwise to discover
-							new directions for their work.
-						</p>
-</div>
-<div class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-<div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 text-2xl">
-							✨
-						</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Professional Quality
-						</h3>
-<p class="text-gray-600">
-							Get polished, professional-quality titles that feel authentic and
-							genre-appropriate, not random word combinations.
-						</p>
-</div>
-<div class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow duration-300">
-<div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 text-2xl">
-							🎓
-						</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Perfect for Students
-						</h3>
-<p class="text-gray-600">
-							A powerful tool for students, bloggers, and essayists who need
-							quick and professional title suggestions for their assignments.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+        Why Use an AI Story Title Generator?
+      </h2>
+      <p class="text-gray-600 leading-relaxed">
+        Finding the right title can sometimes take longer than writing the story
+        itself. That's where AI comes in. Penwise uses advanced language models
+        to suggest creative story titles that match your genre, theme, and tone.
+        Instead of endless brainstorming, you get instant ideas that feel
+        polished and ready to use.
+      </p>
+    </div>
+    <div
+      class="grid md:grid-cols-3 gap-8"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <div
+        class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 text-2xl"
+        >
+          📚
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">For All Genres</h3>
+        <p class="text-gray-600">
+          Writers across all genres—mystery, fantasy, romance, science fiction,
+          thriller, or literary fiction—can use Penwise to discover new
+          directions for their work.
+        </p>
+      </div>
+      <div
+        class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 text-2xl"
+        >
+          ✨
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">Professional Quality</h3>
+        <p class="text-gray-600">
+          Get polished, professional-quality titles that feel authentic and
+          genre-appropriate, not random word combinations.
+        </p>
+      </div>
+      <div
+        class="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 text-2xl"
+        >
+          🎓
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">Perfect for Students</h3>
+        <p class="text-gray-600">
+          A powerful tool for students, bloggers, and essayists who need quick
+          and professional title suggestions for their assignments.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- How It Works Section 
+
+<!-- How It Works Section -->
 <section class="py-16 lg:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div data-aos="fade-right">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-							Perfect for Every Type of Writing
-						</h2>
-<p class="text-gray-600 mb-8 leading-relaxed">
-							Simply enter a theme, a keyword, or even just a mood, and our AI
-							story generator will produce a range of creative and original
-							titles for you. Whether you're looking for something poetic,
-							dramatic, or playful, Penwise adapts to your style.
-						</p>
-<ul class="space-y-4">
-<li class="flex items-center gap-3">
-<span class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm">✓</span>
-<span class="text-gray-700 font-medium">Short stories in any genre</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm">✓</span>
-<span class="text-gray-700 font-medium">Essays or personal reflections</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm">✓</span>
-<span class="text-gray-700 font-medium">Creative writing assignments</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm">✓</span>
-<span class="text-gray-700 font-medium">Anthology entries or competitions</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm">✓</span>
-<span class="text-gray-700 font-medium">Blog posts or serialized fiction</span>
-</li>
-</ul>
-</div>
-<div class="relative" data-aos="fade-left">
-<div class="aspect-square rounded-3xl bg-gray-100 overflow-hidden relative">
-<!-- Placeholder for illustration -->
-<div class="absolute inset-0 flex items-center justify-center bg-gray-50">
-<span class="text-6xl">✍️</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+          Perfect for Every Type of Writing
+        </h2>
+        <p class="text-gray-600 mb-8 leading-relaxed">
+          Simply enter a theme, a keyword, or even just a mood, and our AI story
+          generator will produce a range of creative and original titles for
+          you. Whether you're looking for something poetic, dramatic, or
+          playful, Penwise adapts to your style.
+        </p>
+        <ul class="space-y-4">
+          <li class="flex items-center gap-3">
+            <span
+              class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700 font-medium"
+              >Short stories in any genre</span
+            >
+          </li>
+          <li class="flex items-center gap-3">
+            <span
+              class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700 font-medium"
+              >Essays or personal reflections</span
+            >
+          </li>
+          <li class="flex items-center gap-3">
+            <span
+              class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700 font-medium"
+              >Creative writing assignments</span
+            >
+          </li>
+          <li class="flex items-center gap-3">
+            <span
+              class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700 font-medium"
+              >Anthology entries or competitions</span
+            >
+          </li>
+          <li class="flex items-center gap-3">
+            <span
+              class="w-6 h-6 rounded-full bg-black text-white flex items-center justify-center text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700 font-medium"
+              >Blog posts or serialized fiction</span
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <div
+          class="aspect-square rounded-3xl bg-gray-100 overflow-hidden relative"
+        >
+          <!-- Placeholder for illustration -->
+          <div
+            class="absolute inset-0 flex items-center justify-center bg-gray-50"
+          >
+            <span class="text-6xl">✍️</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- Explore More Section 
+
+<!-- Explore More Section -->
 <section class="py-16 lg:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16" data-aos="fade-up">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-						Generate Story Titles Effortlessly
-					</h2>
-<p class="text-gray-600">
-						Discover unique, engaging story titles with the click of a button —
-						powered by AI.
-					</p>
-</div>
-<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
-<a class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300" href="#">
-<h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
-							AI Story Title Generator
-						</h3>
-<p class="text-sm text-gray-500">
-							Quickly generate story titles that capture your theme.
-						</p>
-</a>
-<a class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300" href="#">
-<h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
-							Use of Devices
-						</h3>
-<p class="text-sm text-gray-500">
-							Incorporate literary devices to create compelling titles.
-						</p>
-</a>
-<a class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300" href="#">
-<h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
-							Storytelling Terms
-						</h3>
-<p class="text-sm text-gray-500">
-							Understand the terminology used in crafting strong titles.
-						</p>
-</a>
-<a class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300" href="#">
-<h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
-							Keep It Unique
-						</h3>
-<p class="text-sm text-gray-500">
-							Generate titles that stand out and stay plagiarism-free.
-						</p>
-</a>
-<a class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300" href="#">
-<h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
-							Boost Efficiency
-						</h3>
-<p class="text-sm text-gray-500">
-							Accelerate your creative process with automated title ideas.
-						</p>
-</a>
-<a class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300" href="#">
-<h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
-							Compare Title Styles
-						</h3>
-<p class="text-sm text-gray-500">
-							See how different genres influence storytelling titles.
-						</p>
-</a>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        Generate Story Titles Effortlessly
+      </h2>
+      <p class="text-gray-600">
+        Discover unique, engaging story titles with the click of a button —
+        powered by AI.
+      </p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-aos="fade-up">
+      <a
+        class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300"
+        href="#"
+      >
+        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
+          AI Story Title Generator
+        </h3>
+        <p class="text-sm text-gray-500">
+          Quickly generate story titles that capture your theme.
+        </p>
+      </a>
+      <a
+        class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300"
+        href="#"
+      >
+        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
+          Use of Devices
+        </h3>
+        <p class="text-sm text-gray-500">
+          Incorporate literary devices to create compelling titles.
+        </p>
+      </a>
+      <a
+        class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300"
+        href="#"
+      >
+        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
+          Storytelling Terms
+        </h3>
+        <p class="text-sm text-gray-500">
+          Understand the terminology used in crafting strong titles.
+        </p>
+      </a>
+      <a
+        class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300"
+        href="#"
+      >
+        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
+          Keep It Unique
+        </h3>
+        <p class="text-sm text-gray-500">
+          Generate titles that stand out and stay plagiarism-free.
+        </p>
+      </a>
+      <a
+        class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300"
+        href="#"
+      >
+        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
+          Boost Efficiency
+        </h3>
+        <p class="text-sm text-gray-500">
+          Accelerate your creative process with automated title ideas.
+        </p>
+      </a>
+      <a
+        class="group bg-white p-6 rounded-2xl border border-gray-100 hover:shadow-md transition-all duration-300"
+        href="#"
+      >
+        <h3 class="text-lg font-bold text-black mb-2 group-hover:text-gray-700">
+          Compare Title Styles
+        </h3>
+        <p class="text-sm text-gray-500">
+          See how different genres influence storytelling titles.
+        </p>
+      </a>
+    </div>
+  </div>
 </section>
- FAQ Section 
+
+<!-- FAQ Section -->
 <section class="py-16 lg:py-24 bg-white">
-<div class="max-w-3xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12" data-aos="fade-up">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-						Everything You Need to Know
-					</h2>
-</div>
-<div class="space-y-4" data-aos="fade-up">
-<!-- FAQ Item 1 -->
-<div class="border border-gray-200 rounded-2xl overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" onclick="toggleFaq('faq1')">
-<span class="font-semibold text-black">What's the difference between a book title and a story
-								title?</span>
-<svg class="w-5 h-5 text-gray-400 transform transition-transform duration-300" fill="none" id="icon-faq1" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-6 text-gray-600" id="content-faq1">
-<p>
-								A book title usually represents a full narrative arc, while a
-								story title is often shorter, symbolic, and designed to capture
-								a single theme or mood. Story titles work best when they
-								intrigue the reader and leave space for interpretation.
-							</p>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="border border-gray-200 rounded-2xl overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" onclick="toggleFaq('faq2')">
-<span class="font-semibold text-black">Can I use these titles for short stories or essays?</span>
-<svg class="w-5 h-5 text-gray-400 transform transition-transform duration-300" fill="none" id="icon-faq2" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-6 text-gray-600" id="content-faq2">
-<p>
-								Absolutely. This tool is built for short-form writing like short
-								stories, essays, and creative writing assignments. You'll get
-								titles that fit academic or artistic contexts.
-							</p>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="border border-gray-200 rounded-2xl overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" onclick="toggleFaq('faq3')">
-<span class="font-semibold text-black">How unique are AI-generated titles?</span>
-<svg class="w-5 h-5 text-gray-400 transform transition-transform duration-300" fill="none" id="icon-faq3" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-6 text-gray-600" id="content-faq3">
-<p>
-								Each title is generated dynamically by AI. While no generator
-								can guarantee absolute uniqueness, Penwise is built to avoid
-								clichés and overused patterns, giving you fresh and original
-								titles tailored to your input.
-							</p>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        Everything You Need to Know
+      </h2>
+    </div>
+    <div class="space-y-4" data-aos="fade-up">
+      <!-- FAQ Item 1 -->
+      <div class="border border-gray-200 rounded-2xl overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq('faq1')"
+        >
+          <span class="font-semibold text-black"
+            >What's the difference between a book title and a story title?</span
+          >
+          <svg
+            class="w-5 h-5 text-gray-400 transform transition-transform duration-300"
+            fill="none"
+            id="icon-faq1"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600" id="content-faq1">
+          <p>
+            A book title usually represents a full narrative arc, while a story
+            title is often shorter, symbolic, and designed to capture a single
+            theme or mood. Story titles work best when they intrigue the reader
+            and leave space for interpretation.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div class="border border-gray-200 rounded-2xl overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq('faq2')"
+        >
+          <span class="font-semibold text-black"
+            >Can I use these titles for short stories or essays?</span
+          >
+          <svg
+            class="w-5 h-5 text-gray-400 transform transition-transform duration-300"
+            fill="none"
+            id="icon-faq2"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600" id="content-faq2">
+          <p>
+            Absolutely. This tool is built for short-form writing like short
+            stories, essays, and creative writing assignments. You'll get titles
+            that fit academic or artistic contexts.
+          </p>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div class="border border-gray-200 rounded-2xl overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between bg-white hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq('faq3')"
+        >
+          <span class="font-semibold text-black"
+            >How unique are AI-generated titles?</span
+          >
+          <svg
+            class="w-5 h-5 text-gray-400 transform transition-transform duration-300"
+            fill="none"
+            id="icon-faq3"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-6 text-gray-600" id="content-faq3">
+          <p>
+            Each title is generated dynamically by AI. While no generator can
+            guarantee absolute uniqueness, Penwise is built to avoid clichés and
+            overused patterns, giving you fresh and original titles tailored to
+            your input.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- Why Penwise Section 
+
+<!-- Why Penwise Section -->
 <section class="py-16 lg:py-24 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-					Why Penwise Is the Best Choice
-				</h2>
-<p class="text-gray-600 leading-relaxed mb-6">
-					Many title generators online produce random word combinations that
-					don't feel meaningful. Penwise is different. Our AI is designed for
-					writers, students, and creators, so it generates relevant,
-					genre-specific, and professional-quality titles you can actually use.
-				</p>
-<p class="text-gray-600 leading-relaxed">
-					The Others might give you 100 options you'll never pick, while Penwise
-					aims to deliver a handful of truly useful suggestions—saving you time
-					and sparking creativity.
-				</p>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+      Why Penwise Is the Best Choice
+    </h2>
+    <p class="text-gray-600 leading-relaxed mb-6">
+      Many title generators online produce random word combinations that don't
+      feel meaningful. Penwise is different. Our AI is designed for writers,
+      students, and creators, so it generates relevant, genre-specific, and
+      professional-quality titles you can actually use.
+    </p>
+    <p class="text-gray-600 leading-relaxed">
+      The Others might give you 100 options you'll never pick, while Penwise
+      aims to deliver a handful of truly useful suggestions—saving you time and
+      sparking creativity.
+    </p>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Ready to Take Your Idea Further?
-				</h2>
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					Don't just stop at the title—use Penwise to write your short story,
-					essay, or even the first chapter of your novel. Start building your
-					story with AI today.
-				</p>
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Write Your Complete Story with Penwise
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url('{% static \'assets/image/footer/bg.png\' %}')"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div
+    class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
+    data-aos="fade-up"
+  >
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Ready to Take Your Idea Further?
+    </h2>
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Don't just stop at the title—use Penwise to write your short story, essay,
+      or even the first chapter of your novel. Start building your story with AI
+      today.
+    </p>
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Write Your Complete Story with Penwise
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section
+
 {% endblock %}

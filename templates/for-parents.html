@@ -1,478 +1,715 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block title %}For Parents - Make
+Your Child the Hero | Penwise{% endblock %} {% block meta_description %}Create
+personalized stories where your child is the hero. Build confidence and a love
+for reading with Penwise.{% endblock %} {% block content %}
+<!-- Navigation -->
 
-{% block title %}For Parents - Make Your Child the Hero | Penwise{% endblock %}
+<!-- Mobile Menu -->
 
-{% block meta_description %}Create personalized stories where your child is the hero. Build confidence and a love for reading with Penwise.{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto">
-<!-- Center Content -->
-<div class="w-full z-20 space-y-6 mx-auto text-center">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in">
-						✨ For Parents
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up">
-						Make Your Child the Hero<br/>of Their Own Story
-					</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						Every parent knows the magic of bedtime stories. With Penwise, you
-						don't just read them a story—you give them one where they are the
-						hero.
-					</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-<button class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2">
-							Create Your Child's Story Now
-							<span class="text-lg"><svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</span>
-</button>
-<button class="px-8 py-2.5 text-[16px] font-semibold bg-transparent border border-white text-white rounded-full hover:bg-white hover:text-black transition-all duration-300">
-							Learn More
-						</button>
-</div>
-</div>
-</div>
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto">
+    <!-- Center Content -->
+    <div class="w-full z-20 space-y-6 mx-auto text-center">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in"
+      >
+        ✨ For Parents
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up"
+      >
+        Make Your Child the Hero<br />of Their Own Story
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        Every parent knows the magic of bedtime stories. With Penwise, you don't
+        just read them a story—you give them one where they are the hero.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <button
+          class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2"
+        >
+          Create Your Child's Story Now
+          <span class="text-lg"
+            ><svg
+              class="w-4 h-4 sm:w-5 sm:h-5"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <button
+          class="px-8 py-2.5 text-[16px] font-semibold bg-transparent border border-white text-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
- Features Section 
+<!-- Features Section -->
 <section class="mt-[60px] py-5 lg:py-16 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Transform Bedtime into an Adventure
-					</h2>
-<p class="text-gray-700 text-base md:text-[14px] max-w-3xl mx-auto">
-						Imagine your son bravely exploring a galaxy of wonders. Picture your
-						daughter solving mysteries in enchanted forests.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-4">
-<div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-4">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black">A Gift Beyond the Page</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							Toys break. Clothes are outgrown. But a story where your child is
-							the main character becomes a keepsake that grows with them.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-4">
-<div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-4">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black">Build Confidence</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							When your child sees themselves as the protagonist, they feel
-							capable, brave, and extraordinary. They discover that their voice
-							matters.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-4">
-<div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-4">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black">Build Lifelong Readers</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							Studies show that children are more motivated to read when the
-							story is personal. Reading stops being a chore and becomes an
-							adventure.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Transform Bedtime into an Adventure
+      </h2>
+      <p class="text-gray-700 text-base md:text-[14px] max-w-3xl mx-auto">
+        Imagine your son bravely exploring a galaxy of wonders. Picture your
+        daughter solving mysteries in enchanted forests.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-4">
+        <div
+          class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black">A Gift Beyond the Page</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Toys break. Clothes are outgrown. But a story where your child is the
+          main character becomes a keepsake that grows with them.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-4">
+        <div
+          class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black">Build Confidence</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          When your child sees themselves as the protagonist, they feel capable,
+          brave, and extraordinary. They discover that their voice matters.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-4">
+        <div
+          class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black">Build Lifelong Readers</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Studies show that children are more motivated to read when the story
+          is personal. Reading stops being a chore and becomes an adventure.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Explore More Section 
-<section class="py-5 lg:py-16 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
-						Supporting Parents With Penwise
-					</h2>
-<p class="text-gray-700 text-base md:text-[14px] max-w-3xl mx-auto">
-						Learn how Penwise tools can help kids grow their creativity and
-						develop strong writing habits.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Parent Resources</h3>
-<p class="text-gray-600 text-sm">
-							Support children’s creativity with tailored writing tools.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Trust &amp; Safety</h3>
-<p class="text-gray-600 text-sm">
-							Learn how we create a safe digital space for young learners.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Schools &amp; Learning
-						</h3>
-<p class="text-gray-600 text-sm">
-							Explore how teachers integrate Penwise into classrooms.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Our Mission</h3>
-<p class="text-gray-600 text-sm">
-							Discover our vision for empowering young writers globally.
-						</p>
-</div>
-<!-- Card 5 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Affordable Plans</h3>
-<p class="text-gray-600 text-sm">
-							Find options that make creativity accessible to all families.
-						</p>
-</div>
-<!-- Card 6 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Future Learning</h3>
-<p class="text-gray-600 text-sm">
-							How AI will continue to inspire the next generation of writers.
-						</p>
-</div>
-</div>
-</div>
+<!-- Explore More Section -->
+<section
+  class="py-5 lg:py-16 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
+        Supporting Parents With Penwise
+      </h2>
+      <p class="text-gray-700 text-base md:text-[14px] max-w-3xl mx-auto">
+        Learn how Penwise tools can help kids grow their creativity and develop
+        strong writing habits.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Parent Resources</h3>
+        <p class="text-gray-600 text-sm">
+          Support children’s creativity with tailored writing tools.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Trust &amp; Safety</h3>
+        <p class="text-gray-600 text-sm">
+          Learn how we create a safe digital space for young learners.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">
+          Schools &amp; Learning
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Explore how teachers integrate Penwise into classrooms.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Our Mission</h3>
+        <p class="text-gray-600 text-sm">
+          Discover our vision for empowering young writers globally.
+        </p>
+      </div>
+      <!-- Card 5 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Affordable Plans</h3>
+        <p class="text-gray-600 text-sm">
+          Find options that make creativity accessible to all families.
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Future Learning</h3>
+        <p class="text-gray-600 text-sm">
+          How AI will continue to inspire the next generation of writers.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- How It Works Section 
+<!-- How It Works Section -->
 <section class="py-5 lg:py-16 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						How It Works for Parents
-					</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
-<span class="text-4xl font-bold text-gray-200 mb-4 block">01</span>
-<h3 class="text-xl font-bold text-black">
-							Tell Us About Your Child
-						</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							Share your child's name, age, and a few details about their
-							personality or interests.
-						</p>
-</div>
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
-<span class="text-4xl font-bold text-gray-200 mb-4 block">02</span>
-<h3 class="text-xl font-bold text-black">Choose a World</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							Select from space odyssey, fairy-tale kingdom, pirate seas,
-							enchanted school, and more magical worlds.
-						</p>
-</div>
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
-<span class="text-4xl font-bold text-gray-200 mb-4 block">03</span>
-<h3 class="text-xl font-bold text-black">Watch the Magic Happen</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							In minutes, Penwise generates a beautifully written and
-							illustrated book where your child is the star.
-						</p>
-</div>
-<div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
-<span class="text-4xl font-bold text-gray-200 mb-4 block">04</span>
-<h3 class="text-xl font-bold text-black">Treasure Forever</h3>
-<p class="text-sm text-gray-600 leading-relaxed">
-							You'll hold in your hands not just a book, but a memory your
-							family will keep forever.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        How It Works for Parents
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+        <span class="text-4xl font-bold text-gray-200 mb-4 block">01</span>
+        <h3 class="text-xl font-bold text-black">Tell Us About Your Child</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Share your child's name, age, and a few details about their
+          personality or interests.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+        <span class="text-4xl font-bold text-gray-200 mb-4 block">02</span>
+        <h3 class="text-xl font-bold text-black">Choose a World</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          Select from space odyssey, fairy-tale kingdom, pirate seas, enchanted
+          school, and more magical worlds.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+        <span class="text-4xl font-bold text-gray-200 mb-4 block">03</span>
+        <h3 class="text-xl font-bold text-black">Watch the Magic Happen</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          In minutes, Penwise generates a beautifully written and illustrated
+          book where your child is the star.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 shadow-xl relative z-10 space-y-2">
+        <span class="text-4xl font-bold text-gray-200 mb-4 block">04</span>
+        <h3 class="text-xl font-bold text-black">Treasure Forever</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">
+          You'll hold in your hands not just a book, but a memory your family
+          will keep forever.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Explore More Section 
-<section class="py-5 lg:py-16 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
-						Supporting Parents With Penwise
-					</h2>
-<p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
-						Learn how Penwise tools can help kids grow their creativity and
-						develop strong writing habits.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Parent Resources</h3>
-<p class="text-gray-600 text-sm">
-							Support children’s creativity with tailored writing tools.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Trust &amp; Safety</h3>
-<p class="text-gray-600 text-sm">
-							Learn how we create a safe digital space for young learners.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Schools &amp; Learning
-						</h3>
-<p class="text-gray-600 text-sm">
-							Explore how teachers integrate Penwise into classrooms.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Our Mission</h3>
-<p class="text-gray-600 text-sm">
-							Discover our vision for empowering young writers globally.
-						</p>
-</div>
-<!-- Card 5 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Affordable Plans</h3>
-<p class="text-gray-600 text-sm">
-							Find options that make creativity accessible to all families.
-						</p>
-</div>
-<!-- Card 6 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Future Learning</h3>
-<p class="text-gray-600 text-sm">
-							How AI will continue to inspire the next generation of writers.
-						</p>
-</div>
-</div>
-</div>
+<!-- Explore More Section -->
+<section
+  class="py-5 lg:py-16 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
+        Supporting Parents With Penwise
+      </h2>
+      <p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
+        Learn how Penwise tools can help kids grow their creativity and develop
+        strong writing habits.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Parent Resources</h3>
+        <p class="text-gray-600 text-sm">
+          Support children’s creativity with tailored writing tools.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Trust &amp; Safety</h3>
+        <p class="text-gray-600 text-sm">
+          Learn how we create a safe digital space for young learners.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">
+          Schools &amp; Learning
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Explore how teachers integrate Penwise into classrooms.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Our Mission</h3>
+        <p class="text-gray-600 text-sm">
+          Discover our vision for empowering young writers globally.
+        </p>
+      </div>
+      <!-- Card 5 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Affordable Plans</h3>
+        <p class="text-gray-600 text-sm">
+          Find options that make creativity accessible to all families.
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Future Learning</h3>
+        <p class="text-gray-600 text-sm">
+          How AI will continue to inspire the next generation of writers.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- FAQ Section 
+<!-- FAQ Section -->
 <section class="py-5 lg:py-16 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Frequently Asked Questions
-					</h2>
-</div>
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>What is a personalized children’s book?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								A book where your child is the main character, customized with
-								their name and traits.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>How does Penwise.ai create my child’s book?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								We use advanced AI to weave your child's details into a
-								professionally crafted story.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Why are personalized books important for kids?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								They boost confidence and engagement by making reading a
-								personal experience.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 4 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Can I choose the type of adventure for my child?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Yes! You can select from various themes like space, fantasy, or
-								mystery.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 5 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Is the book suitable for all ages?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Our stories are tailored to be age-appropriate for children of
-								various reading levels.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 6 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Do the books come with illustrations?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Yes, each story is accompanied by beautiful, AI-generated
-								illustrations.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 7 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>How long does it take to create a book?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								It takes just a few minutes to generate a complete story.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 8 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Can I give a personalized book as a gift?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Absolutely! They make perfect, unique gifts for birthdays and
-								holidays.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 9 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Is Penwise safe for children?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Yes, we prioritize safety and privacy, ensuring all content is
-								child-friendly.
-							</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Frequently Asked Questions
+      </h2>
+    </div>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>What is a personalized children’s book?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            A book where your child is the main character, customized with their
+            name and traits.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>How does Penwise.ai create my child’s book?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            We use advanced AI to weave your child's details into a
+            professionally crafted story.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Why are personalized books important for kids?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            They boost confidence and engagement by making reading a personal
+            experience.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 4 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Can I choose the type of adventure for my child?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Yes! You can select from various themes like space, fantasy, or
+            mystery.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 5 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Is the book suitable for all ages?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Our stories are tailored to be age-appropriate for children of
+            various reading levels.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 6 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Do the books come with illustrations?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Yes, each story is accompanied by beautiful, AI-generated
+            illustrations.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 7 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>How long does it take to create a book?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            It takes just a few minutes to generate a complete story.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 8 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Can I give a personalized book as a gift?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Absolutely! They make perfect, unique gifts for birthdays and
+            holidays.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 9 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Is Penwise safe for children?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Yes, we prioritize safety and privacy, ensuring all content is
+            child-friendly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<!-- Dark Overlay -->
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-<!-- Heading -->
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Start Your Child's Adventure Today
-				</h2>
-<!-- Subtext -->
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					The best stories are the ones where our children discover they are
-					capable of anything. Give your child the gift of seeing themselves as
-					the hero of their own tale.
-				</p>
-<!-- CTA Button -->
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Create Your Child's Story Now
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url(&quot;{% static 'assets/image/footer/bg.png' %}&quot;)"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <!-- Heading -->
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Start Your Child's Adventure Today
+    </h2>
+    <!-- Subtext -->
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      The best stories are the ones where our children discover they are capable
+      of anything. Give your child the gift of seeing themselves as the hero of
+      their own tale.
+    </p>
+    <!-- CTA Button -->
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Create Your Child's Story Now
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section 
 
 <script>
-			// Mobile menu toggle
-			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			const closeMenuBtn = document.getElementById("closeMenuBtn");
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
 
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.remove("translate-x-full");
-			});
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
 
-			closeMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.add("translate-x-full");
-			});
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
 
-			// FAQ Accordion
-			const faqQuestions = document.querySelectorAll(".faq-question");
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-			faqQuestions.forEach((question) => {
-				question.addEventListener("click", () => {
-					const faqItem = question.parentElement;
-					const answer = question.nextElementSibling;
-					const icon = question.querySelector(".faq-icon");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqItem = question.parentElement;
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector(".faq-icon");
 
-					// Toggle answer
-					if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-						answer.style.maxHeight = "0px";
-						icon.style.transform = "rotate(0deg)";
-					} else {
-						answer.style.maxHeight = answer.scrollHeight + "px";
-						icon.style.transform = "rotate(180deg)";
-					}
-				});
-			});
-		</script>
+      // Toggle answer
+      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+        answer.style.maxHeight = "0px";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
 {% endblock %}

@@ -1,370 +1,522 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}Pricing & Value | Penwise{% endblock %}
-
-{% block meta_description %}Transform your ideas into bestselling books without breaking the bank. Professional writing made accessible with Penwise.{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto px-6 relative">
-<div class="relative z-20 text-center">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in">
-						✨ Pricing &amp; Value
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up">
-						Transform Your Ideas Into<br/>Bestselling Books Without<br/>Breaking
-						the Bank
-					</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						Professional writing made accessible. At Penwise.ai, we believe that
-						turning your imagination into a professionally polished novel
-						shouldn't be complicated or expensive.
-					</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-<button class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2">
-							View Plans
-							<span class="text-lg"><svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</span>
-</button>
-</div>
-</div>
-</div>
+{% extends 'base.html' %} {% load static %} {% block title %}Pricing & Value |
+Penwise{% endblock %} {% block meta_description %}Transform your ideas into
+bestselling books without breaking the bank. Professional writing made
+accessible with Penwise.{% endblock %} {% block content %} 
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url('{% static \'assets/image/hero/herobackground.png\' %}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="relative z-20 text-center">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in"
+      >
+        ✨ Pricing &amp; Value
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up"
+      >
+        Transform Your Ideas Into<br />Bestselling Books Without<br />Breaking
+        the Bank
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        Professional writing made accessible. At Penwise.ai, we believe that
+        turning your imagination into a professionally polished novel shouldn't
+        be complicated or expensive.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <button
+          class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2"
+        >
+          View Plans
+          <span class="text-lg"
+            ><svg
+              class="w-4 h-4 sm:w-5 sm:h-5"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
- Professional Writing Made Accessible Section 
+Professional Writing Made Accessible Section
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="space-y-6">
-<div class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium">
-							ACCESSIBLE EXCELLENCE
-						</div>
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black leading-tight">
-							Professional Writing Made Accessible
-						</h2>
-<p class="text-gray-600 leading-relaxed">
-							Writing has always been one of humanity's most powerful forms of
-							expression. Throughout history, writers have faced the challenge
-							of bringing their visions to life while navigating the practical
-							realities of the publishing world.
-						</p>
-<p class="text-gray-600 leading-relaxed">
-							In today's rapidly evolving literary landscape, artificial
-							intelligence represents a revolutionary tool that can amplify
-							human creativity rather than replace it. Penwise.ai stands at the
-							forefront of this transformation, offering writers an intelligent
-							companion that understands narrative structure, character
-							development, and plot progression.
-						</p>
-<p class="text-gray-600 leading-relaxed">
-							Penwise.ai addresses fundamental challenges by providing
-							sophisticated writing assistance at a fraction of the cost of
-							traditional publishing services. Our AI doesn't just generate
-							text; it understands the architecture of compelling storytelling.
-						</p>
-</div>
-<div class="relative">
-<div class="rounded-2xl overflow-hidden shadow-2xl">
-<!-- Placeholder image -->
-<img alt="Accessible Writing" class="w-full h-auto" src="{% static 'assets/image/hero/dashbaord.png' %}"/>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <div
+          class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium"
+        >
+          ACCESSIBLE EXCELLENCE
+        </div>
+        <h2
+          class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black leading-tight"
+        >
+          Professional Writing Made Accessible
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Writing has always been one of humanity's most powerful forms of
+          expression. Throughout history, writers have faced the challenge of
+          bringing their visions to life while navigating the practical
+          realities of the publishing world.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          In today's rapidly evolving literary landscape, artificial
+          intelligence represents a revolutionary tool that can amplify human
+          creativity rather than replace it. Penwise.ai stands at the forefront
+          of this transformation, offering writers an intelligent companion that
+          understands narrative structure, character development, and plot
+          progression.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Penwise.ai addresses fundamental challenges by providing sophisticated
+          writing assistance at a fraction of the cost of traditional publishing
+          services. Our AI doesn't just generate text; it understands the
+          architecture of compelling storytelling.
+        </p>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <!-- Placeholder image -->
+          <img
+            alt="Accessible Writing"
+            class="w-full h-auto"
+            src="{% static 'assets/image/hero/dashbaord.png' %}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- Unmatched Value Section 
+Unmatched Value Section
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-sm">
-						UNMATCHED VALUE
-					</div>
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Why Penwise.ai Offers Unmatched Value
-					</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Card 1 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Unlimited Creativity, Flexible Access
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							Whether you're drafting your first novel or your tenth, our AI
-							works tirelessly to help you generate rich narratives, compelling
-							characters, and captivating plots without limits. Penwise.ai
-							breaks down barriers by providing truly unlimited access to
-							advanced writing assistance.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">Time is Money</h3>
-<p class="text-gray-600 leading-relaxed">
-							Save hundreds of hours by letting Penwise.ai handle story
-							structure, pacing, and consistency, so you can focus on the
-							creative spark. Efficiency in creative work means eliminating
-							unnecessary friction and focusing energy on the aspects of writing
-							that truly require human creativity.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Professional-Grade Output
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							Every book you create is publication-ready. From a single idea to
-							a fully formatted manuscript, Penwise.ai ensures your work shines
-							like it was written by a professional author. We address
-							sophisticated elements like narrative structure, character
-							consistency, and pacing optimization.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">Full Ownership</h3>
-<p class="text-gray-600 leading-relaxed">
-							You own every word you create. Your books, your rights, your
-							creative freedom—always. Creative freedom becomes meaningful only
-							when writers have the legal authority to make decisions about
-							their work without interference.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-sm"
+      >
+        UNMATCHED VALUE
+      </div>
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Why Penwise.ai Offers Unmatched Value
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">
+          Unlimited Creativity, Flexible Access
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          Whether you're drafting your first novel or your tenth, our AI works
+          tirelessly to help you generate rich narratives, compelling
+          characters, and captivating plots without limits. Penwise.ai breaks
+          down barriers by providing truly unlimited access to advanced writing
+          assistance.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">Time is Money</h3>
+        <p class="text-gray-600 leading-relaxed">
+          Save hundreds of hours by letting Penwise.ai handle story structure,
+          pacing, and consistency, so you can focus on the creative spark.
+          Efficiency in creative work means eliminating unnecessary friction and
+          focusing energy on the aspects of writing that truly require human
+          creativity.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">
+          Professional-Grade Output
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          Every book you create is publication-ready. From a single idea to a
+          fully formatted manuscript, Penwise.ai ensures your work shines like
+          it was written by a professional author. We address sophisticated
+          elements like narrative structure, character consistency, and pacing
+          optimization.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">Full Ownership</h3>
+        <p class="text-gray-600 leading-relaxed">
+          You own every word you create. Your books, your rights, your creative
+          freedom—always. Creative freedom becomes meaningful only when writers
+          have the legal authority to make decisions about their work without
+          interference.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Writing Partner Section 
+Writing Partner Section
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-6">
-						More Than a Tool—It's Your Writing Partner
-					</h2>
-<p class="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
-						Penwise.ai isn't just software; it's a creative partner that adapts
-						to your storytelling style, keeps you productive, and empowers you
-						to write books that resonate with readers worldwide. Every plan is
-						built to maximize your creative potential and deliver tangible
-						results, whether that's your first published novel or a growing
-						catalog of bestsellers.
-					</p>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-6">
+        More Than a Tool—It's Your Writing Partner
+      </h2>
+      <p class="text-gray-600 text-lg max-w-4xl mx-auto leading-relaxed">
+        Penwise.ai isn't just software; it's a creative partner that adapts to
+        your storytelling style, keeps you productive, and empowers you to write
+        books that resonate with readers worldwide. Every plan is built to
+        maximize your creative potential and deliver tangible results, whether
+        that's your first published novel or a growing catalog of bestsellers.
+      </p>
+    </div>
+  </div>
 </section>
- Explore More Section 
-<section class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
-						Transparent Pricing, Real Value
-					</h2>
-<p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
-						Find the perfect balance of cost and features with plans designed
-						for all writers.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Affordable Options
-						</h3>
-<p class="text-gray-600 text-sm">
-							Choose pricing that suits your publishing journey.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Price Comparisons</h3>
-<p class="text-gray-600 text-sm">
-							See how our services compare with other providers.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Value for Money</h3>
-<p class="text-gray-600 text-sm">
-							Get professional quality without overspending.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Efficient Use of Budget
-						</h3>
-<p class="text-gray-600 text-sm">
-							Save time and money while publishing smarter.
-						</p>
-</div>
-<!-- Card 5 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Measure ROI</h3>
-<p class="text-gray-600 text-sm">
-							Track the results of your publishing investment.
-						</p>
-</div>
-<!-- Card 6 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Future Value</h3>
-<p class="text-gray-600 text-sm">
-							Our tools evolve to give you lasting benefits.
-						</p>
-</div>
-</div>
-</div>
+Explore More Section
+<section
+  class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
+        Transparent Pricing, Real Value
+      </h2>
+      <p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
+        Find the perfect balance of cost and features with plans designed for
+        all writers.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Affordable Options</h3>
+        <p class="text-gray-600 text-sm">
+          Choose pricing that suits your publishing journey.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Price Comparisons</h3>
+        <p class="text-gray-600 text-sm">
+          See how our services compare with other providers.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Value for Money</h3>
+        <p class="text-gray-600 text-sm">
+          Get professional quality without overspending.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">
+          Efficient Use of Budget
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Save time and money while publishing smarter.
+        </p>
+      </div>
+      <!-- Card 5 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Measure ROI</h3>
+        <p class="text-gray-600 text-sm">
+          Track the results of your publishing investment.
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Future Value</h3>
+        <p class="text-gray-600 text-sm">
+          Our tools evolve to give you lasting benefits.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- FAQ Section 
+FAQ Section
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Frequently Asked Questions
-					</h2>
-</div>
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Are AI book writing tools free?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Penwise offers various plans to suit different needs. While we
-								may offer trials or limited free access, our comprehensive
-								features are part of our paid plans designed to provide
-								professional value.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>How much does AI book writing cost?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Costs vary depending on the plan you choose. Compared to hiring
-								ghostwriters or editors, Penwise provides a significantly more
-								affordable solution for professional-quality writing assistance.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Is using AI cheaper than hiring a ghostwriter?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Yes, typically much cheaper. Ghostwriters can charge thousands
-								of dollars for a novel, whereas Penwise offers unlimited
-								assistance for a monthly subscription fraction of that cost.
-							</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Frequently Asked Questions
+      </h2>
+    </div>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Are AI book writing tools free?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Penwise offers various plans to suit different needs. While we may
+            offer trials or limited free access, our comprehensive features are
+            part of our paid plans designed to provide professional value.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>How much does AI book writing cost?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Costs vary depending on the plan you choose. Compared to hiring
+            ghostwriters or editors, Penwise provides a significantly more
+            affordable solution for professional-quality writing assistance.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Is using AI cheaper than hiring a ghostwriter?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Yes, typically much cheaper. Ghostwriters can charge thousands of
+            dollars for a novel, whereas Penwise offers unlimited assistance for
+            a monthly subscription fraction of that cost.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<!-- Dark Overlay -->
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-<!-- Heading -->
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Bring your Novel to Life - Let<br/>Penwise Be Your Writing Partner
-				</h2>
-<!-- Subtext -->
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					Start writing your novel today with Penwise — get Penwise-powered
-					assistance for plotting, drafting, and refining every chapter
-					effortlessly.
-				</p>
-<!-- CTA Button -->
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Start My Novel For Free
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url('{% static \'assets/image/footer/bg.png\' %}')"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <!-- Heading -->
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Bring your Novel to Life - Let<br />Penwise Be Your Writing Partner
+    </h2>
+    <!-- Subtext -->
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Start writing your novel today with Penwise — get Penwise-powered
+      assistance for plotting, drafting, and refining every chapter
+      effortlessly.
+    </p>
+    <!-- CTA Button -->
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Start My Novel For Free
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section 
 
 <script>
-			// Mobile menu toggle
-			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			const closeMenuBtn = document.getElementById("closeMenuBtn");
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
 
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.remove("translate-x-full");
-			});
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
 
-			closeMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.add("translate-x-full");
-			});
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
 
-			// FAQ Accordion
-			const faqQuestions = document.querySelectorAll(".faq-question");
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-			faqQuestions.forEach((question) => {
-				question.addEventListener("click", () => {
-					const faqItem = question.parentElement;
-					const answer = question.nextElementSibling;
-					const icon = question.querySelector(".faq-icon");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqItem = question.parentElement;
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector(".faq-icon");
 
-					// Toggle answer
-					if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-						answer.style.maxHeight = "0px";
-						icon.style.transform = "rotate(0deg)";
-					} else {
-						answer.style.maxHeight = answer.scrollHeight + "px";
-						icon.style.transform = "rotate(180deg)";
-					}
-				});
-			});
-		</script>
+      // Toggle answer
+      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+        answer.style.maxHeight = "0px";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
 {% endblock %}

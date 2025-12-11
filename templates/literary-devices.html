@@ -1,584 +1,789 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}Literary Devices: A Complete Masterclass | Penwise{% endblock %}
-
-{% block meta_description %}From foundational concepts to advanced literary analysis - your comprehensive guide to understanding and mastering the art of literary expression{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto">
-<div class="w-full z-20 space-y-6 mx-auto text-center" data-aos="fade-up">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6">
-						📚 Literary Masterclass
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight">
-						Literary Devices:<br/>A Complete Masterclass
-					</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						From foundational concepts to advanced literary analysis - your
-						comprehensive guide to understanding and mastering the art of
-						literary expression.
-					</p>
-</div>
-</div>
+{% extends 'base.html' %} {% load static %} {% block title %}Literary Devices: A
+Complete Masterclass | Penwise{% endblock %} {% block meta_description %}From
+foundational concepts to advanced literary analysis - your comprehensive guide
+to understanding and mastering the art of literary expression{% endblock %} {%
+block content %} 
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto">
+    <div class="w-full z-20 space-y-6 mx-auto text-center" data-aos="fade-up">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6"
+      >
+        📚 Literary Masterclass
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight"
+      >
+        Literary Devices:<br />A Complete Masterclass
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        From foundational concepts to advanced literary analysis - your
+        comprehensive guide to understanding and mastering the art of literary
+        expression.
+      </p>
+    </div>
+  </div>
 </section>
- Stats Section 
+<!-- Stats Section  -->
 <section class="mt-[60px] py-5 lg:py-16 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center" data-aos="fade-up">
-<div class="p-6 rounded-2xl bg-gray-50">
-<div class="text-4xl font-bold text-black mb-2">7</div>
-<div class="text-gray-600 text-sm">Modules</div>
-</div>
-<div class="p-6 rounded-2xl bg-gray-50">
-<div class="text-4xl font-bold text-black mb-2">50+</div>
-<div class="text-gray-600 text-sm">Devices</div>
-</div>
-<div class="p-6 rounded-2xl bg-gray-50">
-<div class="text-4xl font-bold text-black mb-2">30+</div>
-<div class="text-gray-600 text-sm">Examples</div>
-</div>
-<div class="p-6 rounded-2xl bg-gray-50">
-<div class="text-4xl font-bold text-black mb-2">15+</div>
-<div class="text-gray-600 text-sm">Exercises</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div
+      class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+      data-aos="fade-up"
+    >
+      <div class="p-6 rounded-2xl bg-gray-50">
+        <div class="text-4xl font-bold text-black mb-2">7</div>
+        <div class="text-gray-600 text-sm">Modules</div>
+      </div>
+      <div class="p-6 rounded-2xl bg-gray-50">
+        <div class="text-4xl font-bold text-black mb-2">50+</div>
+        <div class="text-gray-600 text-sm">Devices</div>
+      </div>
+      <div class="p-6 rounded-2xl bg-gray-50">
+        <div class="text-4xl font-bold text-black mb-2">30+</div>
+        <div class="text-gray-600 text-sm">Examples</div>
+      </div>
+      <div class="p-6 rounded-2xl bg-gray-50">
+        <div class="text-4xl font-bold text-black mb-2">15+</div>
+        <div class="text-gray-600 text-sm">Exercises</div>
+      </div>
+    </div>
+  </div>
 </section>
- Introduction Section 
+<!-- Introduction Section  -->
 <section class="py-5 lg:py-16 bg-white">
-<div class="max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-6">
-					Welcome to Your Literary Devices Masterclass
-				</h2>
-<p class="text-gray-700 text-base md:text-[16px] leading-relaxed mb-8">
-					Welcome, aspiring writers and literature enthusiasts. This
-					comprehensive journey into the world of literary devices will explore
-					not just what these devices are, but why they exist, how they function
-					in the human psyche, and most importantly, how you can wield them with
-					the precision of a master craftsperson.
-				</p>
-<div class="bg-gray-50 border-l-4 border-black p-6 rounded-r-xl my-8 text-left">
-<h3 class="font-bold text-lg mb-3 text-black">Professor's Note</h3>
-<p class="text-gray-600">
-						Literary devices are not mere ornaments sprinkled throughout text
-						for decoration. They are the fundamental architecture of meaning
-						itself. Just as a carpenter must understand the properties of
-						different materials, a writer must understand how metaphor differs
-						from simile not just in structure, but in cognitive impact on the
-						reader's mind.
-					</p>
-</div>
-<p class="text-gray-700 text-base md:text-[16px] leading-relaxed">
-					This course is structured as a progressive journey from foundational
-					understanding to sophisticated application. We begin with the
-					neurological basis of why literary devices work on human
-					consciousness, progress through systematic categorization and
-					analysis, and culminate in advanced synthesis techniques.
-				</p>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-6">
+      Welcome to Your Literary Devices Masterclass
+    </h2>
+    <p class="text-gray-700 text-base md:text-[16px] leading-relaxed mb-8">
+      Welcome, aspiring writers and literature enthusiasts. This comprehensive
+      journey into the world of literary devices will explore not just what
+      these devices are, but why they exist, how they function in the human
+      psyche, and most importantly, how you can wield them with the precision of
+      a master craftsperson.
+    </p>
+    <div
+      class="bg-gray-50 border-l-4 border-black p-6 rounded-r-xl my-8 text-left"
+    >
+      <h3 class="font-bold text-lg mb-3 text-black">Professor's Note</h3>
+      <p class="text-gray-600">
+        Literary devices are not mere ornaments sprinkled throughout text for
+        decoration. They are the fundamental architecture of meaning itself.
+        Just as a carpenter must understand the properties of different
+        materials, a writer must understand how metaphor differs from simile not
+        just in structure, but in cognitive impact on the reader's mind.
+      </p>
+    </div>
+    <p class="text-gray-700 text-base md:text-[16px] leading-relaxed">
+      This course is structured as a progressive journey from foundational
+      understanding to sophisticated application. We begin with the neurological
+      basis of why literary devices work on human consciousness, progress
+      through systematic categorization and analysis, and culminate in advanced
+      synthesis techniques.
+    </p>
+  </div>
 </section>
- Course Content Section 
+<!-- Course Content Section  -->
 <section class="py-5 lg:py-16 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="lg:grid lg:grid-cols-12 lg:gap-12">
-<!-- Sidebar Navigation -->
-<aside class="lg:col-span-3 mb-8 lg:mb-0">
-<div class="lg:sticky lg:top-24 bg-white rounded-2xl p-6 shadow-sm border border-gray-100">
-<h3 class="font-bold text-lg mb-4 text-black">Course Modules</h3>
-<nav class="space-y-2">
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module1">Module 1: Theory</a>
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module2">Module 2: Foundational</a>
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module3">Module 3: Sound</a>
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module4">Module 4: Architecture</a>
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module5">Module 5: Symbolism</a>
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module6">Module 6: Rhetoric</a>
-<a class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors" href="#module7">Module 7: Mastery</a>
-</nav>
-</div>
-</aside>
-<!-- Main Content -->
-<main class="lg:col-span-9 space-y-6">
-<!-- Module 1 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module1">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod1')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										1
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											The Theoretical Foundation
-										</h2>
-<p class="text-gray-500 text-sm">
-											Understanding the cognitive science behind literary
-											devices
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod1-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod1-content">
-<div class="pt-6">
-<h3 class="text-lg font-bold mb-4 text-black">
-										The Cognitive Science of Literary Devices
-									</h3>
-<p class="text-gray-600 mb-6">
-										Literary devices exploit fundamental aspects of human
-										cognition, memory, and emotional processing. When you
-										encounter a metaphor like "Time is money," your brain
-										performs remarkable cognitive operations involving bilateral
-										processing and conceptual blending.
-									</p>
-<div class="bg-gray-50 p-6 rounded-xl mb-6 border border-gray-100">
-<h4 class="font-bold mb-3 text-black">
-											Cognitive Processing Example
-										</h4>
-<p class="font-medium mb-3 text-gray-800">
-											Metaphor: "Her voice was velvet in the darkness."
-										</p>
-<ul class="space-y-2 text-sm text-gray-600">
-<li>
-<strong>Sensory Activation:</strong> "Velvet" activates
-												tactile memory centers
-											</li>
-<li>
-<strong>Cross-Modal Mapping:</strong> Brain maps tactile
-												qualities onto auditory experience
-											</li>
-<li>
-<strong>Emotional Resonance:</strong> Velvet's luxury
-												associations transfer to voice
-											</li>
-<li>
-<strong>Contextual Enhancement:</strong> Darkness
-												heightens non-visual senses
-											</li>
-</ul>
-</div>
-<h3 class="text-lg font-bold mb-4 text-black">
-										The Architecture of Meaning
-									</h3>
-<div class="grid md:grid-cols-2 gap-4">
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Surface Level</h4>
-<p class="text-sm text-gray-600">
-												Grammar, sound patterns, rhythm, visual appearance
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Semantic Level</h4>
-<p class="text-sm text-gray-600">
-												Meaning construction, literal vs. figurative, cultural
-												context
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Cognitive Level</h4>
-<p class="text-sm text-gray-600">
-												Memory activation, pattern recognition, attention
-												direction
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Emotional Level</h4>
-<p class="text-sm text-gray-600">
-												Mood, emotional intensity, empathetic engagement
-											</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Module 2 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module2">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod2')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										2
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											Foundational Devices
-										</h2>
-<p class="text-gray-500 text-sm">
-											Imagery, metaphor, simile, and comparison devices
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod2-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod2-content">
-<div class="pt-6">
-<h3 class="text-lg font-bold mb-4 text-black">
-										Imagery - Foundation of Literary Experience
-									</h3>
-<p class="text-gray-600 mb-6">
-										Imagery bridges the abstract world of ideas and the concrete
-										world of sensory experience. The seven categories:
-									</p>
-<div class="grid md:grid-cols-2 gap-3 mb-6">
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold text-black">Visual (Sight)</h4>
-<p class="text-sm text-gray-600">
-												Colors, shapes, movement, light/darkness
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold text-black">Auditory (Sound)</h4>
-<p class="text-sm text-gray-600">
-												Volume, pitch, timbre, rhythm, silence
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold text-black">Tactile (Touch)</h4>
-<p class="text-sm text-gray-600">
-												Texture, temperature, pressure
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold text-black">Olfactory (Smell)</h4>
-<p class="text-sm text-gray-600">
-												Sweet, acrid, fresh, familiar scents
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold text-black">Gustatory (Taste)</h4>
-<p class="text-sm text-gray-600">
-												Sweet, sour, bitter, salty, umami
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold text-black">
-												Kinesthetic (Movement)
-											</h4>
-<p class="text-sm text-gray-600">
-												Physical motion, balance, acceleration
-											</p>
-</div>
-</div>
-<div class="bg-gray-50 p-6 rounded-xl mb-6 border border-gray-100">
-<h4 class="font-bold mb-3 text-black">
-											Master Class Example
-										</h4>
-<p class="italic mb-3 text-gray-800">
-											"The coffee shop exhaled its familiar breath of roasted
-											beans and yesterday's pastries, while Sarah's fingers
-											drummed an anxious staccato against the ceramic mug's
-											warmth."
-										</p>
-<ul class="text-sm space-y-1 text-gray-600">
-<li>
-<strong>Olfactory:</strong> Roasted beans, pastries -
-												comfort + staleness
-											</li>
-<li>
-<strong>Auditory:</strong> Drummed staccato - matches
-												anxiety
-											</li>
-<li>
-<strong>Tactile:</strong> Mug's warmth - grounding
-												sensation
-											</li>
-</ul>
-</div>
-<h3 class="text-lg font-bold mb-4 text-black">
-										Comparison Devices
-									</h3>
-<div class="space-y-4">
-<div class="bg-gray-50 p-4 rounded-xl border-l-4 border-black">
-<h4 class="font-bold mb-2 text-black">
-												Simile: Explicit Comparison
-											</h4>
-<p class="text-sm mb-2 text-gray-600">
-												Structure: A is like B
-											</p>
-<p class="italic text-sm text-gray-500">
-												"Her anger was like a forest fire - beautiful from a
-												distance, devastating up close."
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl border-l-4 border-black">
-<h4 class="font-bold mb-2 text-black">
-												Metaphor: Implicit Comparison
-											</h4>
-<p class="text-sm mb-2 text-gray-600">
-												Structure: A is B
-											</p>
-<p class="italic text-sm text-gray-500">
-												"Her anger was wildfire consuming everything in its
-												path."
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl border-l-4 border-black">
-<h4 class="font-bold mb-2 text-black">Personification</h4>
-<p class="text-sm mb-2 text-gray-600">
-												Strategic animation of the inanimate
-											</p>
-<p class="italic text-sm text-gray-500">
-												"The March wind had opinions about everything - the
-												proper angle for newspapers, the correct speed for
-												walking."
-											</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Module 3 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module3">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod3')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										3
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											The Music of Language
-										</h2>
-<p class="text-gray-500 text-sm">
-											Sound devices and rhythmic structures
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod3-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod3-content">
-<div class="pt-6">
-<p class="text-gray-600 mb-6">
-										Language evolved from music, and music remains embedded in
-										all effective writing. Sound patterns affect meaning as
-										profoundly as word choice itself.
-									</p>
-<h3 class="text-lg font-bold mb-4 text-black">
-										Sound Device Taxonomy
-									</h3>
-<div class="space-y-3 mb-6">
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Alliteration</h4>
-<p class="text-sm mb-1 text-gray-600">
-												Initial consonant repetition
-											</p>
-<p class="italic text-sm text-gray-500">
-												"The storm struck suddenly"
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Assonance</h4>
-<p class="text-sm mb-1 text-gray-600">
-												Vowel sound repetition
-											</p>
-<p class="italic text-sm text-gray-500">
-												"The rain in Spain stays mainly in the plain"
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Consonance</h4>
-<p class="text-sm mb-1 text-gray-600">
-												Consonant sound repetition (any position)
-											</p>
-<p class="italic text-sm text-gray-500">
-												"The lumpy, bumpy road"
-											</p>
-</div>
-<div class="bg-gray-50 p-4 rounded-xl">
-<h4 class="font-bold mb-2 text-black">Onomatopoeia</h4>
-<p class="text-sm mb-1 text-gray-600">
-												Words that sound like their meaning
-											</p>
-<p class="italic text-sm text-gray-500">
-												"Buzz, crash, whisper, boom"
-											</p>
-</div>
-</div>
-<div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-<h4 class="font-bold mb-3 text-black">
-											Sound Symbolism Guide
-										</h4>
-<ul class="space-y-2 text-sm text-gray-600">
-<li>
-<strong>High Sounds (i, e, ee):</strong> Smallness,
-												quickness, brightness
-											</li>
-<li>
-<strong>Low Sounds (o, u, oo):</strong> Largeness,
-												slowness, darkness
-											</li>
-<li>
-<strong>Plosive Consonants (p, b, t, d):</strong>
-												Impact, suddenness
-											</li>
-<li>
-<strong>Fricative Consonants (f, v, s, z):</strong>
-												Flowing, continuous
-											</li>
-<li>
-<strong>Liquid Consonants (l, r):</strong> Smoothness,
-												elegance
-											</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!-- Module 4 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module4">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod4')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										4
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											Architectural Devices
-										</h2>
-<p class="text-gray-500 text-sm">
-											Structure, time, and narrative control
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod4-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod4-content">
-<div class="pt-6">
-<p class="text-gray-600 mb-6">
-										Time is literature's most flexible element. Understanding
-										how to manipulate narrative time and structure gives you
-										control over the reader's experience.
-									</p>
-</div>
-</div>
-</div>
-<!-- Module 5 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module5">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod5')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										5
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											Symbolism &amp; Motif
-										</h2>
-<p class="text-gray-500 text-sm">
-											Layering meaning through recurring elements
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod5-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod5-content">
-<div class="pt-6">
-<p class="text-gray-600 mb-6">
-										Symbols are objects, characters, or actions that stand for
-										something beyond themselves. Motifs are recurring elements
-										that develop themes.
-									</p>
-</div>
-</div>
-</div>
-<!-- Module 6 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module6">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod6')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										6
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											Rhetorical Devices
-										</h2>
-<p class="text-gray-500 text-sm">
-											Persuasion, emphasis, and sentence structure
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod6-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod6-content">
-<div class="pt-6">
-<p class="text-gray-600 mb-6">
-										Rhetorical devices are techniques used to convey meaning
-										with the goal of persuading the reader or listener.
-									</p>
-</div>
-</div>
-</div>
-<!-- Module 7 -->
-<div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24" data-aos="fade-up" id="module7">
-<button class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggle('mod7')">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl">
-										7
-									</div>
-<div class="text-left">
-<h2 class="text-xl font-bold text-black">
-											Mastery Integration
-										</h2>
-<p class="text-gray-500 text-sm">
-											Combining devices for maximum effect
-										</p>
-</div>
-</div>
-<svg class="w-6 h-6 text-gray-400 transition-transform duration-300" fill="none" id="mod7-icon" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-8 pb-8 space-y-6 border-t border-gray-100" id="mod7-content">
-<div class="pt-6">
-<p class="text-gray-600 mb-6">
-										True mastery comes not from using devices in isolation, but
-										from weaving them together to create a rich, multi-layered
-										experience.
-									</p>
-</div>
-</div>
-</div>
-</main>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="lg:grid lg:grid-cols-12 lg:gap-12">
+      <!-- Sidebar Navigation -->
+      <aside class="lg:col-span-3 mb-8 lg:mb-0">
+        <div
+          class="lg:sticky lg:top-24 bg-white rounded-2xl p-6 shadow-sm border border-gray-100"
+        >
+          <h3 class="font-bold text-lg mb-4 text-black">Course Modules</h3>
+          <nav class="space-y-2">
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module1"
+              >Module 1: Theory</a
+            >
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module2"
+              >Module 2: Foundational</a
+            >
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module3"
+              >Module 3: Sound</a
+            >
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module4"
+              >Module 4: Architecture</a
+            >
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module5"
+              >Module 5: Symbolism</a
+            >
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module6"
+              >Module 6: Rhetoric</a
+            >
+            <a
+              class="block px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-50 hover:text-black rounded-lg transition-colors"
+              href="#module7"
+              >Module 7: Mastery</a
+            >
+          </nav>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <main class="lg:col-span-9 space-y-6">
+        <!-- Module 1 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module1"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod1')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                1
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">
+                  The Theoretical Foundation
+                </h2>
+                <p class="text-gray-500 text-sm">
+                  Understanding the cognitive science behind literary devices
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod1-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod1-content"
+          >
+            <div class="pt-6">
+              <h3 class="text-lg font-bold mb-4 text-black">
+                The Cognitive Science of Literary Devices
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Literary devices exploit fundamental aspects of human cognition,
+                memory, and emotional processing. When you encounter a metaphor
+                like "Time is money," your brain performs remarkable cognitive
+                operations involving bilateral processing and conceptual
+                blending.
+              </p>
+              <div
+                class="bg-gray-50 p-6 rounded-xl mb-6 border border-gray-100"
+              >
+                <h4 class="font-bold mb-3 text-black">
+                  Cognitive Processing Example
+                </h4>
+                <p class="font-medium mb-3 text-gray-800">
+                  Metaphor: "Her voice was velvet in the darkness."
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li>
+                    <strong>Sensory Activation:</strong> "Velvet" activates
+                    tactile memory centers
+                  </li>
+                  <li>
+                    <strong>Cross-Modal Mapping:</strong> Brain maps tactile
+                    qualities onto auditory experience
+                  </li>
+                  <li>
+                    <strong>Emotional Resonance:</strong> Velvet's luxury
+                    associations transfer to voice
+                  </li>
+                  <li>
+                    <strong>Contextual Enhancement:</strong> Darkness heightens
+                    non-visual senses
+                  </li>
+                </ul>
+              </div>
+              <h3 class="text-lg font-bold mb-4 text-black">
+                The Architecture of Meaning
+              </h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Surface Level</h4>
+                  <p class="text-sm text-gray-600">
+                    Grammar, sound patterns, rhythm, visual appearance
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Semantic Level</h4>
+                  <p class="text-sm text-gray-600">
+                    Meaning construction, literal vs. figurative, cultural
+                    context
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Cognitive Level</h4>
+                  <p class="text-sm text-gray-600">
+                    Memory activation, pattern recognition, attention direction
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Emotional Level</h4>
+                  <p class="text-sm text-gray-600">
+                    Mood, emotional intensity, empathetic engagement
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Module 2 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module2"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod2')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                2
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">
+                  Foundational Devices
+                </h2>
+                <p class="text-gray-500 text-sm">
+                  Imagery, metaphor, simile, and comparison devices
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod2-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod2-content"
+          >
+            <div class="pt-6">
+              <h3 class="text-lg font-bold mb-4 text-black">
+                Imagery - Foundation of Literary Experience
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Imagery bridges the abstract world of ideas and the concrete
+                world of sensory experience. The seven categories:
+              </p>
+              <div class="grid md:grid-cols-2 gap-3 mb-6">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold text-black">Visual (Sight)</h4>
+                  <p class="text-sm text-gray-600">
+                    Colors, shapes, movement, light/darkness
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold text-black">Auditory (Sound)</h4>
+                  <p class="text-sm text-gray-600">
+                    Volume, pitch, timbre, rhythm, silence
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold text-black">Tactile (Touch)</h4>
+                  <p class="text-sm text-gray-600">
+                    Texture, temperature, pressure
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold text-black">Olfactory (Smell)</h4>
+                  <p class="text-sm text-gray-600">
+                    Sweet, acrid, fresh, familiar scents
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold text-black">Gustatory (Taste)</h4>
+                  <p class="text-sm text-gray-600">
+                    Sweet, sour, bitter, salty, umami
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold text-black">Kinesthetic (Movement)</h4>
+                  <p class="text-sm text-gray-600">
+                    Physical motion, balance, acceleration
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-gray-50 p-6 rounded-xl mb-6 border border-gray-100"
+              >
+                <h4 class="font-bold mb-3 text-black">Master Class Example</h4>
+                <p class="italic mb-3 text-gray-800">
+                  "The coffee shop exhaled its familiar breath of roasted beans
+                  and yesterday's pastries, while Sarah's fingers drummed an
+                  anxious staccato against the ceramic mug's warmth."
+                </p>
+                <ul class="text-sm space-y-1 text-gray-600">
+                  <li>
+                    <strong>Olfactory:</strong> Roasted beans, pastries -
+                    comfort + staleness
+                  </li>
+                  <li>
+                    <strong>Auditory:</strong> Drummed staccato - matches
+                    anxiety
+                  </li>
+                  <li>
+                    <strong>Tactile:</strong> Mug's warmth - grounding sensation
+                  </li>
+                </ul>
+              </div>
+              <h3 class="text-lg font-bold mb-4 text-black">
+                Comparison Devices
+              </h3>
+              <div class="space-y-4">
+                <div class="bg-gray-50 p-4 rounded-xl border-l-4 border-black">
+                  <h4 class="font-bold mb-2 text-black">
+                    Simile: Explicit Comparison
+                  </h4>
+                  <p class="text-sm mb-2 text-gray-600">
+                    Structure: A is like B
+                  </p>
+                  <p class="italic text-sm text-gray-500">
+                    "Her anger was like a forest fire - beautiful from a
+                    distance, devastating up close."
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl border-l-4 border-black">
+                  <h4 class="font-bold mb-2 text-black">
+                    Metaphor: Implicit Comparison
+                  </h4>
+                  <p class="text-sm mb-2 text-gray-600">Structure: A is B</p>
+                  <p class="italic text-sm text-gray-500">
+                    "Her anger was wildfire consuming everything in its path."
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl border-l-4 border-black">
+                  <h4 class="font-bold mb-2 text-black">Personification</h4>
+                  <p class="text-sm mb-2 text-gray-600">
+                    Strategic animation of the inanimate
+                  </p>
+                  <p class="italic text-sm text-gray-500">
+                    "The March wind had opinions about everything - the proper
+                    angle for newspapers, the correct speed for walking."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Module 3 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module3"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod3')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                3
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">
+                  The Music of Language
+                </h2>
+                <p class="text-gray-500 text-sm">
+                  Sound devices and rhythmic structures
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod3-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod3-content"
+          >
+            <div class="pt-6">
+              <p class="text-gray-600 mb-6">
+                Language evolved from music, and music remains embedded in all
+                effective writing. Sound patterns affect meaning as profoundly
+                as word choice itself.
+              </p>
+              <h3 class="text-lg font-bold mb-4 text-black">
+                Sound Device Taxonomy
+              </h3>
+              <div class="space-y-3 mb-6">
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Alliteration</h4>
+                  <p class="text-sm mb-1 text-gray-600">
+                    Initial consonant repetition
+                  </p>
+                  <p class="italic text-sm text-gray-500">
+                    "The storm struck suddenly"
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Assonance</h4>
+                  <p class="text-sm mb-1 text-gray-600">
+                    Vowel sound repetition
+                  </p>
+                  <p class="italic text-sm text-gray-500">
+                    "The rain in Spain stays mainly in the plain"
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Consonance</h4>
+                  <p class="text-sm mb-1 text-gray-600">
+                    Consonant sound repetition (any position)
+                  </p>
+                  <p class="italic text-sm text-gray-500">
+                    "The lumpy, bumpy road"
+                  </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-xl">
+                  <h4 class="font-bold mb-2 text-black">Onomatopoeia</h4>
+                  <p class="text-sm mb-1 text-gray-600">
+                    Words that sound like their meaning
+                  </p>
+                  <p class="italic text-sm text-gray-500">
+                    "Buzz, crash, whisper, boom"
+                  </p>
+                </div>
+              </div>
+              <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+                <h4 class="font-bold mb-3 text-black">Sound Symbolism Guide</h4>
+                <ul class="space-y-2 text-sm text-gray-600">
+                  <li>
+                    <strong>High Sounds (i, e, ee):</strong> Smallness,
+                    quickness, brightness
+                  </li>
+                  <li>
+                    <strong>Low Sounds (o, u, oo):</strong> Largeness, slowness,
+                    darkness
+                  </li>
+                  <li>
+                    <strong>Plosive Consonants (p, b, t, d):</strong>
+                    Impact, suddenness
+                  </li>
+                  <li>
+                    <strong>Fricative Consonants (f, v, s, z):</strong>
+                    Flowing, continuous
+                  </li>
+                  <li>
+                    <strong>Liquid Consonants (l, r):</strong> Smoothness,
+                    elegance
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Module 4 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module4"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod4')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                4
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">
+                  Architectural Devices
+                </h2>
+                <p class="text-gray-500 text-sm">
+                  Structure, time, and narrative control
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod4-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod4-content"
+          >
+            <div class="pt-6">
+              <p class="text-gray-600 mb-6">
+                Time is literature's most flexible element. Understanding how to
+                manipulate narrative time and structure gives you control over
+                the reader's experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Module 5 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module5"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod5')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                5
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">
+                  Symbolism &amp; Motif
+                </h2>
+                <p class="text-gray-500 text-sm">
+                  Layering meaning through recurring elements
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod5-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod5-content"
+          >
+            <div class="pt-6">
+              <p class="text-gray-600 mb-6">
+                Symbols are objects, characters, or actions that stand for
+                something beyond themselves. Motifs are recurring elements that
+                develop themes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Module 6 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module6"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod6')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                6
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">Rhetorical Devices</h2>
+                <p class="text-gray-500 text-sm">
+                  Persuasion, emphasis, and sentence structure
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod6-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod6-content"
+          >
+            <div class="pt-6">
+              <p class="text-gray-600 mb-6">
+                Rhetorical devices are techniques used to convey meaning with
+                the goal of persuading the reader or listener.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Module 7 -->
+        <div
+          class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden scroll-mt-24"
+          data-aos="fade-up"
+          id="module7"
+        >
+          <button
+            class="w-full px-8 py-6 flex items-center justify-between hover:bg-gray-50 transition-colors"
+            onclick="toggle('mod7')"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center font-bold text-xl"
+              >
+                7
+              </div>
+              <div class="text-left">
+                <h2 class="text-xl font-bold text-black">
+                  Mastery Integration
+                </h2>
+                <p class="text-gray-500 text-sm">
+                  Combining devices for maximum effect
+                </p>
+              </div>
+            </div>
+            <svg
+              class="w-6 h-6 text-gray-400 transition-transform duration-300"
+              fill="none"
+              id="mod7-icon"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M19 9l-7 7-7-7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden px-8 pb-8 space-y-6 border-t border-gray-100"
+            id="mod7-content"
+          >
+            <div class="pt-6">
+              <p class="text-gray-600 mb-6">
+                True mastery comes not from using devices in isolation, but from
+                weaving them together to create a rich, multi-layered
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Ready to Master Literary Devices?
-				</h2>
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					Join thousands of writers who have elevated their craft with Penwise.
-					Start your journey today.
-				</p>
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Start Learning Now
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url(&quot;{% static 'assets/image/footer/bg.png' %}&quot;)"
+>
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div
+    class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
+    data-aos="fade-up"
+  >
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Ready to Master Literary Devices?
+    </h2>
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Join thousands of writers who have elevated their craft with Penwise.
+      Start your journey today.
+    </p>
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Start Learning Now
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section
+
 {% endblock %}

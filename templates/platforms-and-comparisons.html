@@ -1,476 +1,647 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block title %}Platforms & Comparisons | Penwise{% endblock %}
-
-{% block meta_description %}Discover how Penwise.ai stands apart from other AI writing tools. Compare Penwise with ChatGPT, Jasper, Notion AI, and more.{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto px-6 relative">
-<div class="relative z-20 text-center">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in">
-						✨ Platforms &amp; Comparisons
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up">
-						Discover How Penwise.ai<br/>Stands Apart
-					</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						When it comes to AI writing tools, the market is full of platforms
-						promising to help you write faster and better. But none are built
-						with one clear mission: turning your idea into a complete,
-						ready-to-publish book.
-					</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-<button class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2">
-							Compare Now
-							<span class="text-lg"><svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</span>
-</button>
-</div>
-</div>
-</div>
+{% extends 'base.html' %} {% load static %} {% block title %}Platforms &
+Comparisons | Penwise{% endblock %} {% block meta_description %}Discover how
+Penwise.ai stands apart from other AI writing tools. Compare Penwise with
+ChatGPT, Jasper, Notion AI, and more.{% endblock %} {% block content %}
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url('{% static \'assets/image/hero/herobackground.png\' %}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="relative z-20 text-center">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in"
+      >
+        ✨ Platforms &amp; Comparisons
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up"
+      >
+        Discover How Penwise.ai<br />Stands Apart
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        When it comes to AI writing tools, the market is full of platforms
+        promising to help you write faster and better. But none are built with
+        one clear mission: turning your idea into a complete, ready-to-publish
+        book.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <button
+          class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2"
+        >
+          Compare Now
+          <span class="text-lg"
+            ><svg
+              class="w-4 h-4 sm:w-5 sm:h-5"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
- Why This Comparison Matters Section 
+<!-- Why This Comparison Matters Section  -->
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="space-y-6">
-<div class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium">
-							WHY IT MATTERS
-						</div>
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black leading-tight">
-							Built for Long-Form Storytelling
-						</h2>
-<p class="text-gray-600 leading-relaxed">
-							Most AI platforms focus on short pieces: blog posts, ads, social
-							captions, or fragments of a story. Writers who dream of crafting
-							an entire book often find themselves piecing together disconnected
-							outputs, fighting with formatting, or losing track of story arcs.
-						</p>
-<p class="text-gray-600 leading-relaxed">
-							Penwise.ai solves that problem. It gives you a clear, guided
-							workflow that takes you from a single spark of an idea to a full
-							manuscript—complete with chapters, characters, pacing, and a
-							satisfying ending. Unlike general AI chatbots or
-							marketing-oriented tools, Penwise was built for long-form
-							storytelling at scale.
-						</p>
-</div>
-<div class="relative">
-<div class="rounded-2xl overflow-hidden shadow-2xl">
-<!-- Placeholder image -->
-<img alt="Comparison Dashboard" class="w-full h-auto" src="{% static 'assets/image/hero/dashbaord.png' %}"/>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <div
+          class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium"
+        >
+          WHY IT MATTERS
+        </div>
+        <h2
+          class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black leading-tight"
+        >
+          Built for Long-Form Storytelling
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Most AI platforms focus on short pieces: blog posts, ads, social
+          captions, or fragments of a story. Writers who dream of crafting an
+          entire book often find themselves piecing together disconnected
+          outputs, fighting with formatting, or losing track of story arcs.
+        </p>
+        <p class="text-gray-600 leading-relaxed">
+          Penwise.ai solves that problem. It gives you a clear, guided workflow
+          that takes you from a single spark of an idea to a full
+          manuscript—complete with chapters, characters, pacing, and a
+          satisfying ending. Unlike general AI chatbots or marketing-oriented
+          tools, Penwise was built for long-form storytelling at scale.
+        </p>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <!-- Placeholder image -->
+          <img
+            alt="Comparison Dashboard"
+            class="w-full h-auto"
+            src="{% static 'assets/image/hero/dashbaord.png' %}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- Stats Section 
-<section class="lg:mx-[60px] mx-5 rounded-3xl bg-black text-white py-16 md:py-24">
-<div class="max-w-7xl mx-auto px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl font-bold mb-4">
-						Penwise.ai by the Numbers
-					</h2>
-<p class="text-gray-400">
-						See why authors choose Penwise.ai over other platforms
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-<div>
-<div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
-							300+
-						</div>
-<div class="text-gray-400 text-lg">Pages per Book</div>
-</div>
-<div>
-<div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
-							24h
-						</div>
-<div class="text-gray-400 text-lg">Average Creation Time</div>
-</div>
-<div>
-<div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
-							100%
-						</div>
-<div class="text-gray-400 text-lg">Publication Ready</div>
-</div>
-</div>
-</div>
+<!-- Stats Section  -->
+<section
+  class="lg:mx-[60px] mx-5 rounded-3xl bg-black text-white py-16 md:py-24"
+>
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        Penwise.ai by the Numbers
+      </h2>
+      <p class="text-gray-400">
+        See why authors choose Penwise.ai over other platforms
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      <div>
+        <div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">300+</div>
+        <div class="text-gray-400 text-lg">Pages per Book</div>
+      </div>
+      <div>
+        <div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">24h</div>
+        <div class="text-gray-400 text-lg">Average Creation Time</div>
+      </div>
+      <div>
+        <div class="text-4xl md:text-5xl lg:text-6xl font-bold mb-2">100%</div>
+        <div class="text-gray-400 text-lg">Publication Ready</div>
+      </div>
+    </div>
+  </div>
 </section>
- Comparisons Section 
+<!-- Comparisons Section -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-sm">
-						HOW WE COMPARE
-					</div>
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Penwise.ai vs The Rest
-					</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Comparison 1: ChatGPT -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-black">
-								Penwise.ai vs ChatGPT
-							</h3>
-<span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium">vs</span>
-</div>
-<p class="text-gray-600 leading-relaxed">
-							ChatGPT is a versatile conversational AI, great for brainstorming.
-							However, writing an entire novel requires dozens of prompts and
-							manual structuring. Penwise.ai eliminates that burden. With just a
-							short idea, Penwise creates a complete outline, develops
-							characters, and generates a full manuscript—from start to finish.
-						</p>
-</div>
-<!-- Comparison 2: Jasper -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-black">
-								Penwise.ai vs Jasper (Jarvis)
-							</h3>
-<span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium">vs</span>
-</div>
-<p class="text-gray-600 leading-relaxed">
-							Jasper excels at marketing content like ads and SEO copy. It's
-							perfect for businesses, but not novelists. Penwise focuses
-							exclusively on long-form fiction. While Jasper might help you
-							write a blog post, Penwise can deliver a 300-page novel complete
-							with chapters and arcs. Jasper is a marketing tool; Penwise is a
-							storytelling partner.
-						</p>
-</div>
-<!-- Comparison 3: Notion AI -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-black">
-								Penwise.ai vs Notion AI
-							</h3>
-<span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium">vs</span>
-</div>
-<p class="text-gray-600 leading-relaxed">
-							Notion AI works best as a productivity enhancer for summarizing
-							and rephrasing. But it doesn't generate complete stories or
-							structured books. Penwise was built for authors, creating
-							full-length manuscripts by guiding you through idea development,
-							outlining, and book generation. Penwise is your creative engine
-							for storytelling.
-						</p>
-</div>
-<!-- Comparison 4: Sudowrite -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-black">
-								Penwise.ai vs Sudowrite
-							</h3>
-<span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium">vs</span>
-</div>
-<p class="text-gray-600 leading-relaxed">
-							Sudowrite is great for expanding drafts and breaking writer's
-							block, but it requires you to write alongside it piece by piece.
-							Penwise works differently: you give it an idea, and it produces an
-							entire novel. Rather than co-writing sentence by sentence, Penwise
-							automates the whole process—delivering a finished book in hours.
-						</p>
-</div>
-<!-- Comparison 5: Copy.ai -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-black">
-								Penwise.ai vs Copy.ai
-							</h3>
-<span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium">vs</span>
-</div>
-<p class="text-gray-600 leading-relaxed">
-							Copy.ai specializes in short, high-volume marketing texts. It's a
-							go-to tool for growth marketers. But for authors, Copy.ai falls
-							short—it doesn't build chapters, plots, or novels. Penwise is
-							designed for storytelling, giving you a clear path from idea to
-							fully formatted manuscript with narrative depth.
-						</p>
-</div>
-<!-- Comparison 6: Writesonic -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center justify-between mb-6">
-<h3 class="text-xl font-bold text-black">
-								Penwise.ai vs Writesonic
-							</h3>
-<span class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium">vs</span>
-</div>
-<p class="text-gray-600 leading-relaxed">
-							Writesonic is a content creation suite for digital marketing. It
-							can generate blog posts and short stories, but it's not optimized
-							for the complexity of novel writing. Penwise specializes in
-							long-form content: entire books with character arcs, chapter
-							pacing, and polished formatting. Writesonic helps marketers;
-							Penwise helps authors.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-sm"
+      >
+        HOW WE COMPARE
+      </div>
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Penwise.ai vs The Rest
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Comparison 1: ChatGPT -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-black">Penwise.ai vs ChatGPT</h3>
+          <span
+            class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium"
+            >vs</span
+          >
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          ChatGPT is a versatile conversational AI, great for brainstorming.
+          However, writing an entire novel requires dozens of prompts and manual
+          structuring. Penwise.ai eliminates that burden. With just a short
+          idea, Penwise creates a complete outline, develops characters, and
+          generates a full manuscript—from start to finish.
+        </p>
+      </div>
+      <!-- Comparison 2: Jasper -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-black">
+            Penwise.ai vs Jasper (Jarvis)
+          </h3>
+          <span
+            class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium"
+            >vs</span
+          >
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Jasper excels at marketing content like ads and SEO copy. It's perfect
+          for businesses, but not novelists. Penwise focuses exclusively on
+          long-form fiction. While Jasper might help you write a blog post,
+          Penwise can deliver a 300-page novel complete with chapters and arcs.
+          Jasper is a marketing tool; Penwise is a storytelling partner.
+        </p>
+      </div>
+      <!-- Comparison 3: Notion AI -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-black">Penwise.ai vs Notion AI</h3>
+          <span
+            class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium"
+            >vs</span
+          >
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Notion AI works best as a productivity enhancer for summarizing and
+          rephrasing. But it doesn't generate complete stories or structured
+          books. Penwise was built for authors, creating full-length manuscripts
+          by guiding you through idea development, outlining, and book
+          generation. Penwise is your creative engine for storytelling.
+        </p>
+      </div>
+      <!-- Comparison 4: Sudowrite -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-black">Penwise.ai vs Sudowrite</h3>
+          <span
+            class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium"
+            >vs</span
+          >
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Sudowrite is great for expanding drafts and breaking writer's block,
+          but it requires you to write alongside it piece by piece. Penwise
+          works differently: you give it an idea, and it produces an entire
+          novel. Rather than co-writing sentence by sentence, Penwise automates
+          the whole process—delivering a finished book in hours.
+        </p>
+      </div>
+      <!-- Comparison 5: Copy.ai -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-black">Penwise.ai vs Copy.ai</h3>
+          <span
+            class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium"
+            >vs</span
+          >
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Copy.ai specializes in short, high-volume marketing texts. It's a
+          go-to tool for growth marketers. But for authors, Copy.ai falls
+          short—it doesn't build chapters, plots, or novels. Penwise is designed
+          for storytelling, giving you a clear path from idea to fully formatted
+          manuscript with narrative depth.
+        </p>
+      </div>
+      <!-- Comparison 6: Writesonic -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div class="flex items-center justify-between mb-6">
+          <h3 class="text-xl font-bold text-black">Penwise.ai vs Writesonic</h3>
+          <span
+            class="bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-sm font-medium"
+            >vs</span
+          >
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          Writesonic is a content creation suite for digital marketing. It can
+          generate blog posts and short stories, but it's not optimized for the
+          complexity of novel writing. Penwise specializes in long-form content:
+          entire books with character arcs, chapter pacing, and polished
+          formatting. Writesonic helps marketers; Penwise helps authors.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Explore More Section 
-<section class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
-						Compare Writing Platforms
-					</h2>
-<p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
-						See how Penwise stands against The Others and choose what fits your
-						creative style best.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Platform Comparisons
-						</h3>
-<p class="text-gray-600 text-sm">
-							See how major publishing platforms differ in features.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Self-Publishing Options
-						</h3>
-<p class="text-gray-600 text-sm">
-							Review popular platforms for indie authors.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Cost Breakdown</h3>
-<p class="text-gray-600 text-sm">
-							Compare pricing models across multiple platforms.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Speed of Publishing
-						</h3>
-<p class="text-gray-600 text-sm">
-							Find out which platforms offer the fastest release.
-						</p>
-</div>
-<!-- Card 5 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Quality Standards</h3>
-<p class="text-gray-600 text-sm">
-							Compare editing and formatting standards offered.
-						</p>
-</div>
-<!-- Card 6 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Performance Insights
-						</h3>
-<p class="text-gray-600 text-sm">
-							Track how books perform across publishing platforms.
-						</p>
-</div>
-</div>
-</div>
+<!-- Explore More Section -->
+<section
+  class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
+        Compare Writing Platforms
+      </h2>
+      <p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
+        See how Penwise stands against The Others and choose what fits your
+        creative style best.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Platform Comparisons</h3>
+        <p class="text-gray-600 text-sm">
+          See how major publishing platforms differ in features.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">
+          Self-Publishing Options
+        </h3>
+        <p class="text-gray-600 text-sm">
+          Review popular platforms for indie authors.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Cost Breakdown</h3>
+        <p class="text-gray-600 text-sm">
+          Compare pricing models across multiple platforms.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Speed of Publishing</h3>
+        <p class="text-gray-600 text-sm">
+          Find out which platforms offer the fastest release.
+        </p>
+      </div>
+      <!-- Card 5 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Quality Standards</h3>
+        <p class="text-gray-600 text-sm">
+          Compare editing and formatting standards offered.
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Performance Insights</h3>
+        <p class="text-gray-600 text-sm">
+          Track how books perform across publishing platforms.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- FAQ Section 
+<!-- FAQ Section -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Frequently Asked Questions
-					</h2>
-</div>
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>What are the best websites for AI book writing?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								While there are many tools, Penwise.ai is specifically designed
-								for long-form book writing, offering structured workflows unlike
-								general chatbots.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Which is the best AI story writing website?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								For complete stories and novels, Penwise.ai offers the best
-								comprehensive platform. The Others like Sudowrite are good for
-								expanding existing drafts.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Which AI tool is best for writing novels?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Penwise.ai is optimized for novels, handling character arcs,
-								pacing, and chapter structure automatically.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 4 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Can AI write a book for me?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Yes, Penwise.ai can generate a full manuscript from your idea,
-								acting as a co-author to bring your vision to life.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 5 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Which is better for book writing: Penwise.ai or Jasper
-								AI?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Penwise.ai is better for books. Jasper is primarily a marketing
-								tool for short copy and blog posts.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 6 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Is Penwise.ai better than Sudowrite for novel writing?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								If you want to generate a full novel from an idea, Penwise is
-								better. Sudowrite is ideal if you prefer to write alongside AI
-								sentence by sentence.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 7 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>How do I pick the right AI writing platform?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Consider your goal. For marketing copy, use Jasper or Copy.ai.
-								For productivity, use Notion AI. For writing complete novels,
-								Penwise.ai is the specialized choice.
-							</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Frequently Asked Questions
+      </h2>
+    </div>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>What are the best websites for AI book writing?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            While there are many tools, Penwise.ai is specifically designed for
+            long-form book writing, offering structured workflows unlike general
+            chatbots.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Which is the best AI story writing website?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            For complete stories and novels, Penwise.ai offers the best
+            comprehensive platform. The Others like Sudowrite are good for
+            expanding existing drafts.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Which AI tool is best for writing novels?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Penwise.ai is optimized for novels, handling character arcs, pacing,
+            and chapter structure automatically.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 4 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Can AI write a book for me?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Yes, Penwise.ai can generate a full manuscript from your idea,
+            acting as a co-author to bring your vision to life.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 5 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span
+            >Which is better for book writing: Penwise.ai or Jasper AI?</span
+          >
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Penwise.ai is better for books. Jasper is primarily a marketing tool
+            for short copy and blog posts.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 6 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Is Penwise.ai better than Sudowrite for novel writing?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            If you want to generate a full novel from an idea, Penwise is
+            better. Sudowrite is ideal if you prefer to write alongside AI
+            sentence by sentence.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 7 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>How do I pick the right AI writing platform?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Consider your goal. For marketing copy, use Jasper or Copy.ai. For
+            productivity, use Notion AI. For writing complete novels, Penwise.ai
+            is the specialized choice.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<!-- Dark Overlay -->
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-<!-- Heading -->
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Bring your Novel to Life - Let<br/>Penwise Be Your Writing Partner
-				</h2>
-<!-- Subtext -->
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					Start writing your novel today with Penwise — get Penwise-powered
-					assistance for plotting, drafting, and refining every chapter
-					effortlessly.
-				</p>
-<!-- CTA Button -->
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Start My Novel For Free
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url('{% static \'assets/image/footer/bg.png\' %}')"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <!-- Heading -->
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Bring your Novel to Life - Let<br />Penwise Be Your Writing Partner
+    </h2>
+    <!-- Subtext -->
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Start writing your novel today with Penwise — get Penwise-powered
+      assistance for plotting, drafting, and refining every chapter
+      effortlessly.
+    </p>
+    <!-- CTA Button -->
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Start My Novel For Free
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section 
 
 <script>
-			// Mobile menu toggle
-			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			const closeMenuBtn = document.getElementById("closeMenuBtn");
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
 
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.remove("translate-x-full");
-			});
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
 
-			closeMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.add("translate-x-full");
-			});
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
 
-			// FAQ Accordion
-			const faqQuestions = document.querySelectorAll(".faq-question");
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-			faqQuestions.forEach((question) => {
-				question.addEventListener("click", () => {
-					const faqItem = question.parentElement;
-					const answer = question.nextElementSibling;
-					const icon = question.querySelector(".faq-icon");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqItem = question.parentElement;
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector(".faq-icon");
 
-					// Toggle answer
-					if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-						answer.style.maxHeight = "0px";
-						icon.style.transform = "rotate(0deg)";
-					} else {
-						answer.style.maxHeight = answer.scrollHeight + "px";
-						icon.style.transform = "rotate(180deg)";
-					}
-				});
-			});
-		</script>
+      // Toggle answer
+      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+        answer.style.maxHeight = "0px";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
 {% endblock %}

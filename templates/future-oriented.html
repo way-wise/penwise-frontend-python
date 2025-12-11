@@ -1,351 +1,500 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block title %}Future Oriented |
+Penwise{% endblock %} {% block meta_description %}Step into the future of
+storytelling with Penwise. Combine human creativity with cutting-edge AI
+technology.{% endblock %} {% block content %}
 
-{% block title %}Future Oriented | Penwise{% endblock %}
-
-{% block meta_description %}Step into the future of storytelling with Penwise. Combine human creativity with cutting-edge AI technology.{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto px-6 relative">
-<div class="relative z-20 text-center">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in">
-						✨ Future-Oriented
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up">
-						Step Into the Future of<br/>Storytelling with Penwise
-					</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						Unleash your imagination and create stories that transcend the
-						ordinary. Penwise empowers writers of all levels to craft complete
-						novels in record time, combining human creativity with cutting-edge
-						AI technology.
-					</p>
-<div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-<button class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2">
-							Start Writing Now
-							<span class="text-lg"><svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</span>
-</button>
-</div>
-</div>
-</div>
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="relative z-20 text-center">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6 animate-fade-in"
+      >
+        ✨ Future-Oriented
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight animate-fade-in-up"
+      >
+        Step Into the Future of<br />Storytelling with Penwise
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        Unleash your imagination and create stories that transcend the ordinary.
+        Penwise empowers writers of all levels to craft complete novels in
+        record time, combining human creativity with cutting-edge AI technology.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+        <button
+          class="px-8 py-2.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2"
+        >
+          Start Writing Now
+          <span class="text-lg"
+            ><svg
+              class="w-4 h-4 sm:w-5 sm:h-5"
+              fill="currentColor"
+              viewbox="0 0 20 20"
+            >
+              <path
+                clip-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
- Tomorrow's Writing Tools Section 
+<!-- Tomorrow's Writing Tools Section -->
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-<div class="space-y-6">
-<div class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium">
-							TOMORROW'S WRITING TOOLS
-						</div>
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black leading-tight">
-							Embrace Tomorrow's Writing Tools Today
-						</h2>
-<h3 class="text-xl font-semibold text-gray-900">
-							Experience the Future of Storytelling
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							The world of writing is evolving, and so should your creative
-							process. With Penwise, you're not just writing a book—you're
-							experiencing the future of storytelling. Our advanced AI doesn't
-							replace your creativity; it amplifies it. Every idea, character,
-							and plot twist you envision is transformed into a polished,
-							compelling narrative that's ready for readers. Say goodbye to
-							writer's block and hello to limitless possibilities.
-						</p>
-</div>
-<div class="relative">
-<div class="rounded-2xl overflow-hidden shadow-2xl">
-<!-- Placeholder for future-oriented image -->
-<img alt="Future of Storytelling" class="w-full h-auto" src="{% static 'assets/image/hero/dashbaord.png' %}"/>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="space-y-6">
+        <div
+          class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium"
+        >
+          TOMORROW'S WRITING TOOLS
+        </div>
+        <h2
+          class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black leading-tight"
+        >
+          Embrace Tomorrow's Writing Tools Today
+        </h2>
+        <h3 class="text-xl font-semibold text-gray-900">
+          Experience the Future of Storytelling
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          The world of writing is evolving, and so should your creative process.
+          With Penwise, you're not just writing a book—you're experiencing the
+          future of storytelling. Our advanced AI doesn't replace your
+          creativity; it amplifies it. Every idea, character, and plot twist you
+          envision is transformed into a polished, compelling narrative that's
+          ready for readers. Say goodbye to writer's block and hello to
+          limitless possibilities.
+        </p>
+      </div>
+      <div class="relative">
+        <div class="rounded-2xl overflow-hidden shadow-2xl">
+          <!-- Placeholder for future-oriented image -->
+          <img
+            alt="Future of Storytelling"
+            class="w-full h-auto"
+            src="{% static 'assets/image/hero/dashbaord.png' %}"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- Cutting-Edge Technology Section 
+<!-- Cutting-Edge Technology Section -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-sm">
-						CUTTING-EDGE TECHNOLOGY
-					</div>
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Innovative Technology at Your Fingertips
-					</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Card 1 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							State-of-the-Art AI Algorithms
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							Penwise uses state-of-the-art AI algorithms designed specifically
-							for fiction writers. Whether you're exploring a sci-fi universe,
-							crafting a thrilling mystery, or weaving a heartfelt romance, our
-							platform understands your vision and brings it to life. The AI
-							guides your story's structure, enhances dialogue, and refines
-							pacing, ensuring a professional-quality result every time.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Your Ideas, Your Ownership
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							Every book you create with Penwise is 100% yours. You maintain
-							full rights and control over your work, ensuring your creative
-							vision is protected. Whether you're publishing independently or
-							simply exploring your imagination, Penwise gives you the freedom
-							to innovate without compromise.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Designed for Visionaries
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							Penwise is for dreamers, innovators, and storytellers who dare to
-							think ahead. Writers no longer need to spend months or years
-							drafting their novels; with Penwise, the journey from idea to
-							finished manuscript takes only hours. Focus on your creativity,
-							and let our AI handle the heavy lifting.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<div class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6">
-<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-xl font-bold text-black mb-4">
-							Join the Future of Fiction
-						</h3>
-<p class="text-gray-600 leading-relaxed">
-							The next era of storytelling is here, and it's accessible to
-							everyone. Penwise is more than a tool—it's a partner in your
-							creative journey. Imagine what you can achieve when your ideas
-							meet the most advanced AI writing technology available.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-medium mb-4 shadow-sm"
+      >
+        CUTTING-EDGE TECHNOLOGY
+      </div>
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Innovative Technology at Your Fingertips
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">
+          State-of-the-Art AI Algorithms
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          Penwise uses state-of-the-art AI algorithms designed specifically for
+          fiction writers. Whether you're exploring a sci-fi universe, crafting
+          a thrilling mystery, or weaving a heartfelt romance, our platform
+          understands your vision and brings it to life. The AI guides your
+          story's structure, enhances dialogue, and refines pacing, ensuring a
+          professional-quality result every time.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">
+          Your Ideas, Your Ownership
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          Every book you create with Penwise is 100% yours. You maintain full
+          rights and control over your work, ensuring your creative vision is
+          protected. Whether you're publishing independently or simply exploring
+          your imagination, Penwise gives you the freedom to innovate without
+          compromise.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">
+          Designed for Visionaries
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          Penwise is for dreamers, innovators, and storytellers who dare to
+          think ahead. Writers no longer need to spend months or years drafting
+          their novels; with Penwise, the journey from idea to finished
+          manuscript takes only hours. Focus on your creativity, and let our AI
+          handle the heavy lifting.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <div
+          class="w-12 h-12 bg-black text-white rounded-xl flex items-center justify-center mb-6"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-black mb-4">
+          Join the Future of Fiction
+        </h3>
+        <p class="text-gray-600 leading-relaxed">
+          The next era of storytelling is here, and it's accessible to everyone.
+          Penwise is more than a tool—it's a partner in your creative journey.
+          Imagine what you can achieve when your ideas meet the most advanced AI
+          writing technology available.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Explore More Section 
-<section class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12 md:mb-16">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
-						Shaping the Future of Writing
-					</h2>
-<p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
-						Explore how Penwise innovates and builds for the next generation of
-						authors.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Card 1 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">AI in Publishing</h3>
-<p class="text-gray-600 text-sm">
-							Discover how AI shapes the future of storytelling.
-						</p>
-</div>
-<!-- Card 2 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Vision for Tomorrow
-						</h3>
-<p class="text-gray-600 text-sm">
-							Learn about our long-term publishing goals.
-						</p>
-</div>
-<!-- Card 3 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Next-Gen Efficiency
-						</h3>
-<p class="text-gray-600 text-sm">
-							Innovations that reduce time from draft to shelf.
-						</p>
-</div>
-<!-- Card 4 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Future Quality Standards
-						</h3>
-<p class="text-gray-600 text-sm">
-							How technology will redefine literary excellence.
-						</p>
-</div>
-<!-- Card 5 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">
-							Shifts in Platforms
-						</h3>
-<p class="text-gray-600 text-sm">
-							Compare how platforms adapt to future demands.
-						</p>
-</div>
-<!-- Card 6 -->
-<div class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
-<h3 class="text-lg font-bold mb-2 text-black">Future Analytics</h3>
-<p class="text-gray-600 text-sm">
-							Advanced tools to track writing and publishing success.
-						</p>
-</div>
-</div>
-</div>
+<!-- Explore More Section -->
+<section
+  class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12 md:mb-16">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-white mb-4">
+        Shaping the Future of Writing
+      </h2>
+      <p class="text-gray-400 text-base md:text-[14px] max-w-3xl mx-auto">
+        Explore how Penwise innovates and builds for the next generation of
+        authors.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">AI in Publishing</h3>
+        <p class="text-gray-600 text-sm">
+          Discover how AI shapes the future of storytelling.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Vision for Tomorrow</h3>
+        <p class="text-gray-600 text-sm">
+          Learn about our long-term publishing goals.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Next-Gen Efficiency</h3>
+        <p class="text-gray-600 text-sm">
+          Innovations that reduce time from draft to shelf.
+        </p>
+      </div>
+      <!-- Card 4 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">
+          Future Quality Standards
+        </h3>
+        <p class="text-gray-600 text-sm">
+          How technology will redefine literary excellence.
+        </p>
+      </div>
+      <!-- Card 5 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Shifts in Platforms</h3>
+        <p class="text-gray-600 text-sm">
+          Compare how platforms adapt to future demands.
+        </p>
+      </div>
+      <!-- Card 6 -->
+      <div
+        class="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300"
+      >
+        <h3 class="text-lg font-bold mb-2 text-black">Future Analytics</h3>
+        <p class="text-gray-600 text-sm">
+          Advanced tools to track writing and publishing success.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- FAQ Section 
+<!-- FAQ Section -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
-						Frequently Asked Questions
-					</h2>
-</div>
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Will AI replace human authors?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								No, AI is a tool to enhance creativity, not replace it. The
-								human imagination remains the core of storytelling.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Is AI writing accepted in schools and universities?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Policies vary by institution. It's best to check with your
-								specific school or university regarding their guidelines on AI
-								assistance.
-							</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-<button class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black">
-<span>Can AI-written books win awards or competitions?</span>
-<svg class="faq-icon w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-<div class="p-6 pt-0 text-gray-600 text-sm">
-								Rules for awards and competitions are evolving. Some accept
-								AI-assisted work, while others require purely human creation.
-								Always read the submission guidelines.
-							</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl lg:text-[38px] font-bold text-black mb-4">
+        Frequently Asked Questions
+      </h2>
+    </div>
+    <div class="space-y-4">
+      <!-- FAQ Item 1 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Will AI replace human authors?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            No, AI is a tool to enhance creativity, not replace it. The human
+            imagination remains the core of storytelling.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Is AI writing accepted in schools and universities?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Policies vary by institution. It's best to check with your specific
+            school or university regarding their guidelines on AI assistance.
+          </div>
+        </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div
+        class="faq-item bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow"
+      >
+        <button
+          class="faq-question w-full flex items-center justify-between p-6 text-left font-semibold text-black"
+        >
+          <span>Can AI-written books win awards or competitions?</span>
+          <svg
+            class="faq-icon w-5 h-5 transition-transform duration-300"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out"
+        >
+          <div class="p-6 pt-0 text-gray-600 text-sm">
+            Rules for awards and competitions are evolving. Some accept
+            AI-assisted work, while others require purely human creation. Always
+            read the submission guidelines.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<!-- Dark Overlay -->
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-<!-- Heading -->
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Bring your Novel to Life - Let<br/>Penwise Be Your Writing Partner
-				</h2>
-<!-- Subtext -->
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					Start writing your novel today with Penwise — get Penwise-powered
-					assistance for plotting, drafting, and refining every chapter
-					effortlessly.
-				</p>
-<!-- CTA Button -->
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Start My Novel For Free
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url(&quot;{% static 'assets/image/footer/bg.png' %}&quot;)"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
+    <!-- Heading -->
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Bring your Novel to Life - Let<br />Penwise Be Your Writing Partner
+    </h2>
+    <!-- Subtext -->
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Start writing your novel today with Penwise — get Penwise-powered
+      assistance for plotting, drafting, and refining every chapter
+      effortlessly.
+    </p>
+    <!-- CTA Button -->
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Start My Novel For Free
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section 
 
 <script>
-			// Mobile menu toggle
-			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			const closeMenuBtn = document.getElementById("closeMenuBtn");
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
 
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.remove("translate-x-full");
-			});
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
 
-			closeMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.add("translate-x-full");
-			});
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
 
-			// FAQ Accordion
-			const faqQuestions = document.querySelectorAll(".faq-question");
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-			faqQuestions.forEach((question) => {
-				question.addEventListener("click", () => {
-					const faqItem = question.parentElement;
-					const answer = question.nextElementSibling;
-					const icon = question.querySelector(".faq-icon");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqItem = question.parentElement;
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector(".faq-icon");
 
-					// Toggle answer
-					if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-						answer.style.maxHeight = "0px";
-						icon.style.transform = "rotate(0deg)";
-					} else {
-						answer.style.maxHeight = answer.scrollHeight + "px";
-						icon.style.transform = "rotate(180deg)";
-					}
-				});
-			});
-		</script>
+      // Toggle answer
+      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+        answer.style.maxHeight = "0px";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
 {% endblock %}

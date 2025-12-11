@@ -1,522 +1,855 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block title %}Penwise -
+Frequently Asked Questions{% endblock %} {% block meta_description %}Find
+answers to common questions about Penwise and how it can help you write
+better.{% endblock %} {% block content %}
 
-{% block title %}Penwise - Frequently Asked Questions{% endblock %}
-
-{% block meta_description %}Find answers to common questions about Penwise and how it can help you write better.{% endblock %}
-
-{% block content %}
-Navigation 
-
- Mobile Menu 
-
- Hero Section 
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/hero2.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<!-- Container for content with profile badges -->
-<div class="flex flex-col lg:flex-row items-center justify-center gap-10" data-aos="fade-up">
-<!-- Center Content -->
-<div class="z-20 space-y-6">
-<h1 class="text-3xl text-center t lg:text-[56px] font-semibold leading-tight tracking-tight animate-fade-in-up">
-						Frequently Asked Questions (FAQ)
-					</h1>
-<p class="text-base lg:text-[16px] text-gray-300 text-center max-w-3xl lg:max-w-full leading-relaxed">
-						Find answers to common questions about features, integrations,
-						pricing, and support for a seamless experience.
-					</p>
-</div>
-</div>
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url(&quot;{% static 'assets/image/hero/hero2.png' %}&quot;);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <!-- Container for content with profile badges -->
+  <div
+    class="flex flex-col lg:flex-row items-center justify-center gap-10"
+    data-aos="fade-up"
+  >
+    <!-- Center Content -->
+    <div class="z-20 space-y-6">
+      <h1
+        class="text-3xl text-center t lg:text-[56px] font-semibold leading-tight tracking-tight animate-fade-in-up"
+      >
+        Frequently Asked Questions (FAQ)
+      </h1>
+      <p
+        class="text-base lg:text-[16px] text-gray-300 text-center max-w-3xl lg:max-w-full leading-relaxed"
+      >
+        Find answers to common questions about features, integrations, pricing,
+        and support for a seamless experience.
+      </p>
+    </div>
+  </div>
 </section>
- FAQ Section 
+
+<!-- FAQ Section -->
 <section class="lg:mx-[60px] mx-5 mt-16 mb-16">
-<div class="max-w-7xl mx-auto" data-aos="fade-up">
-<!-- FAQ Tabs -->
-<div class="bg-white overflow-hidden">
-<!-- Tab Navigation -->
-<div class="border-b border-gray-200 overflow-x-auto">
-<nav class="flex min-w-max lg:min-w-0">
-<button class="faq-tab px-6 py-4 text-sm font-medium text-black border-b-2 border-black whitespace-nowrap" data-tab="general">
-								General
-							</button>
-<button class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors" data-tab="features">
-								Features
-							</button>
-<button class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors" data-tab="pricing">
-								Payments &amp; Pricing
-							</button>
-<button class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors" data-tab="account">
-								Account &amp; Profile
-							</button>
-<button class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors" data-tab="support">
-								Technical Support
-							</button>
-<button class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors" data-tab="safety">
-								Safety &amp; Policies
-							</button>
-</nav>
-</div>
-<!-- Tab Content -->
-<div class="py-6 lg:p-8">
-<!-- General Tab -->
-<div class="faq-content" data-content="general">
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What is Penwise?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Penwise is an Penwise-powered writing assistant that helps
-											you brainstorm, structure, and refine your stories — from
-											idea to final draft.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Can I use Penwise for any type of writing?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Yes! Penwise is designed for novels, short stories,
-											screenplays, blogs, academic writing, and more. Our AI
-											adapts to your writing style and genre.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>How does Penwise improve my writing?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Penwise provides real-time suggestions for grammar, style,
-											plot development, and character consistency. It helps you
-											maintain narrative flow and overcome writer's block with
-											intelligent recommendations.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 4 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Is my work private and secure?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Absolutely! Your work is encrypted and stored securely. We
-											never share, sell, or use your content for training
-											purposes. You maintain full ownership and rights to
-											everything you create.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 5 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Do I need any technical skills to use Penwise?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											No technical skills required! Penwise is designed to be
-											intuitive and user-friendly. If you can type, you can use
-											Penwise. Our interface is clean and straightforward.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 6 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Does Penwise work offline or on mobile?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Penwise is a web-based application that requires an
-											internet connection for AI features. However, we offer
-											mobile-responsive design, and offline mode is coming soon!
-										</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Features Tab -->
-<div class="faq-content hidden" data-content="features">
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What are the key features of Penwise?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Penwise offers Penwise-powered writing assistance, plot
-											generation, character development tools, grammar and style
-											checking, version control, collaboration features, and
-											export options to multiple formats.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Can I collaborate with other writers?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Yes! Our Pro and Team plans include real-time
-											collaboration features, allowing multiple writers to work
-											on the same project simultaneously with version tracking.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What export formats are supported?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											You can export your work to PDF, DOCX, TXT, EPUB, and
-											Markdown formats. Premium users also get access to
-											screenplay and manuscript formatting templates.
-										</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Pricing Tab -->
-<div class="faq-content hidden" data-content="pricing">
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>How much does Penwise cost?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Penwise offers a free plan with basic features, a Pro plan
-											at $12/month, and a Team plan at $20/user/month. Annual
-											subscriptions receive a 20% discount.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Can I cancel my subscription anytime?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Yes, you can cancel your subscription at any time. You'll
-											continue to have access to premium features until the end
-											of your billing period.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What payment methods do you accept?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											We accept all major credit cards (Visa, MasterCard,
-											American Express), PayPal, and Apple Pay. All payments are
-											processed securely through Stripe.
-										</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Account Tab -->
-<div class="faq-content hidden" data-content="account">
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>How do I create an account?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Click "Get Started" and sign up with your email, Google,
-											or Apple account. Verify your email and start writing
-											immediately!
-										</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Can I change my account email?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Yes, you can update your email address in Account
-											Settings. You'll need to verify the new email address
-											before the change takes effect.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>How do I delete my account?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Go to Account Settings → Privacy &amp; Security → Delete
-											Account. Please note that this action is permanent and
-											will delete all your projects and data.
-										</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Support Tab -->
-<div class="faq-content hidden" data-content="support">
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What should I do if I encounter a bug?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Please report bugs through the "Help" menu or email
-											support@penwise.ai with details about the issue. Include
-											screenshots if possible.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>How can I contact customer support?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											You can reach us via email at support@penwise.ai, through
-											the in-app chat support (Pro and Team plans), or via our
-											contact form. We typically respond within 24 hours.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What browsers are supported?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											Penwise works best on the latest versions of Chrome,
-											Firefox, Safari, and Edge. We recommend keeping your
-											browser updated for optimal performance.
-										</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Safety Tab -->
-<div class="faq-content hidden" data-content="safety">
-<div class="space-y-4">
-<!-- FAQ Item 1 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>How is my data protected?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											We use industry-standard encryption (AES-256) for data at
-											rest and TLS 1.3 for data in transit. All data is stored
-											on secure, GDPR-compliant servers with regular backups.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 2 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>Do you use my content to train your AI?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											No, we never use your content to train our AI models. Your
-											work remains private and is only accessed by you and
-											anyone you choose to share it with.
-										</div>
-</div>
-</div>
-<!-- FAQ Item 3 -->
-<div class="faq-item rounded-lg">
-<button class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors">
-<span>What is your content moderation policy?</span>
-<svg class="faq-icon w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
-<div class="p-5 pt-0 text-gray-600">
-											We believe in creative freedom. We do not moderate private
-											content. Our AI refuses to generate content that violates
-											our Terms of Service (illegal content, explicit harm).
-										</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto" data-aos="fade-up">
+    <!-- FAQ Tabs -->
+    <div class="bg-white overflow-hidden">
+      <!-- Tab Navigation -->
+      <div class="border-b border-gray-200 overflow-x-auto">
+        <nav class="flex min-w-max lg:min-w-0">
+          <button
+            class="faq-tab px-6 py-4 text-sm font-medium text-black border-b-2 border-black whitespace-nowrap"
+            data-tab="general"
+          >
+            General
+          </button>
+          <button
+            class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors"
+            data-tab="features"
+          >
+            Features
+          </button>
+          <button
+            class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors"
+            data-tab="pricing"
+          >
+            Payments &amp; Pricing
+          </button>
+          <button
+            class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors"
+            data-tab="account"
+          >
+            Account &amp; Profile
+          </button>
+          <button
+            class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors"
+            data-tab="support"
+          >
+            Technical Support
+          </button>
+          <button
+            class="faq-tab px-6 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-black hover:border-gray-300 whitespace-nowrap transition-colors"
+            data-tab="safety"
+          >
+            Safety &amp; Policies
+          </button>
+        </nav>
+      </div>
+      <!-- Tab Content -->
+      <div class="py-6 lg:p-8">
+        <!-- General Tab -->
+        <div class="faq-content" data-content="general">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What is Penwise?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Penwise is an Penwise-powered writing assistant that helps you
+                  brainstorm, structure, and refine your stories — from idea to
+                  final draft.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Can I use Penwise for any type of writing?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Yes! Penwise is designed for novels, short stories,
+                  screenplays, blogs, academic writing, and more. Our AI adapts
+                  to your writing style and genre.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>How does Penwise improve my writing?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Penwise provides real-time suggestions for grammar, style,
+                  plot development, and character consistency. It helps you
+                  maintain narrative flow and overcome writer's block with
+                  intelligent recommendations.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Is my work private and secure?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Absolutely! Your work is encrypted and stored securely. We
+                  never share, sell, or use your content for training purposes.
+                  You maintain full ownership and rights to everything you
+                  create.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Do I need any technical skills to use Penwise?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  No technical skills required! Penwise is designed to be
+                  intuitive and user-friendly. If you can type, you can use
+                  Penwise. Our interface is clean and straightforward.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 6 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Does Penwise work offline or on mobile?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Penwise is a web-based application that requires an internet
+                  connection for AI features. However, we offer
+                  mobile-responsive design, and offline mode is coming soon!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Features Tab -->
+        <div class="faq-content hidden" data-content="features">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What are the key features of Penwise?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Penwise offers Penwise-powered writing assistance, plot
+                  generation, character development tools, grammar and style
+                  checking, version control, collaboration features, and export
+                  options to multiple formats.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Can I collaborate with other writers?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Yes! Our Pro and Team plans include real-time collaboration
+                  features, allowing multiple writers to work on the same
+                  project simultaneously with version tracking.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What export formats are supported?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  You can export your work to PDF, DOCX, TXT, EPUB, and Markdown
+                  formats. Premium users also get access to screenplay and
+                  manuscript formatting templates.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pricing Tab -->
+        <div class="faq-content hidden" data-content="pricing">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>How much does Penwise cost?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Penwise offers a free plan with basic features, a Pro plan at
+                  $12/month, and a Team plan at $20/user/month. Annual
+                  subscriptions receive a 20% discount.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Can I cancel my subscription anytime?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Yes, you can cancel your subscription at any time. You'll
+                  continue to have access to premium features until the end of
+                  your billing period.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What payment methods do you accept?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  We accept all major credit cards (Visa, MasterCard, American
+                  Express), PayPal, and Apple Pay. All payments are processed
+                  securely through Stripe.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Account Tab -->
+        <div class="faq-content hidden" data-content="account">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>How do I create an account?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Click "Get Started" and sign up with your email, Google, or
+                  Apple account. Verify your email and start writing
+                  immediately!
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Can I change my account email?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Yes, you can update your email address in Account Settings.
+                  You'll need to verify the new email address before the change
+                  takes effect.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>How do I delete my account?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Go to Account Settings → Privacy &amp; Security → Delete
+                  Account. Please note that this action is permanent and will
+                  delete all your projects and data.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Support Tab -->
+        <div class="faq-content hidden" data-content="support">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What should I do if I encounter a bug?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Please report bugs through the "Help" menu or email
+                  support@penwise.ai with details about the issue. Include
+                  screenshots if possible.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>How can I contact customer support?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  You can reach us via email at support@penwise.ai, through the
+                  in-app chat support (Pro and Team plans), or via our contact
+                  form. We typically respond within 24 hours.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What browsers are supported?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  Penwise works best on the latest versions of Chrome, Firefox,
+                  Safari, and Edge. We recommend keeping your browser updated
+                  for optimal performance.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Safety Tab -->
+        <div class="faq-content hidden" data-content="safety">
+          <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>How is my data protected?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  We use industry-standard encryption (AES-256) for data at rest
+                  and TLS 1.3 for data in transit. All data is stored on secure,
+                  GDPR-compliant servers with regular backups.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>Do you use my content to train your AI?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  No, we never use your content to train our AI models. Your
+                  work remains private and is only accessed by you and anyone
+                  you choose to share it with.
+                </div>
+              </div>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item rounded-lg">
+              <button
+                class="faq-question w-full flex items-center justify-between p-5 text-left font-medium text-black hover:bg-gray-50 transition-colors"
+              >
+                <span>What is your content moderation policy?</span>
+                <svg
+                  class="faq-icon w-5 h-5 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19 9l-7 7-7-7"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></path>
+                </svg>
+              </button>
+              <div
+                class="faq-answer max-h-0 overflow-hidden transition-all duration-300"
+              >
+                <div class="p-5 pt-0 text-gray-600">
+                  We believe in creative freedom. We do not moderate private
+                  content. Our AI refuses to generate content that violates our
+                  Terms of Service (illegal content, explicit harm).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- CTA Section 
-<section class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden" style="background-image: url('{% static 'assets/image/footer/bg.png' %}')">
-<!-- Dark Overlay -->
-<div class="absolute inset-0 bg-black bg-opacity-60"></div>
-<div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center" data-aos="fade-up">
-<!-- Heading -->
-<h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
-					Bring your Novel to Life - Let<br/>Penwise Be Your Writing Partner
-				</h2>
-<!-- Subtext -->
-<p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed">
-					Start writing your novel today with Penwise — get Penwise-powered
-					assistance for plotting, drafting, and refining every chapter
-					effortlessly.
-				</p>
-<!-- CTA Button -->
-<button class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl">
-					Start My Novel For Free
-					<svg class="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
+
+<!-- CTA Section  -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url(&quot;{% static 'assets/image/footer/bg.png' %}&quot;)"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div
+    class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
+    data-aos="fade-up"
+  >
+    <!-- Heading -->
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Bring your Novel to Life - Let<br />Penwise Be Your Writing Partner
+    </h2>
+    <!-- Subtext -->
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Start writing your novel today with Penwise — get Penwise-powered
+      assistance for plotting, drafting, and refining every chapter
+      effortlessly.
+    </p>
+    <!-- CTA Button -->
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Start My Novel For Free
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
 </section>
- Footer Section 
-
-
-
 
 <script>
-			// Mobile menu toggle logic is handled in script.js
+  // Mobile menu toggle logic is handled in script.js
 
-			// FAQ Tab Switching
-			const faqTabs = document.querySelectorAll(".faq-tab");
-			const faqContents = document.querySelectorAll(".faq-content");
+  // FAQ Tab Switching
+  const faqTabs = document.querySelectorAll(".faq-tab");
+  const faqContents = document.querySelectorAll(".faq-content");
 
-			faqTabs.forEach((tab) => {
-				tab.addEventListener("click", () => {
-					const targetTab = tab.dataset.tab;
+  faqTabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const targetTab = tab.dataset.tab;
 
-					// Remove active state from all tabs
-					faqTabs.forEach((t) => {
-						t.classList.remove("text-black", "border-black");
-						t.classList.add("text-gray-500", "border-transparent");
-					});
+      // Remove active state from all tabs
+      faqTabs.forEach((t) => {
+        t.classList.remove("text-black", "border-black");
+        t.classList.add("text-gray-500", "border-transparent");
+      });
 
-					// Add active state to clicked tab
-					tab.classList.remove("text-gray-500", "border-transparent");
-					tab.classList.add("text-black", "border-black");
+      // Add active state to clicked tab
+      tab.classList.remove("text-gray-500", "border-transparent");
+      tab.classList.add("text-black", "border-black");
 
-					// Hide all content
-					faqContents.forEach((content) => {
-						content.classList.add("hidden");
-					});
+      // Hide all content
+      faqContents.forEach((content) => {
+        content.classList.add("hidden");
+      });
 
-					// Show target content
-					const targetContent = document.querySelector(
-						`[data-content="${targetTab}"]`
-					);
-					if (targetContent) {
-						targetContent.classList.remove("hidden");
-					}
-				});
-			});
+      // Show target content
+      const targetContent = document.querySelector(
+        `[data-content="${targetTab}"]`
+      );
+      if (targetContent) {
+        targetContent.classList.remove("hidden");
+      }
+    });
+  });
 
-			// FAQ Accordion
-			const faqQuestions = document.querySelectorAll(".faq-question");
+  // FAQ Accordion
+  const faqQuestions = document.querySelectorAll(".faq-question");
 
-			faqQuestions.forEach((question) => {
-				question.addEventListener("click", () => {
-					const faqItem = question.parentElement;
-					const answer = question.nextElementSibling;
-					const icon = question.querySelector(".faq-icon");
+  faqQuestions.forEach((question) => {
+    question.addEventListener("click", () => {
+      const faqItem = question.parentElement;
+      const answer = question.nextElementSibling;
+      const icon = question.querySelector(".faq-icon");
 
-					// Toggle answer
-					if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
-						answer.style.maxHeight = "0px";
-						icon.style.transform = "rotate(0deg)";
-					} else {
-						answer.style.maxHeight = answer.scrollHeight + "px";
-						icon.style.transform = "rotate(180deg)";
-					}
-				});
-			});
-		</script>
+      // Toggle answer
+      if (answer.style.maxHeight && answer.style.maxHeight !== "0px") {
+        answer.style.maxHeight = "0px";
+        icon.style.transform = "rotate(0deg)";
+      } else {
+        answer.style.maxHeight = answer.scrollHeight + "px";
+        icon.style.transform = "rotate(180deg)";
+      }
+    });
+  });
+</script>
 {% endblock %}

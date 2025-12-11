@@ -1,0 +1,280 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Penwise -
+Newsletter{% endblock %} {% block meta_description %}Subscribe to the Penwise
+newsletter for writing tips, updates, and exclusive content.{% endblock %} {%
+block content %}
+
+<!-- Hero Section -->
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
+  style="
+    background-image: url('{% static \'assets/image/hero/hero2.png\' %}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <!-- Container for content with profile badges -->
+  <div class="flex flex-col lg:flex-row items-center justify-center gap-10">
+    <!-- Center Content -->
+    <div class="z-20 space-y-6" data-aos="fade-up">
+      <h1
+        class="text-3xl text-center t lg:text-[56px] font-semibold leading-tight tracking-tight"
+      >
+        Stay Updated with Penwise
+      </h1>
+      <p
+        class="text-base lg:text-[16px] text-gray-300 text-center max-w-3xl lg:max-w-full leading-relaxed"
+      >
+        Subscribe to our newsletter and get the latest writing tips, product
+        updates, and exclusive content delivered to your inbox.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter Signup Section -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
+        Join Our Newsletter
+      </h2>
+      <p class="text-[#64748B] text-sm md:text-base">
+        Get weekly insights, writing tips, and exclusive updates from the
+        Penwise team
+      </p>
+    </div>
+    <div
+      class="bg-white rounded-3xl shadow-sm p-8 md:p-12 border border-gray-100"
+      data-aos="fade-up"
+    >
+      <form class="space-y-6" method="post" action="#">
+        {% csrf_token %}
+        <div class="space-y-4">
+          <!-- Name Input -->
+          <div class="relative">
+            <input
+              class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+              placeholder="Your Name*"
+              type="text"
+              name="name"
+              required
+            />
+            <div
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <!-- Email Input -->
+          <div class="relative">
+            <input
+              class="w-full pl-4 pr-10 py-3.5 bg-white border border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-1 focus:ring-black transition-all"
+              placeholder="Your Email*"
+              type="email"
+              name="email"
+              required
+            />
+            <div
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewbox="0 0 24 24"
+              >
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <button
+          class="w-full py-4 bg-[#1E1E1E] text-white font-medium rounded-lg hover:bg-black transition-colors flex items-center justify-center gap-2 group"
+          type="submit"
+        >
+          Subscribe to Newsletter
+          <svg
+            class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M14 5l7 7m0 0l-7 7m7-7H3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="py-16 md:py-24 bg-[#F8FAFC]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0F172A] mb-4">
+        What You'll Get
+      </h2>
+      <p class="text-[#64748B] text-sm md:text-base">
+        Our newsletter is packed with valuable content for writers
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Benefit 1 -->
+      <div
+        class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
+        data-aos="fade-right"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#0F172A] mb-4">
+          Writing Tips & Techniques
+        </h3>
+        <p class="text-[#64748B] text-sm leading-relaxed">
+          Weekly insights on improving your writing skills, overcoming writer's
+          block, and mastering different genres.
+        </p>
+      </div>
+      <!-- Benefit 2 -->
+      <div
+        class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
+        data-aos="fade-up"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#0F172A] mb-4">Product Updates</h3>
+        <p class="text-[#64748B] text-sm leading-relaxed">
+          Be the first to know about new features, improvements, and exciting
+          updates to the Penwise platform.
+        </p>
+      </div>
+      <!-- Benefit 3 -->
+      <div
+        class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300"
+        data-aos="fade-left"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-full flex items-center justify-center mb-4"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-bold text-[#0F172A] mb-4">Exclusive Content</h3>
+        <p class="text-[#64748B] text-sm leading-relaxed">
+          Access to subscriber-only resources, templates, and early access to
+          new tools and features.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section
+  class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
+  style="background-image: url('{% static \'assets/image/footer/bg.png\' %}')"
+>
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <div
+    class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center"
+    data-aos="fade-up"
+  >
+    <!-- Heading -->
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight"
+    >
+      Ready to Start Writing Better?
+    </h2>
+    <!-- Subtext -->
+    <p
+      class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed"
+    >
+      Join thousands of writers who are already using Penwise to create amazing
+      content.
+    </p>
+    <!-- CTA Button -->
+    <button
+      class="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black font-semibold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl"
+    >
+      Start Writing For Free
+      <svg
+        class="w-4 h-4 sm:w-5 sm:h-5"
+        fill="currentColor"
+        viewbox="0 0 20 20"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+          fill-rule="evenodd"
+        ></path>
+      </svg>
+    </button>
+  </div>
+</section>
+
+{% endblock %}
