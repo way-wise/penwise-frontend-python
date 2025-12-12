@@ -47,5 +47,164 @@
     </script>
     <script src="{% static 'script.js' %}"></script>
     {% block extra_scripts %}{% endblock %}
+
+    <!-- Newsletter Popup Modal -->
+    <div id="newsletterPopup" class="fixed inset-0 z-[9999] hidden items-center justify-center p-4" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(4px);">
+      <div class="relative bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 transform transition-all duration-300 scale-95 opacity-0" id="newsletterModal">
+        <!-- Close Button -->
+        <button id="closeNewsletterPopup" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors" aria-label="Close">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+
+        <!-- Content -->
+        <div class="text-center">
+          <!-- Icon/Badge -->
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-black rounded-full mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+
+          <!-- Headline -->
+          <h2 class="text-2xl md:text-3xl font-bold text-[#0F172A] mb-3">
+            Join Our Newsletter to Get an Extra <span class="text-green-700">5% Off</span>
+          </h2>
+
+          <!-- Sub-headline -->
+          <p class="text-sm md:text-base text-[#64748B] mb-6 leading-relaxed">
+            Sign up for the latest news and exclusives. As a welcome gift, take an extra 5% off your first order, even on sale items.
+          </p>
+
+          <!-- Form -->
+          <form id="newsletterForm" class="space-y-4" method="post" action="/newsletter/">
+            {% csrf_token %}
+            <!-- Email Input -->
+            <div class="relative">
+              <input 
+                type="email" 
+                id="newsletterEmail" 
+                name="email" 
+                placeholder="Enter your email address" 
+                required
+                class="w-full px-4 py-3.5 bg-white border-2 border-gray-200 rounded-lg text-sm text-[#0F172A] placeholder:text-[#94A3B8] focus:outline-none focus:border-black focus:ring-2 focus:ring-black transition-all"
+              />
+              <div class="absolute right-3 top-1/2 -translate-y-1/2 text-[#94A3B8] pointer-events-none">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                </svg>
+              </div>
+            </div>
+
+            <!-- CTA Button -->
+            <button 
+              type="submit" 
+              class="w-full py-3.5 bg-black text-white font-semibold rounded-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 group"
+            >
+              Subscribe & Unlock Discount
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Footer/Micro-copy -->
+          <p class="text-xs text-[#94A3B8] mt-4 leading-relaxed">
+            By clicking above, you agree to receive email updates. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Newsletter Popup Logic
+      document.addEventListener('DOMContentLoaded', function() {
+        const newsletterPopup = document.getElementById('newsletterPopup');
+        const newsletterModal = document.getElementById('newsletterModal');
+        const closeBtn = document.getElementById('closeNewsletterPopup');
+        const newsletterForm = document.getElementById('newsletterForm');
+        
+        // Check if user has already subscribed or closed the popup
+        const hasSeenPopup = localStorage.getItem('newsletterPopupSeen');
+        const hasSubscribed = localStorage.getItem('newsletterSubscribed');
+        
+        function showPopup() {
+          if (hasSubscribed === 'true') return; // Don't show if already subscribed
+          
+          newsletterPopup.classList.remove('hidden');
+          newsletterPopup.classList.add('flex');
+          
+          // Trigger animation
+          setTimeout(() => {
+            newsletterModal.classList.remove('scale-95', 'opacity-0');
+            newsletterModal.classList.add('scale-100', 'opacity-100');
+          }, 10);
+          
+          document.body.style.overflow = 'hidden';
+        }
+        
+        function hidePopup() {
+          newsletterModal.classList.remove('scale-100', 'opacity-100');
+          newsletterModal.classList.add('scale-95', 'opacity-0');
+          
+          setTimeout(() => {
+            newsletterPopup.classList.add('hidden');
+            newsletterPopup.classList.remove('flex');
+            document.body.style.overflow = '';
+          }, 300);
+          
+          localStorage.setItem('newsletterPopupSeen', 'true');
+        }
+        
+        // Show popup after 3 seconds if not seen before
+        if (hasSeenPopup !== 'true' && hasSubscribed !== 'true') {
+          setTimeout(showPopup, 3000);
+        }
+        
+        // Close button
+        closeBtn.addEventListener('click', hidePopup);
+        
+        // Close on overlay click
+        newsletterPopup.addEventListener('click', function(e) {
+          if (e.target === newsletterPopup) {
+            hidePopup();
+          }
+        });
+        
+        // Handle form submission
+        newsletterForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const email = document.getElementById('newsletterEmail').value;
+          
+          // Here you would typically send to your backend
+          // For now, we'll just mark as subscribed and hide popup
+          console.log('Newsletter subscription:', email);
+          
+          // Mark as subscribed
+          localStorage.setItem('newsletterSubscribed', 'true');
+          
+          // Show success message
+          newsletterModal.innerHTML = `
+            <div class="text-center py-8">
+              <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h2 class="text-2xl font-bold text-[#0F172A] mb-2">Thank You!</h2>
+              <p class="text-[#64748B] mb-4">Check your email for your 5% discount code.</p>
+              <button onclick="this.closest('#newsletterPopup').classList.add('hidden'); this.closest('#newsletterPopup').classList.remove('flex'); document.body.style.overflow = '';" class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
+                Close
+              </button>
+            </div>
+          `;
+          
+          // Auto-close after 3 seconds
+          setTimeout(hidePopup, 3000);
+        });
+      });
+    </script>
   </body>
 </html>
