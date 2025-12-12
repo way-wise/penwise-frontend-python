@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	function openMobileMenu() {
 		mobileMenu.classList.remove("translate-x-full");
 		if (mobileMenuOverlay) {
+			// Handle both hidden class and opacity-based overlays
 			mobileMenuOverlay.classList.remove("hidden");
+			mobileMenuOverlay.classList.remove("opacity-0", "pointer-events-none");
+			mobileMenuOverlay.classList.add("opacity-100");
+			mobileMenuOverlay.style.pointerEvents = "auto";
 		}
 		document.body.style.overflow = "hidden";
 	}
@@ -24,7 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	function closeMobileMenu() {
 		mobileMenu.classList.add("translate-x-full");
 		if (mobileMenuOverlay) {
+			// Handle both hidden class and opacity-based overlays
 			mobileMenuOverlay.classList.add("hidden");
+			mobileMenuOverlay.classList.add("opacity-0", "pointer-events-none");
+			mobileMenuOverlay.classList.remove("opacity-100");
+			mobileMenuOverlay.style.pointerEvents = "none";
 		}
 		document.body.style.overflow = "";
 	}
