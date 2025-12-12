@@ -1,418 +1,630 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} 
+{% load static %} 
 
 {% block title %}Publishing & Copyright | Penwise{% endblock %}
 
-{% block meta_description %}Your creativity belongs to you. Discover how Penwise.ai protects your copyright and provides complete publishing freedom.{% endblock %}
+{% block meta_description %}Your creativity
+belongs to you. Discover how Penwise.ai protects your copyright and provides
+complete publishing freedom.{% endblock %}
 
 {% block content %}
-<!-- Navigation -->
 
-<!-- Mobile Menu -->
 
 <!-- Hero Section -->
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-16 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto px-6 relative z-20 text-center">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6">
-					⚖️ Legal &amp; Rights
-				</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight">
-					Publishing &amp; Copyright
-				</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-					Your creativity belongs to you. Discover how Penwise.ai protects your
-					copyright and provides complete publishing freedom.
-				</p>
-</div>
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-16 bg-black text-white overflow-hidden"
+  style="
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto px-6 relative z-20 text-center">
+    <div
+      class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6"
+    >
+      ⚖️ Legal &amp; Rights
+    </div>
+    <h1
+      class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight"
+    >
+      Publishing &amp; Copyright
+    </h1>
+    <p
+      class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+    >
+      Your creativity belongs to you. Discover how Penwise.ai protects your
+      copyright and provides complete publishing freedom.
+    </p>
+  </div>
 </section>
- User Copyright Ownership 
+<!-- User Copyright Ownership  -->
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="max-w-3xl mx-auto text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-						User Copyright Ownership
-					</h2>
-<p class="text-lg text-gray-700 leading-relaxed mb-4">
-						All books and written content you create on Penwise.ai are
-						exclusively owned by you. Penwise.ai does not claim any ownership or
-						license to your creations. By default under copyright law, the
-						author of a work retains its rights from the moment the work is
-						fixed in a tangible form.
-					</p>
-<p class="text-lg text-gray-900 font-medium">
-						In short, your creative work belongs to you and you alone;
-						Penwise.ai has no claim or interest in it.
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-<div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6">
-							🔒
-						</div>
-<h3 class="text-xl font-bold mb-3">Exclusive Ownership</h3>
-<p class="text-gray-600">
-							You retain 100% of the rights to your works created with
-							Penwise.ai, without any limitations or restrictions from our
-							platform.
-						</p>
-</div>
-<div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-<div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6">
-							🛡️
-						</div>
-<h3 class="text-xl font-bold mb-3">Automatic Protection</h3>
-<p class="text-gray-600">
-							Your copyright is automatically protected from the moment of
-							creation and fixation of your content in digital form.
-						</p>
-</div>
-<div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300">
-<div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6">
-							🚫
-						</div>
-<h3 class="text-xl font-bold mb-3">No Claims by Platform</h3>
-<p class="text-gray-600">
-							Penwise.ai makes no claims, demands no licenses, and has no
-							interest in your literary creations or intellectual property.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+        User Copyright Ownership
+      </h2>
+      <p class="text-lg text-gray-700 leading-relaxed mb-4">
+        All books and written content you create on Penwise.ai are exclusively
+        owned by you. Penwise.ai does not claim any ownership or license to your
+        creations. By default under copyright law, the author of a work retains
+        its rights from the moment the work is fixed in a tangible form.
+      </p>
+      <p class="text-lg text-gray-900 font-medium">
+        In short, your creative work belongs to you and you alone; Penwise.ai
+        has no claim or interest in it.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-2xl mb-6"
+        >
+          🔒
+        </div>
+        <h3 class="text-xl font-bold mb-3">Exclusive Ownership</h3>
+        <p class="text-gray-600">
+          You retain 100% of the rights to your works created with Penwise.ai,
+          without any limitations or restrictions from our platform.
+        </p>
+      </div>
+      <div
+        class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-green-600 text-2xl mb-6"
+        >
+          🛡️
+        </div>
+        <h3 class="text-xl font-bold mb-3">Automatic Protection</h3>
+        <p class="text-gray-600">
+          Your copyright is automatically protected from the moment of creation
+          and fixation of your content in digital form.
+        </p>
+      </div>
+      <div
+        class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-all duration-300"
+      >
+        <div
+          class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 text-2xl mb-6"
+        >
+          🚫
+        </div>
+        <h3 class="text-xl font-bold mb-3">No Claims by Platform</h3>
+        <p class="text-gray-600">
+          Penwise.ai makes no claims, demands no licenses, and has no interest
+          in your literary creations or intellectual property.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Publishing Freedom 
+<!-- Publishing Freedom -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div>
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-							Publishing Freedom
-						</h2>
-<p class="text-gray-700 leading-relaxed mb-6">
-							Because you hold the full copyright to your work, you are entirely
-							free to publish, distribute, and monetize it however you choose.
-							Penwise.ai imposes no restrictions on where or how you share your
-							books.
-						</p>
-<p class="text-gray-700 leading-relaxed mb-6">
-							You may sell or give away your work in any format — e-book,
-							print-on-demand, audiobook, or otherwise — through any channel,
-							retailer, or website of your choice. All royalties or earnings
-							from sales belong to you.
-						</p>
-<div class="bg-white p-6 rounded-xl border-l-4 border-black shadow-sm">
-<p class="font-medium text-gray-900">
-								Complete publishing freedom: sell where you want, when you want,
-								how you want, without any restrictions.
-							</p>
-</div>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-<h3 class="text-xl font-bold mb-6">Your Rights Include:</h3>
-<ul class="space-y-4">
-<li class="flex items-start gap-3">
-<span class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm">✓</span>
-<span class="text-gray-700">Publication on all platforms and distribution channels</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm">✓</span>
-<span class="text-gray-700">Commercialization in all formats (digital, print,
-									audio)</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm">✓</span>
-<span class="text-gray-700">Retention of 100% of generated revenue</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm">✓</span>
-<span class="text-gray-700">Complete control over pricing and sales terms</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm">✓</span>
-<span class="text-gray-700">Freedom to assign or license to third parties</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm">✓</span>
-<span class="text-gray-700">International distribution without platform approval</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+          Publishing Freedom
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Because you hold the full copyright to your work, you are entirely
+          free to publish, distribute, and monetize it however you choose.
+          Penwise.ai imposes no restrictions on where or how you share your
+          books.
+        </p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          You may sell or give away your work in any format — e-book,
+          print-on-demand, audiobook, or otherwise — through any channel,
+          retailer, or website of your choice. All royalties or earnings from
+          sales belong to you.
+        </p>
+        <div class="bg-white p-6 rounded-xl border-l-4 border-black shadow-sm">
+          <p class="font-medium text-gray-900">
+            Complete publishing freedom: sell where you want, when you want, how
+            you want, without any restrictions.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+        <h3 class="text-xl font-bold mb-6">Your Rights Include:</h3>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700"
+              >Publication on all platforms and distribution channels</span
+            >
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700"
+              >Commercialization in all formats (digital, print, audio)</span
+            >
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700"
+              >Retention of 100% of generated revenue</span
+            >
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700"
+              >Complete control over pricing and sales terms</span
+            >
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700"
+              >Freedom to assign or license to third parties</span
+            >
+          </li>
+          <li class="flex items-start gap-3">
+            <span
+              class="flex-shrink-0 w-6 h-6 bg-green-100 rounded-full flex items-center justify-center text-green-600 text-sm"
+              >✓</span
+            >
+            <span class="text-gray-700"
+              >International distribution without platform approval</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
- Legal Protection and Responsibilities 
+<!-- Legal Protection and Responsibilities -->
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-16">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-						Legal Protection and Responsibilities
-					</h2>
-<p class="text-gray-600 max-w-3xl mx-auto">
-						Your books are automatically protected by copyright law as soon as
-						you write them. However, with ownership comes responsibility.
-					</p>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-<div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-<div class="font-bold text-lg mb-2">Automatic Legal Protection</div>
-<p class="text-sm text-gray-600">
-							Your works automatically benefit from copyright protection upon
-							creation, granting you exclusive rights recognized by law.
-						</p>
-</div>
-<div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-<div class="font-bold text-lg mb-2">Originality Requirement</div>
-<p class="text-sm text-gray-600">
-							You must ensure your content is entirely original or that you
-							possess appropriate licenses for any third-party material used.
-						</p>
-</div>
-<div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-<div class="font-bold text-lg mb-2">Editorial Responsibility</div>
-<p class="text-sm text-gray-600">
-							You assume full responsibility for compliance with applicable
-							laws, ethical standards, and regulatory requirements.
-						</p>
-</div>
-<div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
-<div class="font-bold text-lg mb-2">Tools Without Control</div>
-<p class="text-sm text-gray-600">
-							Penwise.ai provides creation and publishing tools but exercises no
-							editorial control over the content you produce.
-						</p>
-</div>
-</div>
-<div class="bg-amber-50 rounded-2xl p-8 border border-amber-100">
-<h3 class="text-xl font-bold mb-6 flex items-center gap-2">
-<span class="text-amber-600">⚠️</span> Your Legal Responsibilities
-						Include:
-					</h3>
-<div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
-<div class="flex items-start gap-3">
-<span class="text-amber-600 mt-1">•</span>
-<span class="text-gray-700">Verification of content originality and legality</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="text-amber-600 mt-1">•</span>
-<span class="text-gray-700">Obtaining necessary permissions for third-party material</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="text-amber-600 mt-1">•</span>
-<span class="text-gray-700">Compliance with defamation and personality rights laws</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="text-amber-600 mt-1">•</span>
-<span class="text-gray-700">Adherence to regulations in your publication territories</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="text-amber-600 mt-1">•</span>
-<span class="text-gray-700">Management of tax implications related to
-								commercialization</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="text-amber-600 mt-1">•</span>
-<span class="text-gray-700">Ensuring content meets platform-specific guidelines where
-								published</span>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+        Legal Protection and Responsibilities
+      </h2>
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        Your books are automatically protected by copyright law as soon as you
+        write them. However, with ownership comes responsibility.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+        <div class="font-bold text-lg mb-2">Automatic Legal Protection</div>
+        <p class="text-sm text-gray-600">
+          Your works automatically benefit from copyright protection upon
+          creation, granting you exclusive rights recognized by law.
+        </p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+        <div class="font-bold text-lg mb-2">Originality Requirement</div>
+        <p class="text-sm text-gray-600">
+          You must ensure your content is entirely original or that you possess
+          appropriate licenses for any third-party material used.
+        </p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+        <div class="font-bold text-lg mb-2">Editorial Responsibility</div>
+        <p class="text-sm text-gray-600">
+          You assume full responsibility for compliance with applicable laws,
+          ethical standards, and regulatory requirements.
+        </p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+        <div class="font-bold text-lg mb-2">Tools Without Control</div>
+        <p class="text-sm text-gray-600">
+          Penwise.ai provides creation and publishing tools but exercises no
+          editorial control over the content you produce.
+        </p>
+      </div>
+    </div>
+    <div class="bg-amber-50 rounded-2xl p-8 border border-amber-100">
+      <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+        <span class="text-amber-600">⚠️</span> Your Legal Responsibilities
+        Include:
+      </h3>
+      <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+        <div class="flex items-start gap-3">
+          <span class="text-amber-600 mt-1">•</span>
+          <span class="text-gray-700"
+            >Verification of content originality and legality</span
+          >
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-amber-600 mt-1">•</span>
+          <span class="text-gray-700"
+            >Obtaining necessary permissions for third-party material</span
+          >
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-amber-600 mt-1">•</span>
+          <span class="text-gray-700"
+            >Compliance with defamation and personality rights laws</span
+          >
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-amber-600 mt-1">•</span>
+          <span class="text-gray-700"
+            >Adherence to regulations in your publication territories</span
+          >
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-amber-600 mt-1">•</span>
+          <span class="text-gray-700"
+            >Management of tax implications related to commercialization</span
+          >
+        </div>
+        <div class="flex items-start gap-3">
+          <span class="text-amber-600 mt-1">•</span>
+          <span class="text-gray-700"
+            >Ensuring content meets platform-specific guidelines where
+            published</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- FAQ 
+<!-- FAQ -->
 <section class="py-16 bg-gray-50">
-<div class="max-w-4xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-<p class="text-gray-600">
-						Common questions about AI, copyright, and publishing
-					</p>
-</div>
-<div class="space-y-4">
-<div class="bg-white rounded-xl shadow-sm overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
-							Can I publish a book written with AI?
-							<svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-4 text-gray-600">
-							Yes, absolutely. There are no laws preventing you from publishing
-							books written with the assistance of AI tools. Many authors use AI
-							for brainstorming, outlining, drafting, and editing.
-						</div>
-</div>
-<div class="bg-white rounded-xl shadow-sm overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
-							Is it legal to sell an AI-written book?
-							<svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-4 text-gray-600">
-							Yes, it is legal to sell books written with AI assistance. You own
-							the content you produce using Penwise, and you have the right to
-							commercialize it as you see fit.
-						</div>
-</div>
-<div class="bg-white rounded-xl shadow-sm overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
-							Do I own the rights to the books written by AI?
-							<svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-4 text-gray-600">
-							Yes. As the creator using the tool, you retain ownership of the
-							output generated by Penwise for your projects. Penwise claims no
-							copyright over your work.
-						</div>
-</div>
-<div class="bg-white rounded-xl shadow-sm overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
-							Can I copyright a book written with AI?
-							<svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-4 text-gray-600">
-							Copyright laws regarding AI-generated content are evolving.
-							Currently, in the US, copyright protects human authorship. If you
-							use AI as a tool but significantly edit, arrange, and curate the
-							content, your human contributions are copyrightable. Purely
-							AI-generated content without human input may not be copyrightable.
-							We recommend consulting a legal professional for specific advice.
-						</div>
-</div>
-<div class="bg-white rounded-xl shadow-sm overflow-hidden">
-<button class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors" onclick="toggleFaq(this)">
-							Do publishers accept AI-assisted writing?
-							<svg class="w-5 h-5 transform transition-transform duration-200" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-<div class="hidden px-6 pb-4 text-gray-600">
-							Policies vary by publisher. Some are open to it, while others may
-							have restrictions. It is important to be transparent and check the
-							specific submission guidelines of any publisher you approach.
-						</div>
-</div>
-</div>
-</div>
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
+      <p class="text-gray-600">
+        Common questions about AI, copyright, and publishing
+      </p>
+    </div>
+    <div class="space-y-4">
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq(this)"
+        >
+          Can I publish a book written with AI?
+          <svg
+            class="w-5 h-5 transform transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Yes, absolutely. There are no laws preventing you from publishing
+          books written with the assistance of AI tools. Many authors use AI for
+          brainstorming, outlining, drafting, and editing.
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq(this)"
+        >
+          Is it legal to sell an AI-written book?
+          <svg
+            class="w-5 h-5 transform transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Yes, it is legal to sell books written with AI assistance. You own the
+          content you produce using Penwise, and you have the right to
+          commercialize it as you see fit.
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq(this)"
+        >
+          Do I own the rights to the books written by AI?
+          <svg
+            class="w-5 h-5 transform transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Yes. As the creator using the tool, you retain ownership of the output
+          generated by Penwise for your projects. Penwise claims no copyright
+          over your work.
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq(this)"
+        >
+          Can I copyright a book written with AI?
+          <svg
+            class="w-5 h-5 transform transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Copyright laws regarding AI-generated content are evolving. Currently,
+          in the US, copyright protects human authorship. If you use AI as a
+          tool but significantly edit, arrange, and curate the content, your
+          human contributions are copyrightable. Purely AI-generated content
+          without human input may not be copyrightable. We recommend consulting
+          a legal professional for specific advice.
+        </div>
+      </div>
+      <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+        <button
+          class="w-full px-6 py-4 text-left flex items-center justify-between font-semibold hover:bg-gray-50 transition-colors"
+          onclick="toggleFaq(this)"
+        >
+          Do publishers accept AI-assisted writing?
+          <svg
+            class="w-5 h-5 transform transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M19 9l-7 7-7-7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden px-6 pb-4 text-gray-600">
+          Policies vary by publisher. Some are open to it, while others may have
+          restrictions. It is important to be transparent and check the specific
+          submission guidelines of any publisher you approach.
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
- Explore More 
+<!-- Explore More -->
 <section class="py-16 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl font-bold mb-4">
-						Navigate Publishing &amp; Copyright
-					</h2>
-<p class="text-gray-600">
-						Understand your rights and learn best practices for protecting your
-						work
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2">Copyright Basics</h3>
-<p class="text-sm text-gray-600">
-							Protect your intellectual property with confidence.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2">Stay Original</h3>
-<p class="text-sm text-gray-600">
-							Learn how to avoid plagiarism while keeping your style unique.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2">Professional Standards</h3>
-<p class="text-sm text-gray-600">
-							Meet industry expectations with polished work.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200" href="/our-mission-and-vision">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2">Our Mission</h3>
-<p class="text-sm text-gray-600">
-							Discover why supporting creators is at the heart of Penwise.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200" href="/literary-glossary">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2">Literary Glossary</h3>
-<p class="text-sm text-gray-600">
-							Understand key publishing terms every writer should know.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200" href="/pricing">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2">Pricing &amp; Value</h3>
-<p class="text-sm text-gray-600">
-							Learn how publishing services fit different budgets.
-						</p>
-</a>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">
+        Navigate Publishing &amp; Copyright
+      </h2>
+      <p class="text-gray-600">
+        Understand your rights and learn best practices for protecting your work
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Copyright Basics</h3>
+        <p class="text-sm text-gray-600">
+          Protect your intellectual property with confidence.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Stay Original</h3>
+        <p class="text-sm text-gray-600">
+          Learn how to avoid plagiarism while keeping your style unique.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Professional Standards</h3>
+        <p class="text-sm text-gray-600">
+          Meet industry expectations with polished work.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200"
+        href="/our-mission-and-vision"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Our Mission</h3>
+        <p class="text-sm text-gray-600">
+          Discover why supporting creators is at the heart of Penwise.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200"
+        href="/literary-glossary"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Literary Glossary</h3>
+        <p class="text-sm text-gray-600">
+          Understand key publishing terms every writer should know.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all border border-transparent hover:border-gray-200"
+        href="/pricing"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Pricing &amp; Value</h3>
+        <p class="text-sm text-gray-600">
+          Learn how publishing services fit different budgets.
+        </p>
+      </a>
+    </div>
+  </div>
 </section>
-  
 
 <script>
-			// Mobile Menu
-			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			const closeMenuBtn = document.getElementById("closeMenuBtn");
+  // Mobile Menu
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
 
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.remove("translate-x-full");
-			});
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
 
-			closeMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.add("translate-x-full");
-			});
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
 
-			// FAQ Toggle
-			function toggleFaq(button) {
-				const content = button.nextElementSibling;
-				const icon = button.querySelector("svg");
+  // FAQ Toggle
+  function toggleFaq(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector("svg");
 
-				if (content.classList.contains("hidden")) {
-					content.classList.remove("hidden");
-					icon.style.transform = "rotate(180deg)";
-				} else {
-					content.classList.add("hidden");
-					icon.style.transform = "rotate(0deg)";
-				}
-			}
-		</script>
+    if (content.classList.contains("hidden")) {
+      content.classList.remove("hidden");
+      icon.style.transform = "rotate(180deg)";
+    } else {
+      content.classList.add("hidden");
+      icon.style.transform = "rotate(0deg)";
+    }
+  }
+</script>
 {% endblock %}

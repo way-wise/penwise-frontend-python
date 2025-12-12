@@ -1,493 +1,727 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} 
+{% load static %} 
 
 {% block title %}Complete Guide to Literary Genres | Penwise{% endblock %}
 
 {% block meta_description %}A comprehensive academic exploration of literary genres, from ancient epics to contemporary digital narratives{% endblock %}
 
 {% block content %}
-<!-- Navigation -->
-
-<!-- Mobile Menu -->
 
 <!-- Hero Section -->
-<section class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-16 bg-black text-white overflow-hidden" style="
-				background-image: url('{% static 'assets/image/hero/herobackground.png' %}');
-				background-size: cover;
-				background-position: center;
-				background-repeat: no-repeat;
-			">
-<div class="max-w-7xl mx-auto px-6 relative">
-<div class="relative z-20 text-center">
-<div class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6">
-						📚 Academic Exploration
-					</div>
-<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight">
-						Complete Guide to<br/>Literary Genres
-					</h1>
-<p class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-						Navigate the vast landscape of literature with comprehensive
-						insights into each genre's characteristics, historical development,
-						theoretical frameworks, and creative possibilities.
-					</p>
-<!-- Stats -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12">
-<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-<div class="text-3xl font-bold mb-2">50+</div>
-<div class="text-gray-300 text-sm">Genres Covered</div>
-</div>
-<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-<div class="text-3xl font-bold mb-2">500+</div>
-<div class="text-gray-300 text-sm">Authors Featured</div>
-</div>
-<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-<div class="text-3xl font-bold mb-2">200+</div>
-<div class="text-gray-300 text-sm">Critical Concepts</div>
-</div>
-<div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-<div class="text-3xl font-bold mb-2">100+</div>
-<div class="text-gray-300 text-sm">Writing Techniques</div>
-</div>
-</div>
-<button class="px-8 py-3.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2" onclick="document.getElementById('intro-section').scrollIntoView({behavior: 'smooth'})">
-						Explore Literary Theory
-						<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20">
-<path clip-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" fill-rule="evenodd"></path>
-</svg>
-</button>
-</div>
-</div>
+<section
+  class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-16 bg-black text-white overflow-hidden"
+  style="
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  "
+>
+  <div class="max-w-7xl mx-auto px-6 relative">
+    <div class="relative z-20 text-center">
+      <div
+        class="inline-block bg-white text-black px-4 py-2 rounded-full text-sm font-normal mb-6"
+      >
+        📚 Academic Exploration
+      </div>
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-[56px] font-semibold leading-tight mb-6 tracking-tight"
+      >
+        Complete Guide to<br />Literary Genres
+      </h1>
+      <p
+        class="text-base md:text-lg lg:text-[16px] text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed"
+      >
+        Navigate the vast landscape of literature with comprehensive insights
+        into each genre's characteristics, historical development, theoretical
+        frameworks, and creative possibilities.
+      </p>
+      <!-- Stats -->
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mb-12"
+      >
+        <div
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+        >
+          <div class="text-3xl font-bold mb-2">50+</div>
+          <div class="text-gray-300 text-sm">Genres Covered</div>
+        </div>
+        <div
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+        >
+          <div class="text-3xl font-bold mb-2">500+</div>
+          <div class="text-gray-300 text-sm">Authors Featured</div>
+        </div>
+        <div
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+        >
+          <div class="text-3xl font-bold mb-2">200+</div>
+          <div class="text-gray-300 text-sm">Critical Concepts</div>
+        </div>
+        <div
+          class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20"
+        >
+          <div class="text-3xl font-bold mb-2">100+</div>
+          <div class="text-gray-300 text-sm">Writing Techniques</div>
+        </div>
+      </div>
+      <button
+        class="px-8 py-3.5 text-[16px] font-semibold bg-white text-black rounded-full hover:bg-gray-100 transition-all duration-300 hover:shadow-xl inline-flex items-center justify-center gap-2"
+        onclick="document.getElementById('intro-section').scrollIntoView({behavior: 'smooth'})"
+      >
+        Explore Literary Theory
+        <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 20 20">
+          <path
+            clip-rule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
 </section>
 <!-- Introduction Section -->
 <section class="py-16 md:py-24 bg-white" id="intro-section">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
-							Introduction to Literary Theory and Genre Studies
-						</h2>
-<p class="text-lg text-gray-700 leading-relaxed">
-							The study of literary genres represents one of the fundamental
-							approaches to understanding literature as both an artistic medium
-							and a cultural phenomenon. Genre theory, rooted in classical
-							rhetoric and evolved through centuries of literary criticism,
-							provides us with frameworks for categorizing, analyzing, and
-							appreciating the diverse forms that human storytelling has taken.
-						</p>
-</div>
-<div class="prose prose-lg max-w-none">
-<p class="text-gray-700 leading-relaxed mb-6">
-							At its core, genre serves multiple functions: it establishes
-							expectations between authors and readers, provides structural
-							guidelines for writers, offers analytical tools for critics, and
-							creates communities of meaning around shared narrative
-							conventions. The concept of genre, however, is far from static.
-						</p>
-<p class="text-gray-700 leading-relaxed">
-							This comprehensive guide approaches literary genres from multiple
-							perspectives: formalist (examining structure and technique),
-							historical (tracing evolution and development), cultural
-							(considering social and ideological contexts), and practical
-							(offering concrete guidance for readers and writers).
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-black mb-6">
+          Introduction to Literary Theory and Genre Studies
+        </h2>
+        <p class="text-lg text-gray-700 leading-relaxed">
+          The study of literary genres represents one of the fundamental
+          approaches to understanding literature as both an artistic medium and
+          a cultural phenomenon. Genre theory, rooted in classical rhetoric and
+          evolved through centuries of literary criticism, provides us with
+          frameworks for categorizing, analyzing, and appreciating the diverse
+          forms that human storytelling has taken.
+        </p>
+      </div>
+      <div class="prose prose-lg max-w-none">
+        <p class="text-gray-700 leading-relaxed mb-6">
+          At its core, genre serves multiple functions: it establishes
+          expectations between authors and readers, provides structural
+          guidelines for writers, offers analytical tools for critics, and
+          creates communities of meaning around shared narrative conventions.
+          The concept of genre, however, is far from static.
+        </p>
+        <p class="text-gray-700 leading-relaxed">
+          This comprehensive guide approaches literary genres from multiple
+          perspectives: formalist (examining structure and technique),
+          historical (tracing evolution and development), cultural (considering
+          social and ideological contexts), and practical (offering concrete
+          guidance for readers and writers).
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Theoretical Approaches 
+<!-- Theoretical Approaches  -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<div class="inline-block bg-gray-200 text-black px-4 py-2 rounded-full text-sm font-medium mb-4">
-						THEORETICAL FOUNDATIONS
-					</div>
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-						Major Theoretical Approaches to Genre
-					</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-<h3 class="font-bold text-xl mb-3">Aristotelian Classification</h3>
-<p class="text-sm text-gray-600 mb-4">
-							Aristotle's "Poetics" established the foundational Western
-							approach to genre, distinguishing between epic, lyric, and
-							dramatic poetry based on mode of representation.
-						</p>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-<h3 class="font-bold text-xl mb-3">Frye's Archetypal Criticism</h3>
-<p class="text-sm text-gray-600 mb-4">
-							Northrop Frye proposed four basic literary modes corresponding to
-							seasons: comedy, romance, tragedy, and irony/satire.
-						</p>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-<h3 class="font-bold text-xl mb-3">Bakhtin's Dialogism</h3>
-<p class="text-sm text-gray-600 mb-4">
-							Bakhtin emphasized the novel's capacity for incorporating multiple
-							voices and genres within a single work through heteroglossia.
-						</p>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-<h3 class="font-bold text-xl mb-3">Poststructuralist Approaches</h3>
-<p class="text-sm text-gray-600 mb-4">
-							Critics like Derrida questioned the stability of genre categories,
-							viewing them as flexible cultural contracts.
-						</p>
-</div>
-<div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
-<h3 class="font-bold text-xl mb-3">Cultural Studies</h3>
-<p class="text-sm text-gray-600 mb-4">
-							Scholars emphasize genre's role in cultural communication,
-							examining how conventions reflect social values.
-						</p>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <div
+        class="inline-block bg-gray-200 text-black px-4 py-2 rounded-full text-sm font-medium mb-4"
+      >
+        THEORETICAL FOUNDATIONS
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        Major Theoretical Approaches to Genre
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+      >
+        <h3 class="font-bold text-xl mb-3">Aristotelian Classification</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Aristotle's "Poetics" established the foundational Western approach to
+          genre, distinguishing between epic, lyric, and dramatic poetry based
+          on mode of representation.
+        </p>
+      </div>
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+      >
+        <h3 class="font-bold text-xl mb-3">Frye's Archetypal Criticism</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Northrop Frye proposed four basic literary modes corresponding to
+          seasons: comedy, romance, tragedy, and irony/satire.
+        </p>
+      </div>
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+      >
+        <h3 class="font-bold text-xl mb-3">Bakhtin's Dialogism</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Bakhtin emphasized the novel's capacity for incorporating multiple
+          voices and genres within a single work through heteroglossia.
+        </p>
+      </div>
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+      >
+        <h3 class="font-bold text-xl mb-3">Poststructuralist Approaches</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Critics like Derrida questioned the stability of genre categories,
+          viewing them as flexible cultural contracts.
+        </p>
+      </div>
+      <div
+        class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+      >
+        <h3 class="font-bold text-xl mb-3">Cultural Studies</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Scholars emphasize genre's role in cultural communication, examining
+          how conventions reflect social values.
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
- Genre Map 
+<!-- Genre Map -->
 <section class="py-16 md:py-24 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<div class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium mb-4">
-						COMPLETE MAP
-					</div>
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-						Literary Territories
-					</h2>
-<p class="text-gray-600 max-w-2xl mx-auto">
-						Explore the complete spectrum of literary genres across all
-						traditions and forms
-					</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-<!-- Fiction -->
-<div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-200">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-2xl font-bold">Fiction: Narrative Literature</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-start gap-2">
-<span class="text-blue-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Literary Fiction:</strong> Character-driven
-									narratives emphasizing style and theme</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-blue-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Speculative Fiction:</strong> Science fiction,
-									fantasy, horror, magical realism</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-blue-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Genre Fiction:</strong> Mystery, thriller, romance,
-									western, adventure</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-blue-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Historical Fiction:</strong> Period narratives across
-									all eras</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-blue-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Experimental Fiction:</strong> Metafiction,
-									postmodern techniques</span>
-</li>
-</ul>
-</div>
-<!-- Poetry -->
-<div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border-2 border-purple-200">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-2xl font-bold">Poetry: Verse Literature</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-start gap-2">
-<span class="text-purple-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Classical Forms:</strong> Epic, lyric, dramatic,
-									pastoral, didactic</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-purple-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Fixed Forms:</strong> Sonnet, villanelle, sestina,
-									ghazal, haiku</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-purple-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Free Verse:</strong> Modernist, confessional, beat,
-									slam poetry</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-purple-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Experimental:</strong> Concrete poetry, language
-									poetry, erasure</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-purple-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Contemporary:</strong> Prose poetry, hybrid forms,
-									digital poetry</span>
-</li>
-</ul>
-</div>
-<!-- Nonfiction -->
-<div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-2xl font-bold">Nonfiction: Factual Literature</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-start gap-2">
-<span class="text-green-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Personal Narrative:</strong> Memoir, autobiography,
-									personal essay</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-green-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Biography:</strong> Life writing, hagiography,
-									collective biography</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-green-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Journalism:</strong> Investigative, narrative, war
-									correspondence</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-green-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Science Writing:</strong> Popular science, nature
-									writing, medical narrative</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-green-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Cultural Criticism:</strong> Essay, literary
-									criticism, cultural analysis</span>
-</li>
-</ul>
-</div>
-<!-- Drama -->
-<div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl border-2 border-amber-200">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-12 h-12 bg-amber-600 rounded-xl flex items-center justify-center">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="text-2xl font-bold">Drama: Performance Literature</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-start gap-2">
-<span class="text-amber-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Classical Drama:</strong> Tragedy, comedy, satyr
-									play</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-amber-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Modern Forms:</strong> Naturalism, expressionism,
-									absurd theater</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-amber-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Musical Theater:</strong> Opera, operetta, musical
-									comedy</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-amber-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Contemporary:</strong> Docudrama, verbatim theater,
-									postdramatic</span>
-</li>
-<li class="flex items-start gap-2">
-<span class="text-amber-600 font-bold">•</span>
-<span class="text-sm text-gray-700"><strong>Performance Art:</strong> Happening, multimedia
-									theater</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <div
+        class="inline-block bg-gray-100 text-black px-4 py-2 rounded-full text-sm font-medium mb-4"
+      >
+        COMPLETE MAP
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        Literary Territories
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Explore the complete spectrum of literary genres across all traditions
+        and forms
+      </p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Fiction -->
+      <div
+        class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-200"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div
+            class="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold">Fiction: Narrative Literature</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Literary Fiction:</strong> Character-driven narratives
+              emphasizing style and theme</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Speculative Fiction:</strong> Science fiction, fantasy,
+              horror, magical realism</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Genre Fiction:</strong> Mystery, thriller, romance,
+              western, adventure</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Historical Fiction:</strong> Period narratives across all
+              eras</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-blue-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Experimental Fiction:</strong> Metafiction, postmodern
+              techniques</span
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Poetry -->
+      <div
+        class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl border-2 border-purple-200"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div
+            class="w-12 h-12 bg-purple-600 rounded-xl flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold">Poetry: Verse Literature</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-purple-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Classical Forms:</strong> Epic, lyric, dramatic,
+              pastoral, didactic</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-purple-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Fixed Forms:</strong> Sonnet, villanelle, sestina,
+              ghazal, haiku</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-purple-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Free Verse:</strong> Modernist, confessional, beat, slam
+              poetry</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-purple-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Experimental:</strong> Concrete poetry, language poetry,
+              erasure</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-purple-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Contemporary:</strong> Prose poetry, hybrid forms,
+              digital poetry</span
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Nonfiction -->
+      <div
+        class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border-2 border-green-200"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div
+            class="w-12 h-12 bg-green-600 rounded-xl flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold">Nonfiction: Factual Literature</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-green-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Personal Narrative:</strong> Memoir, autobiography,
+              personal essay</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Biography:</strong> Life writing, hagiography, collective
+              biography</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Journalism:</strong> Investigative, narrative, war
+              correspondence</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Science Writing:</strong> Popular science, nature
+              writing, medical narrative</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-green-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Cultural Criticism:</strong> Essay, literary criticism,
+              cultural analysis</span
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Drama -->
+      <div
+        class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl border-2 border-amber-200"
+      >
+        <div class="flex items-center gap-3 mb-6">
+          <div
+            class="w-12 h-12 bg-amber-600 rounded-xl flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewbox="0 0 24 24"
+            >
+              <path
+                d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              ></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold">Drama: Performance Literature</h3>
+        </div>
+        <ul class="space-y-3">
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Classical Drama:</strong> Tragedy, comedy, satyr
+              play</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Modern Forms:</strong> Naturalism, expressionism, absurd
+              theater</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Musical Theater:</strong> Opera, operetta, musical
+              comedy</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Contemporary:</strong> Docudrama, verbatim theater,
+              postdramatic</span
+            >
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-amber-600 font-bold">•</span>
+            <span class="text-sm text-gray-700"
+              ><strong>Performance Art:</strong> Happening, multimedia
+              theater</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
- How to Use Guide 
+<!-- How to Use Guide -->
 <section class="py-16 md:py-24 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6">
-<div class="text-center mb-12">
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-						How to Use This Comprehensive Guide
-					</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
-<div class="text-3xl mb-4">📚</div>
-<h3 class="font-bold text-lg mb-2">For Academic Study</h3>
-<p class="text-sm text-gray-600">
-							Utilize theoretical frameworks, historical contexts, and critical
-							perspectives for scholarly research and analysis.
-						</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
-<div class="text-3xl mb-4">🎓</div>
-<h3 class="font-bold text-lg mb-2">For Educators</h3>
-<p class="text-sm text-gray-600">
-							Structured approach to teaching literary genres with historical
-							development and practical exercises.
-						</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
-<div class="text-3xl mb-4">📖</div>
-<h3 class="font-bold text-lg mb-2">For Readers</h3>
-<p class="text-sm text-gray-600">
-							Discover new genres and deepen appreciation through comprehensive
-							analysis of conventions and innovations.
-						</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
-<div class="text-3xl mb-4">✍️</div>
-<h3 class="font-bold text-lg mb-2">For Writers</h3>
-<p class="text-sm text-gray-600">
-							Master genre conventions while understanding how to innovate
-							within traditional boundaries.
-						</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
-<div class="text-3xl mb-4">🔬</div>
-<h3 class="font-bold text-lg mb-2">For Critics</h3>
-<p class="text-sm text-gray-600">
-							Access comprehensive theoretical frameworks and methodological
-							approaches for genre analysis.
-						</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all">
-<div class="text-3xl mb-4">🌍</div>
-<h3 class="font-bold text-lg mb-2">For Comparative Studies</h3>
-<p class="text-sm text-gray-600">
-							Explore different cultural traditions and forms that challenge &gt;
-							EXPLORE MORE
-						</p>
-</div>
-<h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
-						Explore Literary Genres
-					</h2>
-<p class="text-gray-600 max-w-2xl mx-auto">
-						From fiction to non-fiction, dive deep into genres and discover
-						where your story belongs
-					</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2 group-hover:text-black">
-							Genre Guide
-						</h3>
-<p class="text-sm text-gray-600">
-							Explore the rules and traits of major literary genres.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200" href="/literary-glossary">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2 group-hover:text-black">
-							Genre Glossary
-						</h3>
-<p class="text-sm text-gray-600">
-							Learn key terms used across various literary categories.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200" href="/story_arcs-explained">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2 group-hover:text-black">
-							Genre Arcs
-						</h3>
-<p class="text-sm text-gray-600">
-							See how different genres shape their story structures.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2 group-hover:text-black">
-							Genre Devices
-						</h3>
-<p class="text-sm text-gray-600">
-							Understand how devices differ across genres.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2 group-hover:text-black">
-							Genre Comparison
-						</h3>
-<p class="text-sm text-gray-600">
-							Compare genres side by side to find your style.
-						</p>
-</a>
-<a class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200" href="#">
-<div class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-<svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-<path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</div>
-<h3 class="font-bold text-lg mb-2 group-hover:text-black">
-							Our Vision
-						</h3>
-<p class="text-sm text-gray-600">
-							Why we promote diverse voices across all genres.
-						</p>
-</a>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        How to Use This Comprehensive Guide
+      </h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all"
+      >
+        <div class="text-3xl mb-4">📚</div>
+        <h3 class="font-bold text-lg mb-2">For Academic Study</h3>
+        <p class="text-sm text-gray-600">
+          Utilize theoretical frameworks, historical contexts, and critical
+          perspectives for scholarly research and analysis.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all"
+      >
+        <div class="text-3xl mb-4">🎓</div>
+        <h3 class="font-bold text-lg mb-2">For Educators</h3>
+        <p class="text-sm text-gray-600">
+          Structured approach to teaching literary genres with historical
+          development and practical exercises.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all"
+      >
+        <div class="text-3xl mb-4">📖</div>
+        <h3 class="font-bold text-lg mb-2">For Readers</h3>
+        <p class="text-sm text-gray-600">
+          Discover new genres and deepen appreciation through comprehensive
+          analysis of conventions and innovations.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all"
+      >
+        <div class="text-3xl mb-4">✍️</div>
+        <h3 class="font-bold text-lg mb-2">For Writers</h3>
+        <p class="text-sm text-gray-600">
+          Master genre conventions while understanding how to innovate within
+          traditional boundaries.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all"
+      >
+        <div class="text-3xl mb-4">🔬</div>
+        <h3 class="font-bold text-lg mb-2">For Critics</h3>
+        <p class="text-sm text-gray-600">
+          Access comprehensive theoretical frameworks and methodological
+          approaches for genre analysis.
+        </p>
+      </div>
+      <div
+        class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all"
+      >
+        <div class="text-3xl mb-4">🌍</div>
+        <h3 class="font-bold text-lg mb-2">For Comparative Studies</h3>
+        <p class="text-sm text-gray-600">
+          Explore different cultural traditions and forms that challenge &gt;
+          EXPLORE MORE
+        </p>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
+        Explore Literary Genres
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        From fiction to non-fiction, dive deep into genres and discover where
+        your story belongs
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-black">
+          Genre Guide
+        </h3>
+        <p class="text-sm text-gray-600">
+          Explore the rules and traits of major literary genres.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200"
+        href="/literary-glossary"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-black">
+          Genre Glossary
+        </h3>
+        <p class="text-sm text-gray-600">
+          Learn key terms used across various literary categories.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200"
+        href="/story_arcs-explained"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M13 10V3L4 14h7v7l9-11h-7z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-black">
+          Genre Arcs
+        </h3>
+        <p class="text-sm text-gray-600">
+          See how different genres shape their story structures.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-black">
+          Genre Devices
+        </h3>
+        <p class="text-sm text-gray-600">
+          Understand how devices differ across genres.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-black">
+          Genre Comparison
+        </h3>
+        <p class="text-sm text-gray-600">
+          Compare genres side by side to find your style.
+        </p>
+      </a>
+      <a
+        class="group p-6 bg-gray-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-transparent hover:border-gray-200"
+        href="#"
+      >
+        <div
+          class="w-12 h-12 bg-black rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+        >
+          <svg
+            class="w-6 h-6 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </div>
+        <h3 class="font-bold text-lg mb-2 group-hover:text-black">
+          Our Vision
+        </h3>
+        <p class="text-sm text-gray-600">
+          Why we promote diverse voices across all genres.
+        </p>
+      </a>
+    </div>
+  </div>
 </section>
-  
 
 <script>
-			// Mobile menu toggle
-			const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-			const mobileMenu = document.getElementById("mobileMenu");
-			const closeMenuBtn = document.getElementById("closeMenuBtn");
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeMenuBtn = document.getElementById("closeMenuBtn");
 
-			mobileMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.remove("translate-x-full");
-			});
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.remove("translate-x-full");
+  });
 
-			closeMenuBtn.addEventListener("click", () => {
-				mobileMenu.classList.add("translate-x-full");
-			});
+  closeMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.add("translate-x-full");
+  });
 
-			// Smooth scroll
-			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-				anchor.addEventListener("click", function (e) {
-					e.preventDefault();
-					const target = document.querySelector(this.getAttribute("href"));
-					if (target) {
-						target.scrollIntoView({ behavior: "smooth", block: "start" });
-					}
-				});
-			});
-		</script>
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+</script>
 {% endblock %}
