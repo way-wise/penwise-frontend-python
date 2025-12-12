@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: penwise-django
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.6
+      - key: WEB_CONCURRENCY
+        value: 4
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings
+    plan: free

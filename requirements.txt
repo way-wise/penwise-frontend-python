@@ -1,5 +1,5 @@
 asgiref==3.11.0
-Django==4.2.10  # Slightly older, more stable version
+Django==6.0
 django-cors-headers==4.9.0
 djangorestframework==3.16.1
 djangorestframework-simplejwt==5.5.1
@@ -7,5 +7,5 @@ PyJWT==2.10.1
 python-dotenv==1.2.1
 sqlparse==0.5.4
 tzdata==2025.2
-whitenoise==6.6.0
 gunicorn==21.2.0
+whitenoise==6.6.0
