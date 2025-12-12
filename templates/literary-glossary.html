@@ -1,12 +1,16 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Literary Glossary |
-Penwise{% endblock %} {% block meta_description %}The essential A–Z of literary
-terms, explained clearly with concise examples and cross-references.{% endblock
-%} {% block content %} 
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Literary Glossary | Penwise{% endblock %}
+
+{% block meta_description %}The essential A–Z of literary terms, explained clearly with concise examples and cross-references.{% endblock %}
+
+{% block content %} 
 <!-- Hero Section -->
 <section
   class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
   style="
-    background-image: url('{% static \'assets/image/hero/herobackground.png\' %}');
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3393,7 +3397,7 @@ terms, explained clearly with concise examples and cross-references.{% endblock
     </div>
   </div>
 </section>
-Key Distinctions Section
+<!-- Key Distinctions Section -->
 <section class="py-16 bg-gray-50">
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <h2 class="text-3xl font-bold text-black mb-8 text-center">
@@ -3436,7 +3440,7 @@ Key Distinctions Section
     </div>
   </div>
 </section>
-Mini-Guides Section
+<!-- Mini-Guides Section -->
 <section class="py-16 bg-white">
   <div class="max-w-5xl mx-auto px-4 sm:px-6">
     <h2 class="text-3xl font-bold text-black mb-8 text-center">
@@ -3508,7 +3512,7 @@ Mini-Guides Section
     </div>
   </div>
 </section>
-Explore More Section
+<!-- Explore More Section -->
 <section
   class="py-16 md:py-24 bg-[url('/assets/image/howitwork/gridbg.png')] bg-cover bg-center relative bg-white overflow-hidden"
 >
@@ -3574,7 +3578,7 @@ Explore More Section
     </div>
   </div>
 </section>
-FAQ Section
+<!-- FAQ Section -->
 <section class="py-16 md:py-24 bg-gray-50">
   <div class="max-w-4xl mx-auto px-4 sm:px-6">
     <div class="text-center mb-12">
