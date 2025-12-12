@@ -1,12 +1,16 @@
-{% extends 'base.html' %} {% load static %} {% block title %}About Penwise -
-Write Smarter, Faster, and Better{% endblock %} {% block meta_description
-%}Learn about Penwise, the Penwise-powered writing assistant transforming
-fiction writing.{% endblock %} {% block content %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Penwise - Write Smarter, Faster, and Better{% endblock %}
+
+{% block meta_description %}Learn about Penwise, the Penwise-powered writing assistant transforming fiction writing.{% endblock %}
+
+{% block content %}
 <!-- Hero Section  -->
 <section
   class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
   style="
-    background-image: url('{% static \'assets/image/hero/herobackground.png\' %}');
+    background-image: url(&quot;{% static 'assets/image/hero/herobackground.png' %}&quot;);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

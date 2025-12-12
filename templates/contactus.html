@@ -1,13 +1,17 @@
-{% extends 'base.html' %} {% load static %} {% block title %}Penwise -
-Frequently Asked Questions{% endblock %} {% block meta_description %}Find
-answers to common questions about Penwise and how it can help you write
-better.{% endblock %} {% block content %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Penwise - Frequently Asked Questions{% endblock %}
+
+{% block meta_description %}Find answers to common questions about Penwise and how it can help you write better.{% endblock %}
+
+{% block content %}
 
 <!-- Hero Section  -->
 <section
   class="lg:mx-[60px] mx-5 lg:mt-[100px] mt-[90px] rounded-3xl relative lg:p-28 p-5 py-10 bg-black text-white overflow-hidden"
   style="
-    background-image: url('{% static \'assets/image/hero/hero2.png\' %}');
+    background-image: url(&quot;{% static 'assets/image/hero/hero2.png' %}&quot;);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -241,7 +245,7 @@ better.{% endblock %} {% block content %}
 </section>
 <section
   class="mt-[80px] max-w-7xl mx-auto px-4 sm:px-6 rounded-t-2xl relative py-16 md:py-20 lg:py-24 w-full h-full bg-cover bg-center bg-no-repeat overflow-hidden"
-  style="background-image: url('{% static \'assets/image/footer/bg.png\' %}')"
+  style="background-image: url(&quot;{% static 'assets/image/footer/bg.png' %}&quot;)"
 >
   <!-- Dark Overlay -->
   <div class="absolute inset-0 bg-black bg-opacity-60"></div>
