@@ -29,7 +29,7 @@ ARG DEBUG=False
 RUN python manage.py collectstatic --noinput
 
 # Expose port
-EXPOSE 8000
+EXPOSE 3088
 
 # Run gunicorn
 CMD ["gunicorn", "--bind", "0.0.0.0:3088", "config.wsgi:application"]
