@@ -515,30 +515,17 @@
 </section>
 
 <script>
-  // Mobile Menu
-  const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const closeMenuBtn = document.getElementById("closeMenuBtn");
-
-  mobileMenuBtn.addEventListener("click", () => {
-    mobileMenu.classList.remove("translate-x-full");
-  });
-
-  closeMenuBtn.addEventListener("click", () => {
-    mobileMenu.classList.add("translate-x-full");
-  });
-
   // FAQ Toggle
   function toggleFaq(button) {
     const content = button.nextElementSibling;
     const icon = button.querySelector("svg");
 
-    if (content.classList.contains("hidden")) {
+    if (content && content.classList.contains("hidden")) {
       content.classList.remove("hidden");
-      icon.style.transform = "rotate(180deg)";
-    } else {
+      if (icon) icon.style.transform = "rotate(180deg)";
+    } else if (content) {
       content.classList.add("hidden");
-      icon.style.transform = "rotate(0deg)";
+      if (icon) icon.style.transform = "rotate(0deg)";
     }
   }
 </script>

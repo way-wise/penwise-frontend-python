@@ -35,8 +35,10 @@
   </head>
 
   <body class="font-sans antialiased overflow-x-hidden">
-    {% include 'includes/navbar.html' %} {% include 'includes/mobile_menu.html'
-    %} {% block content %}{% endblock %} {% include 'includes/footer.html' %}
+    {% include 'includes/navbar.html' %}
+    {% include 'includes/mobile_menu.html' %}
+    {% block content %}{% endblock %}
+    {% include 'includes/footer.html' %}
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -125,13 +127,13 @@
         const closeBtn = document.getElementById('closeNewsletterPopup');
         const newsletterForm = document.getElementById('newsletterForm');
         
-        // Check if user has already subscribed or closed the popup
-        const hasSeenPopup = localStorage.getItem('newsletterPopupSeen');
-        const hasSubscribed = localStorage.getItem('newsletterSubscribed');
+        let popupShown = false; // Track if popup is currently visible
         
         function showPopup() {
-          if (hasSubscribed === 'true') return; // Don't show if already subscribed
+          // Don't show if already visible
+          if (popupShown) return;
           
+          popupShown = true;
           newsletterPopup.classList.remove('hidden');
           newsletterPopup.classList.add('flex');
           
@@ -145,6 +147,7 @@
         }
         
         function hidePopup() {
+          popupShown = false;
           newsletterModal.classList.remove('scale-100', 'opacity-100');
           newsletterModal.classList.add('scale-95', 'opacity-0');
           
@@ -153,14 +156,19 @@
             newsletterPopup.classList.remove('flex');
             document.body.style.overflow = '';
           }, 300);
-          
-          localStorage.setItem('newsletterPopupSeen', 'true');
         }
         
-        // Show popup after 3 seconds if not seen before
-        if (hasSeenPopup !== 'true' && hasSubscribed !== 'true') {
-          setTimeout(showPopup, 3000);
-        }
+        // Show popup after 10 seconds on every page load
+        setTimeout(showPopup, 10000);
+        
+        // Show popup when user scrolls
+        let scrollTriggered = false;
+        window.addEventListener('scroll', function() {
+          if (!scrollTriggered && !popupShown) {
+            scrollTriggered = true;
+            showPopup();
+          }
+        }, { once: true });
         
         // Close button
         closeBtn.addEventListener('click', hidePopup);
@@ -179,11 +187,7 @@
           const email = document.getElementById('newsletterEmail').value;
           
           // Here you would typically send to your backend
-          // For now, we'll just mark as subscribed and hide popup
           console.log('Newsletter subscription:', email);
-          
-          // Mark as subscribed
-          localStorage.setItem('newsletterSubscribed', 'true');
           
           // Show success message
           newsletterModal.innerHTML = `

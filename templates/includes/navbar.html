@@ -79,6 +79,50 @@
 
 			<button
 				id="mobileMenuBtn"
+				onclick="
+					try {
+						var menu = document.getElementById('mobileMenu');
+						var overlay = document.getElementById('mobileMenuOverlay');
+						
+						if (menu) {
+							menu.classList.remove('translate-x-full');
+							menu.style.display = 'block';
+							menu.style.visibility = 'visible';
+							
+							if (overlay) {
+								overlay.classList.remove('hidden');
+								overlay.style.display = 'block';
+								overlay.style.opacity = '1';
+								overlay.style.pointerEvents = 'auto';
+								overlay.style.visibility = 'visible';
+							}
+							
+							document.body.style.overflow = 'hidden';
+						} else {
+							menu = document.querySelector('#mobileMenu');
+							overlay = document.querySelector('#mobileMenuOverlay');
+							
+							if (menu) {
+								menu.classList.remove('translate-x-full');
+								menu.style.display = 'block';
+								menu.style.visibility = 'visible';
+								
+								if (overlay) {
+									overlay.classList.remove('hidden');
+									overlay.style.display = 'block';
+									overlay.style.opacity = '1';
+									overlay.style.pointerEvents = 'auto';
+									overlay.style.visibility = 'visible';
+								}
+								
+								document.body.style.overflow = 'hidden';
+							}
+						}
+					} catch(e) {
+						console.error('Error opening mobile menu:', e);
+					}
+					return false;
+				"
 				class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200"
 			>
 				<span
