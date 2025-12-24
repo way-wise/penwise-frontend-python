@@ -443,31 +443,76 @@ function initDashboardMobileMenu() {
 	const overlay = document.getElementById('dashboardSidebarOverlay');
 	const menuBtn = document.getElementById('dashboardMobileMenuBtn');
 	const closeBtn = document.getElementById('sidebarClose');
+	const sidebarToggle = document.getElementById('sidebarToggle');
 	
-	if (!sidebar || !overlay) return;
+	if (!sidebar) {
+		console.log('Dashboard sidebar not found');
+		return;
+	}
 	
 	function openSidebar() {
-		sidebar.classList.remove('-translate-x-full');
-		overlay.classList.remove('hidden');
-		document.body.style.overflow = 'hidden';
+		if (sidebar) {
+			sidebar.classList.remove('-translate-x-full');
+			if (overlay) {
+				overlay.classList.remove('hidden');
+			}
+			document.body.style.overflow = 'hidden';
+		}
 	}
 	
 	function closeSidebar() {
-		sidebar.classList.add('-translate-x-full');
-		overlay.classList.add('hidden');
-		document.body.style.overflow = '';
+		if (sidebar) {
+			sidebar.classList.add('-translate-x-full');
+			if (overlay) {
+				overlay.classList.add('hidden');
+			}
+			document.body.style.overflow = '';
+		}
 	}
 	
+	function toggleSidebar() {
+		if (sidebar.classList.contains('-translate-x-full')) {
+			openSidebar();
+		} else {
+			closeSidebar();
+		}
+	}
+	
+	// Mobile menu button
 	if (menuBtn) {
-		menuBtn.addEventListener('click', openSidebar);
+		menuBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			openSidebar();
+		});
 	}
 	
+	// Close button
 	if (closeBtn) {
-		closeBtn.addEventListener('click', closeSidebar);
+		closeBtn.addEventListener('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			closeSidebar();
+		});
 	}
 	
+	// Desktop sidebar toggle
+	if (sidebarToggle) {
+		sidebarToggle.addEventListener('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			// Toggle sidebar on desktop (you can customize this behavior)
+			toggleSidebar();
+		});
+	}
+	
+	// Overlay click to close
 	if (overlay) {
-		overlay.addEventListener('click', closeSidebar);
+		overlay.addEventListener('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+			closeSidebar();
+		});
 	}
 	
 	// Close sidebar when clicking on nav links (mobile)
@@ -479,17 +524,51 @@ function initDashboardMobileMenu() {
 			}
 		});
 	});
+	
+	// Close sidebar on escape key
+	document.addEventListener('keydown', function(e) {
+		if (e.key === 'Escape' && sidebar && !sidebar.classList.contains('-translate-x-full')) {
+			closeSidebar();
+		}
+	});
+}
+
+// Initialize dashboard functionality
+function initDashboard() {
+	highlightActiveDashboardMenu();
+	initDashboardMobileMenu();
 }
 
 // Initialize dashboard menu highlighting when DOM is ready
-if (document.getElementById('dashboardSidebar')) {
-	if (document.readyState === 'loading') {
-		document.addEventListener('DOMContentLoaded', () => {
-			highlightActiveDashboardMenu();
-			initDashboardMobileMenu();
-		});
-	} else {
-		highlightActiveDashboardMenu();
-		initDashboardMobileMenu();
+function waitForDashboardElements() {
+	const sidebar = document.getElementById('dashboardSidebar');
+	if (sidebar) {
+		initDashboard();
+		return true;
+	}
+	return false;
+}
+
+// Try multiple times to ensure elements are loaded
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', function() {
+		if (!waitForDashboardElements()) {
+			// Retry after a short delay
+			setTimeout(function() {
+				if (!waitForDashboardElements()) {
+					setTimeout(waitForDashboardElements, 200);
+				}
+			}, 100);
+		}
+	});
+} else {
+	// DOM already loaded
+	if (!waitForDashboardElements()) {
+		// Retry after a short delay
+		setTimeout(function() {
+			if (!waitForDashboardElements()) {
+				setTimeout(waitForDashboardElements, 200);
+			}
+		}, 100);
 	}
 }

@@ -1,6 +1,15 @@
 {% load static %}
 <!-- Dashboard Sidebar Overlay (Mobile) -->
-<div id="dashboardSidebarOverlay" class="fixed inset-0 bg-black/50 z-40 lg:hidden hidden transition-opacity duration-300"></div>
+<div id="dashboardSidebarOverlay" onclick="
+  const sidebar = document.getElementById('dashboardSidebar');
+  const overlay = document.getElementById('dashboardSidebarOverlay');
+  if (sidebar) {
+    sidebar.classList.add('-translate-x-full');
+    if (overlay) overlay.classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+  return false;
+" class="fixed inset-0 bg-black/50 z-40 lg:hidden hidden transition-opacity duration-300"></div>
 
 <!-- Dashboard Sidebar -->
 <aside id="dashboardSidebar" class="fixed left-0 top-0 h-full w-64 bg-white border-r border-gray-200 z-50 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
@@ -19,7 +28,16 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
       </svg>
     </button>
-    <button id="sidebarClose" class="p-1 hover:bg-gray-100 rounded transition-colors lg:hidden">
+    <button id="sidebarClose" onclick="
+      const sidebar = document.getElementById('dashboardSidebar');
+      const overlay = document.getElementById('dashboardSidebarOverlay');
+      if (sidebar) {
+        sidebar.classList.add('-translate-x-full');
+        if (overlay) overlay.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+      return false;
+    " class="p-1 hover:bg-gray-100 rounded transition-colors lg:hidden">
       <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
