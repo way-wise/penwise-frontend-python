@@ -12,7 +12,7 @@
 " class="fixed inset-0 bg-black/50 z-40 lg:hidden hidden transition-opacity duration-300"></div>
 
 <!-- Dashboard Sidebar -->
-<aside id="dashboardSidebar" class="fixed left-6 top-6 h-full w-64 rounded-[16px] bg-[#F9F9FB] border border-[#E4E8EF] z-50 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300" style="left: 1.5rem; top: 1.5rem;">
+<aside id="dashboardSidebar" class="fixed left-0 top-0 lg:left-6 lg:top-6 h-full w-64 rounded-[16px] bg-[#F9F9FB] border border-[#E4E8EF] z-50 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
   <!-- Logo Section -->
   <div class="flex items-center justify-between p-6 border-b border-gray-200">
     <div class="flex items-center gap-2">
@@ -95,7 +95,7 @@
     <div class="bg-white rounded-lg p-4 mb-4 border border-[#E4E8EF]">
       <h3 class="text-sm font-semibold text-gray-900 mb-2">No Current Project Available</h3>
       <p class="text-xs text-gray-600 mb-3">No projects found. Create one to get started.</p>
-      <a href="/new-project" class="block w-full text-center px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors text-sm font-medium">
+      <a href="/new-project" class="block w-full text-center px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition-colors text-sm font-medium">
         Create your first book
       </a>
     </div>
@@ -103,16 +103,16 @@
 
   <!-- Your Book Rights Section -->
   <div class="p-4 border-t border-gray-200">
-    <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-lg p-4 text-white relative overflow-hidden">
+    <p class="text-sm font-semibold text-gray-900 mb-2">Your Book Rights</p>
+    <div class="bg-black rounded-lg p-4 text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-0 right-0 w-32 h-32 bg-white rounded-full -mr-16 -mt-16"></div>
         <div class="absolute bottom-0 left-0 w-24 h-24 bg-white rounded-full -ml-12 -mb-12"></div>
       </div>
       <div class="relative z-10">
-        <h3 class="text-sm font-semibold mb-2">Your Book Rights</h3>
-        <p class="text-2xl font-bold mb-1">You have the right to 1 FREE chapter</p>
+        <p class="text-base font-bold mb-1">You have the right to 1 FREE chapter</p>
         <p class="text-xs text-gray-300 mb-4">Start with one free chapter to try out all core features.</p>
-        <a href="/your-plan" class="block w-full text-center px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-100 transition-colors text-sm font-semibold">
+        <a href="/your-plan" class="block w-full text-center px-4 py-2 bg-white text-black rounded-full hover:bg-gray-100 transition-colors text-sm font-semibold">
           To buy More
         </a>
       </div>
