@@ -422,3 +422,74 @@ console.log(
 	"%cBuilt with ❤️ using Tailwind CSS",
 	"font-size: 14px; color: #666;"
 );
+
+// Dashboard sidebar active menu highlighting
+function highlightActiveDashboardMenu() {
+	const currentPath = window.location.pathname;
+	const menuItems = document.querySelectorAll('#dashboardSidebar nav a');
+	
+	menuItems.forEach(item => {
+		const href = item.getAttribute('href');
+		if (href && (currentPath === href || currentPath.startsWith(href + '/'))) {
+			item.classList.add('bg-black', 'text-white');
+			item.classList.remove('text-gray-700', 'hover:bg-gray-100');
+		}
+	});
+}
+
+// Dashboard mobile menu toggle
+function initDashboardMobileMenu() {
+	const sidebar = document.getElementById('dashboardSidebar');
+	const overlay = document.getElementById('dashboardSidebarOverlay');
+	const menuBtn = document.getElementById('dashboardMobileMenuBtn');
+	const closeBtn = document.getElementById('sidebarClose');
+	
+	if (!sidebar || !overlay) return;
+	
+	function openSidebar() {
+		sidebar.classList.remove('-translate-x-full');
+		overlay.classList.remove('hidden');
+		document.body.style.overflow = 'hidden';
+	}
+	
+	function closeSidebar() {
+		sidebar.classList.add('-translate-x-full');
+		overlay.classList.add('hidden');
+		document.body.style.overflow = '';
+	}
+	
+	if (menuBtn) {
+		menuBtn.addEventListener('click', openSidebar);
+	}
+	
+	if (closeBtn) {
+		closeBtn.addEventListener('click', closeSidebar);
+	}
+	
+	if (overlay) {
+		overlay.addEventListener('click', closeSidebar);
+	}
+	
+	// Close sidebar when clicking on nav links (mobile)
+	const navLinks = sidebar.querySelectorAll('nav a');
+	navLinks.forEach(link => {
+		link.addEventListener('click', () => {
+			if (window.innerWidth < 1024) {
+				closeSidebar();
+			}
+		});
+	});
+}
+
+// Initialize dashboard menu highlighting when DOM is ready
+if (document.getElementById('dashboardSidebar')) {
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', () => {
+			highlightActiveDashboardMenu();
+			initDashboardMobileMenu();
+		});
+	} else {
+		highlightActiveDashboardMenu();
+		initDashboardMobileMenu();
+	}
+}

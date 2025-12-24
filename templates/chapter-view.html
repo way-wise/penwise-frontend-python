@@ -1,0 +1,111 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+
+{% block title %}Chapter View - Penwise{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto">
+  <!-- Progress Steps -->
+  <div class="hidden lg:flex items-center justify-between mb-8 overflow-x-auto">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Idea</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Review Idea</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Story Draft</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Detailed Plan</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">5</div>
+      <span class="text-sm font-medium text-gray-700">Create Chapter</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">6</div>
+      <span class="text-sm font-medium text-gray-600">Export</span>
+    </div>
+  </div>
+
+  <!-- Chapter Header -->
+  <div class="text-center mb-6 lg:mb-8">
+    <p class="text-xs sm:text-sm text-gray-600 mb-2">Chapter: 1</p>
+    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">Blood on the Keys</h1>
+    <p class="text-sm lg:text-base text-gray-600">2883 words</p>
+  </div>
+
+  <!-- Chapter Content -->
+  <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sm:p-6 lg:p-8 mb-6 lg:mb-8">
+    <div class="prose prose-lg max-w-none">
+      <p class="text-gray-800 leading-relaxed mb-4 text-justify">
+        The wind hunted down Rue Saint-Paul like something with a face, shouldering through Old Montreal's narrow arteries and making the tin cigarette sign in the alley shriek against its rusted chains. Each gust turned the metal into a mad percussion section, a clang and rattle riding the February storm's savage rhythm.
+      </p>
+      <p class="text-gray-800 leading-relaxed mb-4 text-justify">
+        Sam Chevalier pulled his overcoat tighter, the wool heavy with the promise of snow. He'd chosen this route deliberately—the back way, through the service entrance that smelled of stale beer and yesterday's cigarettes. Neutrality had been his currency for years, a carefully maintained distance from the city's darker currents. Tonight, that distance felt thinner than the ice forming on the cobblestones.
+      </p>
+      <p class="text-gray-800 leading-relaxed mb-4 text-justify">
+        Le Spectre Bleu waited ahead, its neon sign flickering like a dying heartbeat. The club had been his sanctuary, a place where music and shadows could coexist without judgment. But as he pushed through the heavy door, something in the silence made his pulse quicken.
+      </p>
+      
+      <!-- Summary Box -->
+      <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 my-8">
+        <p class="text-gray-800 leading-relaxed italic">
+          Sam discovers Juliette's brutally murdered body in Le Spectre Bleu after hours, shattering his carefully constructed world. Through grief-stricken flashbacks, we witness their passionate secret relationship and the club's atmosphere before this devastating discovery transforms Sam from neutral businessman to hunted man, as his violent nature surfaces in his grief.
+        </p>
+      </div>
+
+      <p class="text-gray-800 leading-relaxed mb-4 text-justify">
+        The stage was empty, the piano silent. But there, draped across the keys like a broken marionette, was Juliette. Her hand still rested on middle C, fingers curled in a final, desperate chord. The "Rouge Fatale" nail polish she'd worn last night—the color he'd teased her about—now looked like blood against the ivory.
+      </p>
+      <p class="text-gray-800 leading-relaxed mb-4 text-justify">
+        Her arm was bent at an impossible angle, the crimson dress he'd watched her choose now soaked through. The stage lights, left on from last night's performance, cast everything in a harsh, unforgiving glow. Sam's breath caught in his throat, a sound that was half sob, half curse.
+      </p>
+      <p class="text-gray-800 leading-relaxed mb-4 text-justify">
+        The glass shattered. A sound ripped up from somewhere animal. Not the measured man he performed. A broken, raw roar that uncaged the beast he'd kept smothered under Savile Row and quiet diplomacy.
+      </p>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <button class="w-full sm:w-auto px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-semibold text-sm lg:text-base">
+      Previous Chapter
+    </button>
+    <div class="text-center order-first sm:order-none">
+      <p class="text-xs sm:text-sm text-gray-600">Chapter 1 of 24</p>
+      <p class="text-sm sm:text-base font-semibold text-gray-900">Blood on the Keys</p>
+    </div>
+    <button class="w-full sm:w-auto px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full hover:bg-gray-50 transition-colors font-semibold text-sm lg:text-base">
+      Next Chapter
+    </button>
+  </div>
+</div>
+{% endblock %}
+

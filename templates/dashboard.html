@@ -1,0 +1,85 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+
+{% block title %}Author Dashboard - Penwise{% endblock %}
+
+{% block extra_css %}
+<style>
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+  <!-- Page Header -->
+  <div class="mb-6 lg:mb-8">
+    <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Author Dashboard</h1>
+    <p class="text-sm lg:text-base text-gray-600">Writing performance & project overview.</p>
+  </div>
+
+  <!-- Metrics Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-6 lg:mb-8">
+    <!-- Total Word Count -->
+    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div class="text-4xl font-bold text-gray-900 mb-1">0</div>
+      <div class="text-sm font-semibold text-gray-700 mb-1">Total Word Count</div>
+      <div class="text-xs text-gray-500">Across 0 active projects</div>
+    </div>
+
+    <!-- Writing Streak -->
+    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div class="text-4xl font-bold text-gray-900 mb-1">0 Days</div>
+      <div class="text-sm font-semibold text-gray-700 mb-1">Writing Streak</div>
+      <div class="text-xs text-gray-500">Personal best: 0 days</div>
+    </div>
+
+    <!-- Average Daily Output -->
+    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div class="text-4xl font-bold text-gray-900 mb-1">0</div>
+      <div class="text-sm font-semibold text-gray-700 mb-1">Average Daily Output</div>
+      <div class="text-xs text-gray-500">Words per writing session</div>
+    </div>
+
+    <!-- Completion Rate -->
+    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div class="text-4xl font-bold text-gray-900 mb-1">0%</div>
+      <div class="text-sm font-semibold text-gray-700 mb-1">Completion Rate</div>
+      <div class="text-xs text-gray-500">Complete book rate</div>
+    </div>
+  </div>
+
+  <!-- Recent Activity -->
+  <div class="bg-white rounded-lg shadow-sm border border-gray-200">
+    <div class="p-6 border-b border-gray-200">
+      <h2 class="text-xl font-semibold text-gray-900">Recent Activity</h2>
+    </div>
+    <div class="p-6">
+      <div class="space-y-4">
+        <!-- Activity Item 1 -->
+        <div class="flex items-start justify-between pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+          <div class="flex-1">
+            <h3 class="font-semibold text-gray-900 mb-1">Project title</h3>
+            <p class="text-sm text-gray-600 mb-2">Project summary</p>
+            <p class="text-xs text-gray-500">March 15, 2024, at 10 AM.</p>
+          </div>
+        </div>
+
+        <!-- Activity Item 2 -->
+        <div class="flex items-start justify-between pb-4 border-b border-gray-100 last:border-0 last:pb-0">
+          <div class="flex-1">
+            <h3 class="font-semibold text-gray-900 mb-1">Project title</h3>
+            <p class="text-sm text-gray-600 mb-2">Project summary</p>
+            <p class="text-xs text-gray-500">March 15, 2024, at 10 AM.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

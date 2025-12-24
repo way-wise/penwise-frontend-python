@@ -1,0 +1,191 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+
+{% block title %}Detailed Plan - Penwise{% endblock %}
+
+{% block content %}
+<div class="max-w-7xl mx-auto">
+  <!-- Progress Steps -->
+  <div class="hidden lg:flex items-center justify-between mb-8 overflow-x-auto">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Idea</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Review Idea</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Story Draft</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">4</div>
+      <span class="text-sm font-medium text-gray-700">Detailed Plan</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">5</div>
+      <span class="text-sm font-medium text-gray-600">Create Chapter</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">6</div>
+      <span class="text-sm font-medium text-gray-600">Export</span>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="mb-6 lg:mb-8">
+    <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Detailed plan - 24 Chapters</h1>
+  </div>
+
+  <!-- ACT I Section -->
+  <div class="bg-white rounded-lg shadow-sm border border-gray-200 mb-6">
+    <div class="p-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="text-2xl font-bold text-gray-900">ACT I (Chapters 8)</h2>
+        <button class="text-gray-600 hover:text-gray-900">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">The standard Lorem</h3>
+        <p class="text-sm text-gray-600 mb-4">Third person limited, focused on Sam Chevalier.</p>
+        <p class="text-gray-700 leading-relaxed mb-6">
+          Sam discovers Juliette's brutally murdered body in Le Spectre Bleu after hours, shattering his carefully constructed world. Through grief-stricken flashbacks, we witness their passionate secret relationship and the club's atmosphere before this devastating discovery transforms Sam from neutral businessman to hunted man, as his violent nature surfaces in his grief.
+        </p>
+      </div>
+
+      <!-- Four Column Layout -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Objective</h4>
+          <p class="text-sm text-gray-600">Hook readers with immediate visceral tension through murder discovery while establishing Sam's character, his passionate relationship with Juliette, and the noir atmosphere of 1950s Montreal.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Worldbuilding</h4>
+          <p class="text-sm text-gray-600">Hook readers with immediate visceral tension through murder discovery while establishing Sam's character, his passionate relationship with Juliette, and the noir atmosphere of 1950s Montreal.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Character Development</h4>
+          <p class="text-sm text-gray-600">Sam's controlled facade crumbles completely, revealing not only his capacity for love and loss, but also the violent potential he's inherited from his criminal family, setting up his transformation arc.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Pacing</h4>
+          <p class="text-sm text-gray-600">Atmospheric opening building to shocking discovery, then explosive emotional breakdown before slowing for strategic flashback revelation, ending with mounting dread.</p>
+        </div>
+      </div>
+
+      <!-- Start/Finish Boxes -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-6">
+        <div class="bg-gray-50 rounded-lg p-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Start</h4>
+          <p class="text-sm text-gray-600">Sam enters his empty club through the back door to find Juliette's lifeless body draped over the piano keys, her blood pooling on the ivory in the dim stage lights.</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg p-4">
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Finish</h4>
+          <p class="text-sm text-gray-600">Police sirens approaching as Sam realizes he has no alibi, his criminal family connections make him the obvious suspect, and something inside him wants to hunt down her killers himself.</p>
+        </div>
+      </div>
+
+      <!-- Collapsible Section -->
+      <div class="border-t border-gray-200 pt-4">
+        <button class="flex items-center gap-2 text-sm font-semibold text-gray-700 hover:text-gray-900">
+          <span>[-]</span>
+          <span>Consult related data for further context</span>
+        </button>
+      </div>
+
+      <!-- Plot Progress, Advancement, Tension -->
+      <div class="mt-6 space-y-4">
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Plot progress</h4>
+          <p class="text-sm text-gray-600">Establishes the inciting incident with Juliette's murder, Introduces Sam as protagonist, and sets up the central mystery while revealing their secret romantic relationship and Sam's capacity for violence.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Plot Advancement</h4>
+          <p class="text-sm text-gray-600">Establishes central mystery of Juliette's murder and positions Sam as both grieving lover and potential suspect, while revealing the violent undercurrents that will drive his character arc.</p>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-2">Tension Level</h4>
+          <div class="flex items-center gap-3">
+            <div class="flex-1 bg-gray-200 rounded-full h-2">
+              <div class="bg-gray-900 h-2 rounded-full" style="width: 90%"></div>
+            </div>
+            <span class="text-sm font-semibold text-gray-700">9/10</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key Events & Revelations -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-3">Key Events</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 mt-1">•</span>
+              <span class="text-sm text-gray-600">Sam discovers Juliette's mutilated body at the piano</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 mt-1">•</span>
+              <span class="text-sm text-gray-600">Flashback to their last passionate conversation and his promise to protect her</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 mt-1">•</span>
+              <span class="text-sm text-gray-600">Sam's violent breakdown revealing his suppressed nature</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-sm font-semibold text-gray-700 mb-3">Revelations</h4>
+          <ul class="space-y-2">
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 mt-1">•</span>
+              <span class="text-sm text-gray-600">Sam discovers Juliette's mutilated body at the piano</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 mt-1">•</span>
+              <span class="text-sm text-gray-600">Flashback to their last passionate conversation and his promise to protect her</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-gray-400 mt-1">•</span>
+              <span class="text-sm text-gray-600">Sam's violent breakdown revealing his suppressed nature</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="flex flex-col items-center space-y-4 mt-8">
+    <button class="w-full max-w-md px-6 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-semibold text-lg">
+      Create first chapter
+    </button>
+    <button class="w-full max-w-md px-6 py-4 border-2 border-gray-300 text-gray-700 rounded-full hover:bg-gray-50 transition-colors font-semibold text-lg">
+      Back to Story Draft
+    </button>
+    <p class="text-sm text-gray-500">Estimated time: 8 minutes</p>
+  </div>
+</div>
+{% endblock %}
+

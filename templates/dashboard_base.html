@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Penwise Dashboard{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Penwise Author Dashboard{% endblock %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    {% block extra_css %}{% endblock %}
+  </head>
+
+  <body class="font-sans antialiased bg-gray-50">
+    {% include 'includes/dashboard_sidebar.html' with active_page=active_page|default:'dashboard' %}
+    {% include 'includes/dashboard_header.html' %}
+    
+    <!-- Main Content Area -->
+    <main class="mt-16 lg:ml-64 p-4 lg:p-6 min-h-screen">
+      {% block content %}{% endblock %}
+    </main>
+
+    <script src="{% static 'script.js' %}"></script>
+    {% block extra_scripts %}{% endblock %}
+  </body>
+</html>
+

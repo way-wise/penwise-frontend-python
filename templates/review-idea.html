@@ -1,0 +1,163 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+
+{% block title %}Review Idea - Penwise{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto">
+  <!-- Progress Steps -->
+  <div class="hidden lg:flex items-center justify-between mb-8 overflow-x-auto">
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Idea</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-black mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+      <span class="text-sm font-medium text-gray-700">Review Idea</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">3</div>
+      <span class="text-sm font-medium text-gray-600">Story Draft</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">4</div>
+      <span class="text-sm font-medium text-gray-600">Detailed Plan</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">5</div>
+      <span class="text-sm font-medium text-gray-600">Create Chapter</span>
+    </div>
+    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
+    <div class="flex items-center gap-2">
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">6</div>
+      <span class="text-sm font-medium text-gray-600">Export</span>
+    </div>
+  </div>
+
+  <!-- Idea Header -->
+  <div class="mb-6 lg:mb-8">
+    <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">The Silent Ordit</h1>
+    <p class="text-sm lg:text-base text-gray-600">Idea Generated - Science Fiction</p>
+  </div>
+
+  <!-- Content Sections -->
+  <div class="space-y-6">
+    <!-- Premise -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-xl font-semibold text-gray-900">Premise</h2>
+        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">
+          Edit
+        </button>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <!-- Logline -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-xl font-semibold text-gray-900">Logline</h2>
+        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">
+          Edit
+        </button>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <!-- Main Character -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <div class="flex items-start justify-between mb-4">
+        <h2 class="text-xl font-semibold text-gray-900">Main Character</h2>
+        <button class="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">
+          Edit
+        </button>
+      </div>
+      <p class="text-gray-700 leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+
+    <!-- General Plot -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">General Plot</h2>
+      
+      <!-- Setting Details -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Setting Details</h3>
+        <div class="flex items-start justify-between mb-4">
+          <p class="text-gray-700 leading-relaxed flex-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="ml-4 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">
+            Edit
+          </button>
+        </div>
+      </div>
+
+      <!-- Central Conflict -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Central Conflict</h3>
+        <div class="flex items-start justify-between mb-4">
+          <p class="text-gray-700 leading-relaxed flex-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="ml-4 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">
+            Edit
+          </button>
+        </div>
+      </div>
+
+      <!-- Story Arc -->
+      <div>
+        <h3 class="text-lg font-semibold text-gray-800 mb-4">Story Arc</h3>
+        <div class="flex items-start justify-between mb-4">
+          <p class="text-gray-700 leading-relaxed flex-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <button class="ml-4 px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors font-semibold text-sm">
+            Edit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Themes -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Main Themes</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-semibold">Isolation and Psychological Deterioration</span>
+        <span class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-semibold">Isolation and Psychological Deterioration</span>
+        <span class="px-4 py-2 bg-gray-800 text-white rounded-full text-sm font-semibold">Isolation and Psychological Deterioration</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="mt-8 flex flex-col items-center space-y-4">
+    <button class="w-full max-w-md px-6 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-semibold text-lg">
+      Validate This Idea
+    </button>
+    <button class="w-full max-w-md px-6 py-4 border-2 border-gray-300 text-gray-700 rounded-full hover:bg-gray-50 transition-colors font-semibold text-lg">
+      Back to Criteria
+    </button>
+    <p class="text-sm text-gray-500">Estimated time: 5 minutes</p>
+  </div>
+</div>
+{% endblock %}
+
