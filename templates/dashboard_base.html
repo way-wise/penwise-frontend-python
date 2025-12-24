@@ -25,12 +25,12 @@
     {% block extra_css %}{% endblock %}
   </head>
 
-  <body class="font-sans antialiased bg-gray-50">
+  <body class="font-sans antialiased bg-white p-6">
     {% include 'includes/dashboard_sidebar.html' with active_page=active_page|default:'dashboard' %}
-    {% include 'includes/dashboard_header.html' %}
     
     <!-- Main Content Area -->
-    <main class="mt-16 lg:ml-64 p-4 lg:p-6 min-h-screen">
+    <main class="lg:ml-64 pb-8 px-4 lg:px-6 min-h-screen">
+      {% include 'includes/dashboard_header.html' %}
       {% block content %}{% endblock %}
     </main>
 
