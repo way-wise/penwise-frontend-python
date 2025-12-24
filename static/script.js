@@ -430,9 +430,17 @@ function highlightActiveDashboardMenu() {
 	
 	menuItems.forEach(item => {
 		const href = item.getAttribute('href');
+		// Remove any existing active classes first
+		item.classList.remove('bg-black', 'text-white', 'bg-white', 'text-black', 'text-gray-700', 'text-gray-800');
+		
+		// Check if this link matches current path
 		if (href && (currentPath === href || currentPath.startsWith(href + '/'))) {
-			item.classList.add('bg-black', 'text-white');
-			item.classList.remove('text-gray-700', 'hover:bg-gray-100');
+			item.classList.add('bg-white', 'text-black');
+			item.classList.remove('text-gray-800', 'hover:bg-gray-100');
+		} else {
+			// Ensure inactive state
+			item.classList.add('text-gray-800', 'hover:bg-gray-100');
+			item.classList.remove('bg-white', 'text-black');
 		}
 	});
 }
