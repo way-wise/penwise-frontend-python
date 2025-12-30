@@ -25,11 +25,11 @@
     {% block extra_css %}{% endblock %}
   </head>
 
-  <body class="font-sans antialiased bg-white min-h-screen">
+  <body class="font-sans antialiased bg-white min-h-screen lg:flex gap-6 justify-between">
     {% include 'includes/dashboard_sidebar.html' with active_page=active_page %}
     
     <!-- Main Content Area -->
-    <main class="lg:ml-64 min-h-screen">
+    <main class="min-h-screen flex-1">
       <div class="p-4 lg:p-6">
         {% include 'includes/dashboard_header.html' %}
         {% block content %}{% endblock %}
