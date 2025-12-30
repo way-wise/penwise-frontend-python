@@ -23,7 +23,7 @@ function findElementWithRetry(id, maxRetries = 10, delay = 50) {
 	return null;
 }
 
-// Global functions for inline handlers
+// Global functions for inline handlers - Mobile Menu
 function openMobileMenu() {
 	// Try to find elements immediately - use multiple methods
 	let menu = document.getElementById('mobileMenu');
@@ -76,6 +76,31 @@ function closeMobileMenu() {
 	
 	// Restore body scroll
 	document.body.style.overflow = '';
+}
+
+// Global functions for inline handlers - Dashboard Sidebar
+function openDashboardSidebar() {
+	const sidebar = document.getElementById('dashboardSidebar');
+	const overlay = document.getElementById('dashboardSidebarOverlay');
+	if (sidebar) {
+		sidebar.classList.remove('-translate-x-full');
+		if (overlay) {
+			overlay.classList.remove('hidden');
+		}
+		document.body.style.overflow = 'hidden';
+	}
+}
+
+function closeDashboardSidebar() {
+	const sidebar = document.getElementById('dashboardSidebar');
+	const overlay = document.getElementById('dashboardSidebarOverlay');
+	if (sidebar) {
+		sidebar.classList.add('-translate-x-full');
+		if (overlay) {
+			overlay.classList.add('hidden');
+		}
+		document.body.style.overflow = '';
+	}
 }
 
 // Create mobile menu if it doesn't exist
@@ -458,49 +483,29 @@ function initDashboardMobileMenu() {
 		return;
 	}
 	
-	function openSidebar() {
-		if (sidebar) {
-			sidebar.classList.remove('-translate-x-full');
-			if (overlay) {
-				overlay.classList.remove('hidden');
-			}
-			document.body.style.overflow = 'hidden';
-		}
-	}
-	
-	function closeSidebar() {
-		if (sidebar) {
-			sidebar.classList.add('-translate-x-full');
-			if (overlay) {
-				overlay.classList.add('hidden');
-			}
-			document.body.style.overflow = '';
-		}
-	}
-	
 	function toggleSidebar() {
 		if (sidebar.classList.contains('-translate-x-full')) {
-			openSidebar();
+			openDashboardSidebar();
 		} else {
-			closeSidebar();
+			closeDashboardSidebar();
 		}
 	}
 	
-	// Mobile menu button
-	if (menuBtn) {
+	// Mobile menu button (backup - inline handlers are primary)
+	if (menuBtn && !menuBtn.onclick) {
 		menuBtn.addEventListener('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			openSidebar();
+			openDashboardSidebar();
 		});
 	}
 	
-	// Close button
-	if (closeBtn) {
+	// Close button (backup - inline handlers are primary)
+	if (closeBtn && !closeBtn.onclick) {
 		closeBtn.addEventListener('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			closeSidebar();
+			closeDashboardSidebar();
 		});
 	}
 	
@@ -514,12 +519,12 @@ function initDashboardMobileMenu() {
 		});
 	}
 	
-	// Overlay click to close
-	if (overlay) {
+	// Overlay click to close (backup - inline handlers are primary)
+	if (overlay && !overlay.onclick) {
 		overlay.addEventListener('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
-			closeSidebar();
+			closeDashboardSidebar();
 		});
 	}
 	
@@ -528,7 +533,7 @@ function initDashboardMobileMenu() {
 	navLinks.forEach(link => {
 		link.addEventListener('click', () => {
 			if (window.innerWidth < 1024) {
-				closeSidebar();
+				closeDashboardSidebar();
 			}
 		});
 	});

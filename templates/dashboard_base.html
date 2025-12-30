@@ -25,13 +25,15 @@
     {% block extra_css %}{% endblock %}
   </head>
 
-  <body class="font-sans antialiased bg-white lg:p-6">
+  <body class="font-sans antialiased bg-white min-h-screen">
     {% include 'includes/dashboard_sidebar.html' with active_page=active_page %}
     
     <!-- Main Content Area -->
-    <main class="lg:ml-64 pb-8 px-4 lg:px-6 min-h-screen">
-      {% include 'includes/dashboard_header.html' %}
-      {% block content %}{% endblock %}
+    <main class="lg:ml-64 min-h-screen">
+      <div class="p-4 lg:p-6">
+        {% include 'includes/dashboard_header.html' %}
+        {% block content %}{% endblock %}
+      </div>
     </main>
 
     <script src="{% static 'script.js' %}"></script>
