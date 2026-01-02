@@ -17,6 +17,8 @@ def render_page(request, page_name='index'):
         'project-list': 'project-list',
         'new-project': 'new-project',
         'your-plan': 'your-plan',
+        'ambassador-affiliate': 'ambassador-affiliate',
+        'settings': 'settings',
     }
     
     # Remove .html extension if present for comparison

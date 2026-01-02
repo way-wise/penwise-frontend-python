@@ -1,0 +1,315 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+
+{% block title %}Settings - Penwise{% endblock %}
+
+{% block extra_css %}
+<style>
+  .settings-section {
+    transition: all 0.2s;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto">
+  <!-- Page Header -->
+  <div class="mb-6 lg:mb-8">
+    <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Settings</h1>
+    <p class="text-sm lg:text-base text-gray-600">Manage your account settings and preferences.</p>
+  </div>
+
+  <!-- Settings Sections -->
+  <div class="space-y-6">
+    <!-- Profile Settings -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 settings-section">
+      <div class="p-6 border-b border-gray-200">
+        <h2 class="text-lg font-semibold text-gray-900">Profile Information</h2>
+        <p class="text-sm text-gray-600 mt-1">Update your personal information</p>
+      </div>
+      <div class="p-6">
+        <div class="space-y-4">
+          <!-- Profile Picture -->
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 bg-black rounded-full flex items-center justify-center">
+              <span class="text-white text-2xl font-semibold">FB</span>
+            </div>
+            <div>
+              <button class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors text-sm font-semibold">
+                Change Photo
+              </button>
+              <p class="text-xs text-gray-500 mt-1">JPG, PNG or GIF. Max size 2MB</p>
+            </div>
+          </div>
+
+          <!-- Full Name -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
+            <input type="text" value="Firoz Bari" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all">
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+            <input type="email" value="firoz.bari@example.com" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all">
+          </div>
+
+          <!-- Bio -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Bio</label>
+            <textarea rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all resize-none" placeholder="Tell us about yourself...">Writer and storyteller passionate about creating compelling narratives.</textarea>
+          </div>
+
+          <div class="pt-2">
+            <button class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+              Save Changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Account Settings -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 settings-section">
+      <div class="p-6 border-b border-gray-200">
+        <h2 class="text-lg font-semibold text-gray-900">Account Settings</h2>
+        <p class="text-sm text-gray-600 mt-1">Manage your account preferences</p>
+      </div>
+      <div class="p-6">
+        <div class="space-y-4">
+          <!-- Language -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Language</label>
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all">
+              <option>English</option>
+              <option>French</option>
+              <option>Spanish</option>
+              <option>German</option>
+            </select>
+          </div>
+
+          <!-- Timezone -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Timezone</label>
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all">
+              <option>UTC (Coordinated Universal Time)</option>
+              <option>EST (Eastern Standard Time)</option>
+              <option>PST (Pacific Standard Time)</option>
+              <option>GMT (Greenwich Mean Time)</option>
+            </select>
+          </div>
+
+          <!-- Email Notifications -->
+          <div class="flex items-center justify-between py-2">
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Email Notifications</h3>
+              <p class="text-xs text-gray-600 mt-1">Receive email updates about your projects</p>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" checked class="sr-only peer">
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+            </label>
+          </div>
+
+          <!-- Project Updates -->
+          <div class="flex items-center justify-between py-2">
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Project Updates</h3>
+              <p class="text-xs text-gray-600 mt-1">Get notified when your projects are updated</p>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" checked class="sr-only peer">
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+            </label>
+          </div>
+
+          <!-- Marketing Emails -->
+          <div class="flex items-center justify-between py-2">
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Marketing Emails</h3>
+              <p class="text-xs text-gray-600 mt-1">Receive updates about new features and offers</p>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" class="sr-only peer">
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+            </label>
+          </div>
+
+          <div class="pt-2">
+            <button class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+              Save Preferences
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security Settings -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 settings-section">
+      <div class="p-6 border-b border-gray-200">
+        <h2 class="text-lg font-semibold text-gray-900">Security</h2>
+        <p class="text-sm text-gray-600 mt-1">Manage your password and security settings</p>
+      </div>
+      <div class="p-6">
+        <div class="space-y-4">
+          <!-- Current Password -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Current Password</label>
+            <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all" placeholder="Enter current password">
+          </div>
+
+          <!-- New Password -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">New Password</label>
+            <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all" placeholder="Enter new password">
+            <p class="text-xs text-gray-500 mt-1">Must be at least 8 characters long</p>
+          </div>
+
+          <!-- Confirm Password -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Confirm New Password</label>
+            <input type="password" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all" placeholder="Confirm new password">
+          </div>
+
+          <div class="pt-2">
+            <button class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+              Update Password
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Writing Preferences -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 settings-section">
+      <div class="p-6 border-b border-gray-200">
+        <h2 class="text-lg font-semibold text-gray-900">Writing Preferences</h2>
+        <p class="text-sm text-gray-600 mt-1">Customize your writing experience</p>
+      </div>
+      <div class="p-6">
+        <div class="space-y-4">
+          <!-- Default Writing Style -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Default Writing Style</label>
+            <select class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all">
+              <option>Formal</option>
+              <option>Casual</option>
+              <option>Creative</option>
+              <option>Academic</option>
+            </select>
+          </div>
+
+          <!-- Auto-save -->
+          <div class="flex items-center justify-between py-2">
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Auto-save</h3>
+              <p class="text-xs text-gray-600 mt-1">Automatically save your work as you write</p>
+            </div>
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input type="checkbox" checked class="sr-only peer">
+              <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+            </label>
+          </div>
+
+          <!-- Word Count Goal -->
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2">Daily Word Count Goal</label>
+            <input type="number" value="1000" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent outline-none transition-all">
+            <p class="text-xs text-gray-500 mt-1">Set your daily writing target</p>
+          </div>
+
+          <div class="pt-2">
+            <button class="px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+              Save Preferences
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Danger Zone -->
+    <div class="bg-white rounded-lg shadow-sm border border-red-200 settings-section">
+      <div class="p-6 border-b border-red-200">
+        <h2 class="text-lg font-semibold text-red-600">Danger Zone</h2>
+        <p class="text-sm text-gray-600 mt-1">Irreversible and destructive actions</p>
+      </div>
+      <div class="p-6">
+        <div class="space-y-4">
+          <!-- Delete Account -->
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Delete Account</h3>
+              <p class="text-xs text-gray-600 mt-1">Permanently delete your account and all associated data</p>
+            </div>
+            <button class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold text-sm">
+              Delete Account
+            </button>
+          </div>
+
+          <!-- Export Data -->
+          <div class="flex items-center justify-between">
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Export Data</h3>
+              <p class="text-xs text-gray-600 mt-1">Download all your data in JSON format</p>
+            </div>
+            <button class="px-4 py-2 bg-gray-200 text-gray-900 rounded-lg hover:bg-gray-300 transition-colors font-semibold text-sm">
+              Export Data
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  // Handle form submissions (prevent default for demo)
+  document.addEventListener('DOMContentLoaded', function() {
+    const saveButtons = document.querySelectorAll('button[class*="bg-black"]');
+    saveButtons.forEach(button => {
+      if (button.textContent.includes('Save')) {
+        button.addEventListener('click', function(e) {
+          e.preventDefault();
+          // Show success message (you can implement actual save logic here)
+          const originalText = button.textContent;
+          button.textContent = 'Saved!';
+          button.classList.add('bg-green-600');
+          button.classList.remove('bg-black', 'hover:bg-gray-800');
+          
+          setTimeout(function() {
+            button.textContent = originalText;
+            button.classList.remove('bg-green-600');
+            button.classList.add('bg-black', 'hover:bg-gray-800');
+          }, 2000);
+        });
+      }
+    });
+
+    // Handle delete account button
+    const deleteButton = document.querySelector('button[class*="bg-red-600"]');
+    if (deleteButton) {
+      deleteButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+          alert('Account deletion would be processed here. This is a demo.');
+        }
+      });
+    }
+
+    // Handle export data button
+    const exportButton = document.querySelector('button:contains("Export Data")');
+    const exportButtons = document.querySelectorAll('button');
+    exportButtons.forEach(btn => {
+      if (btn.textContent.includes('Export Data')) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          alert('Data export would be initiated here. This is a demo.');
+        });
+      }
+    });
+  });
+</script>
+{% endblock %}
+

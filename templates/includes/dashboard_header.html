@@ -1,6 +1,6 @@
 {% load static %}
 <!-- Dashboard Header -->
-<header class="bg-[#F9F9FB]/90 backdrop-blur-sm sticky top-4 lg:top-6 flex items-center justify-end border border-[#E4E8EF] rounded-[16px] px-4 lg:px-6 py-4 lg:py-5 mb-6 lg:mb-12 z-30">
+<header class="bg-[#F9F9FB]/90 backdrop-blur-sm sticky top-4 lg:top-6 flex items-center justify-between border border-[#E4E8EF] rounded-[16px] px-4 lg:px-6 py-4 lg:py-5 mb-6 lg:mb-12 z-30">
   <!-- Mobile Menu Button -->
   <button id="dashboardMobileMenuBtn" onclick="openDashboardSidebar(); return false;" class="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
     <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -10,12 +10,105 @@
   
   <div class="flex items-center gap-4 ml-auto">
     <span class="text-gray-700 text-sm lg:text-base">Hi 👋 <span class="font-semibold">Firoz Bari</span></span>
-    <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
-      <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
-      </svg>
-      <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
-    </button>
+    
+    <!-- Notification Dropdown -->
+    <div class="relative" id="notificationDropdown">
+      <button onclick="if(typeof toggleNotificationDropdown === 'function') { toggleNotificationDropdown(); } else { var menu = document.getElementById('notificationDropdownMenu'); var userMenu = document.getElementById('userDropdownMenu'); if (userMenu) userMenu.classList.add('hidden'); if (menu) menu.classList.toggle('hidden'); } return false;" class="p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
+        <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+        </svg>
+        <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
+      </button>
+      
+      <!-- Notification Dropdown Menu -->
+      <div id="notificationDropdownMenu" class="hidden absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-50 max-h-96 overflow-y-auto">
+        <div class="p-4 border-b border-gray-200">
+          <h3 class="text-sm font-semibold text-gray-900">Notifications</h3>
+        </div>
+        <div class="py-2">
+          <!-- Notification Item 1 -->
+          <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition-colors border-b border-gray-100">
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-900">New project created</p>
+                <p class="text-xs text-gray-600 mt-1">Your project "The King of Peel Street" has been created successfully.</p>
+                <p class="text-xs text-gray-500 mt-1">2 minutes ago</p>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Notification Item 2 -->
+          <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition-colors border-b border-gray-100">
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-900">Chapter completed</p>
+                <p class="text-xs text-gray-600 mt-1">Chapter 3 of "The ghost of rue Saint-Paul" is ready for review.</p>
+                <p class="text-xs text-gray-500 mt-1">1 hour ago</p>
+              </div>
+            </div>
+          </a>
+          
+          <!-- Notification Item 3 -->
+          <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition-colors">
+            <div class="flex items-start gap-3">
+              <div class="w-2 h-2 bg-yellow-500 rounded-full mt-2"></div>
+              <div class="flex-1">
+                <p class="text-sm font-medium text-gray-900">Payment reminder</p>
+                <p class="text-xs text-gray-600 mt-1">Your subscription will renew in 3 days.</p>
+                <p class="text-xs text-gray-500 mt-1">2 days ago</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="p-3 border-t border-gray-200">
+          <a href="#" class="block text-center text-sm text-gray-700 hover:text-gray-900 font-medium">View all notifications</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- User Profile Dropdown -->
+    <div class="relative" id="userProfileDropdown">
+      <button onclick="if(typeof toggleUserDropdown === 'function') { toggleUserDropdown(); } else { var menu = document.getElementById('userDropdownMenu'); var notifMenu = document.getElementById('notificationDropdownMenu'); if (notifMenu) notifMenu.classList.add('hidden'); if (menu) menu.classList.toggle('hidden'); } return false;" class="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-lg transition-colors">
+        <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
+          <span class="text-white text-sm font-semibold">FB</span>
+        </div>
+        <svg class="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </button>
+      
+      <!-- User Dropdown Menu -->
+      <div id="userDropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 py-2 z-50">
+        <a href="/your-plan" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+            </svg>
+            <span>Your Plan</span>
+          </div>
+        </a>
+        <a href="/settings" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 transition-colors">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span>Settings</span>
+          </div>
+        </a>
+        <div class="border-t border-gray-200 my-1"></div>
+        <a href="/logout" class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+            </svg>
+            <span>Logout</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 </header>
 

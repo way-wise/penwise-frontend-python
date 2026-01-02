@@ -78,6 +78,111 @@ function closeMobileMenu() {
 	document.body.style.overflow = '';
 }
 
+// Global function for user dropdown toggle
+function toggleUserDropdown(e) {
+	if (e) {
+		e.preventDefault();
+		e.stopPropagation();
+	}
+	
+	const dropdown = document.getElementById('userDropdownMenu');
+	const notificationDropdown = document.getElementById('notificationDropdownMenu');
+	
+	// Close notification dropdown if open
+	if (notificationDropdown && !notificationDropdown.classList.contains('hidden')) {
+		notificationDropdown.classList.add('hidden');
+	}
+	
+	// Toggle user dropdown
+	if (dropdown) {
+		const isHidden = dropdown.classList.contains('hidden');
+		dropdown.classList.toggle('hidden');
+		console.log('User dropdown toggled, isHidden:', isHidden);
+	} else {
+		console.error('User dropdown menu not found');
+	}
+}
+
+// Global function for notification dropdown toggle
+function toggleNotificationDropdown(e) {
+	if (e) {
+		e.preventDefault();
+		e.stopPropagation();
+	}
+	
+	const notificationDropdown = document.getElementById('notificationDropdownMenu');
+	const userDropdown = document.getElementById('userDropdownMenu');
+	
+	// Close user dropdown if open
+	if (userDropdown && !userDropdown.classList.contains('hidden')) {
+		userDropdown.classList.add('hidden');
+	}
+	
+	// Toggle notification dropdown
+	if (notificationDropdown) {
+		const isHidden = notificationDropdown.classList.contains('hidden');
+		notificationDropdown.classList.toggle('hidden');
+		console.log('Notification dropdown toggled, isHidden:', isHidden);
+	} else {
+		console.error('Notification dropdown menu not found');
+	}
+}
+
+// Make functions globally accessible
+window.toggleUserDropdown = toggleUserDropdown;
+window.toggleNotificationDropdown = toggleNotificationDropdown;
+
+// Initialize dropdown functionality when DOM is ready
+function initDropdowns() {
+	// Add event listeners as fallback
+	const userDropdownButton = document.querySelector('#userProfileDropdown button');
+	const notificationDropdownButton = document.querySelector('#notificationDropdown button');
+	
+	if (userDropdownButton) {
+		userDropdownButton.addEventListener('click', function(e) {
+			toggleUserDropdown(e);
+		});
+	}
+	
+	if (notificationDropdownButton) {
+		notificationDropdownButton.addEventListener('click', function(e) {
+			toggleNotificationDropdown(e);
+		});
+	}
+	
+	console.log('Dropdowns initialized');
+}
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', function(event) {
+	const userDropdown = document.getElementById('userDropdownMenu');
+	const userDropdownContainer = document.getElementById('userProfileDropdown');
+	const notificationDropdown = document.getElementById('notificationDropdownMenu');
+	const notificationDropdownContainer = document.getElementById('notificationDropdown');
+	
+	// Check if click is inside user dropdown container
+	const clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
+	// Check if click is inside notification dropdown container
+	const clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
+	
+	// Close user dropdown if clicking outside
+	if (userDropdown && !clickedInsideUser) {
+		userDropdown.classList.add('hidden');
+	}
+	
+	// Close notification dropdown if clicking outside
+	if (notificationDropdown && !clickedInsideNotification) {
+		notificationDropdown.classList.add('hidden');
+	}
+});
+
+// Initialize on DOM ready
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', initDropdowns);
+} else {
+	initDropdowns();
+}
+
 // Global functions for inline handlers - Dashboard Sidebar
 function openDashboardSidebar() {
 	const sidebar = document.getElementById('dashboardSidebar');

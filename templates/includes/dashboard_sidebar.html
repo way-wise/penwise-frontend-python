@@ -3,7 +3,7 @@
 <div id="dashboardSidebarOverlay" onclick="closeDashboardSidebar(); return false;" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden lg:hidden"></div>
 
 <!-- Dashboard Sidebar -->
-<aside id="dashboardSidebar" class="fixed lg:sticky top-0 lg:top-6 left-0 h-screen lg:h-[calc(100vh-3rem)] w-64 lg:rounded-[16px] bg-[#F9F9FB] border-r lg:border border-[#E4E8EF] z-50 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
+<aside id="dashboardSidebar" class="fixed lg:sticky top-0 lg:top-6 left-0 lg:left-6 h-screen lg:h-[calc(100vh-3rem)] w-64 lg:rounded-[16px] bg-[#F9F9FB] border-r lg:border border-[#E4E8EF] z-50 flex flex-col transform -translate-x-full lg:translate-x-0 transition-transform duration-300">
   <!-- Logo Section -->
   <div class="flex items-center justify-between lg:p-6 p-4 border-b border-gray-200">
     <div class="flex items-center gap-2">
@@ -27,8 +27,8 @@
   </div>
 
   <!-- Navigation Menu -->
-  <nav class="flex-1 overflow-y-auto p-2 lg:p-4">
-    <ul class="space-y-1 lg:space-y-2">
+  <nav class="flex-1 overflow-y-auto p-2 lg:p-3">
+    <ul class="space-y-1">
       <li>
         <a href="/dashboard" class="text-xs lg:text-base relative after:content-[''] after:absolute after:bottom-2 after:left-full after:w-1 after:lg:h-6 after:h-4 after:bg-black after:rounded-r-full after:opacity-0 flex items-center gap-3 lg:px-4 px-2 lg:py-2 py-1.5 rounded-lg transition-colors {% if active_page == 'dashboard' %}after:opacity-100 bg-white text-black border border-[#E4E8EF]{% else %}text-gray-800 hover:bg-gray-100 hover:after:opacity-100{% endif %}">
           <svg class="size-4 lg:size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,6 +54,14 @@
         </a>
       </li>
       <li>
+        <a href="/ambassador-affiliate" class="text-xs lg:text-base relative after:content-[''] after:absolute after:bottom-2 after:left-full after:w-1 after:lg:h-6 after:h-4 after:bg-black after:rounded-r-full after:opacity-0 flex items-center gap-3 lg:px-4 px-2 lg:py-2 py-1.5 rounded-lg transition-colors {% if active_page == 'ambassador-affiliate' %}after:opacity-100 bg-white text-black border border-[#E4E8EF]{% else %}text-gray-800 hover:bg-gray-100 hover:after:opacity-100{% endif %}">
+          <svg class="size-4 lg:size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+          </svg>
+          <span class="font-medium">Ambassador/Affiliate</span>
+        </a>
+      </li>
+      <li>
         <a href="/your-plan" class="text-xs lg:text-base relative after:content-[''] after:absolute after:bottom-2 after:left-full after:w-1 after:lg:h-6 after:h-4 after:bg-black after:rounded-r-full after:opacity-0 flex items-center gap-3 lg:px-4 px-2 lg:py-2 py-1.5 rounded-lg transition-colors {% if active_page == 'your-plan' %}after:opacity-100 bg-white text-black border border-[#E4E8EF]{% else %}text-gray-800 hover:bg-gray-100 hover:after:opacity-100{% endif %}">
           <svg class="size-4 lg:size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
@@ -61,40 +69,21 @@
           <span class="font-medium">Your Plan</span>
         </a>
       </li>
-      <li>
-        <a href="/logout" class="text-xs lg:text-base flex items-center gap-3 lg:px-4 px-2 lg:py-2 py-1.5 rounded-lg transition-colors text-gray-800 hover:bg-gray-100">
-          <svg class="size-4 lg:size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
-          </svg>
-          <span class="font-medium">Logout</span>
-        </a>
-      </li>
     </ul>
   </nav>
 
-  <!-- Current Project Section -->
-  <div class="lg:p-4 p-2 border-t border-gray-200">
-    <div class="bg-white rounded-lg lg:p-4 p-2 lg:mb-4 mb-2 border border-[#E4E8EF]">
-      <h3 class="text-xs lg:text-sm font-semibold text-gray-900 lg:mb-2 mb-1">No Current Project Available</h3>
-      <p class="text-xs lg:text-sm text-gray-600 lg:mb-3 mb-2">No projects found. Create one to get started.</p>
-      <a href="/new-project" class="block w-full text-center px-4 lg:py-2 py-1.5 bg-black text-white rounded-full hover:bg-gray-800 transition-colors lg:text-sm text-xs font-medium">
-        Create your first book
-      </a>
-    </div>
-  </div>
-
   <!-- Your Book Rights Section -->
-  <div class="lg:p-4 p-2 border-t border-gray-200">
-    <p class="text-xs lg:text-sm font-semibold text-gray-900 lg:mb-2 mb-2">Your Book Rights</p>
-    <div class="bg-black rounded-lg p-4 text-white relative overflow-hidden">
+  <div class="lg:p-3 p-2 border-t border-gray-200">
+    <p class="text-xs lg:text-sm font-semibold text-gray-900 mb-2">Your Book Rights</p>
+    <div class="bg-black rounded-lg p-3 text-white relative overflow-hidden">
       <div class="absolute inset-0 opacity-10">
         <div class="absolute top-0 right-0 w-32 h-32 bg-white rounded-full -mr-16 -mt-16"></div>
         <div class="absolute bottom-0 left-0 w-24 h-24 bg-white rounded-full -ml-12 -mb-12"></div>
       </div>
       <div class="relative z-10">
-        <p class="text-xs lg:text-base font-bold lg:mb-1 mb-0.5">You have the right to 1 FREE chapter</p>
-        <p class="text-xs text-gray-300 mb-4">Start with one free chapter to try out all core features.</p>
-        <a href="/your-plan" class="block w-full text-center px-4 lg:py-2 py-1.5 bg-white text-black rounded-full hover:bg-gray-100 transition-colors lg:text-sm text-xs font-semibold">
+        <p class="text-xs lg:text-sm font-bold mb-1">You have the right to 1 FREE chapter</p>
+        <p class="text-xs text-gray-300 mb-3">Start with one free chapter to try out all core features.</p>
+        <a href="/your-plan" class="block w-full text-center px-3 py-1.5 bg-white text-black rounded-full hover:bg-gray-100 transition-colors text-xs font-semibold">
           To buy More
         </a>
       </div>
@@ -102,8 +91,8 @@
   </div>
 
   <!-- Support Email -->
-  <div class="lg:p-4 p-2 border-t border-gray-200">
-    <a href="mailto:support@penwise.ai" class=" block w-full text-center px-4 lg:py-2 py-1.5 transition-colors lg:text-sm text-xs font-medium text-black hover:text-gray-900 text-center transition-colors">
+  <div class="lg:p-3 p-2 border-t border-gray-200">
+    <a href="mailto:support@penwise.ai" class="block w-full text-center px-3 py-2 text-xs font-medium text-black hover:text-gray-900 transition-colors">
       support@penwise.ai
     </a>
   </div>
