@@ -192,17 +192,18 @@ function initDropdowns() {
 }
 
 // Close dropdowns when clicking outside (with slight delay to allow toggle to complete)
-if (!window.clickOutsideTimeout) {
+// Only set up if not already set up by inline script
+if (!window.dropdownClickHandlerSetup) {
+	window.dropdownClickHandlerSetup = true;
 	window.clickOutsideTimeout = null;
-}
-document.addEventListener('click', function(event) {
-	// Clear any pending timeout
-	if (window.clickOutsideTimeout) {
-		clearTimeout(window.clickOutsideTimeout);
-	}
-	
-	// Small delay to allow toggle function to complete first
-	window.clickOutsideTimeout = setTimeout(function() {
+	document.addEventListener('click', function(event) {
+		// Clear any pending timeout
+		if (window.clickOutsideTimeout) {
+			clearTimeout(window.clickOutsideTimeout);
+		}
+		
+		// Small delay to allow toggle function to complete first
+		window.clickOutsideTimeout = setTimeout(function() {
 		const userDropdown = document.getElementById('userDropdownMenu');
 		const userDropdownContainer = document.getElementById('userProfileDropdown');
 		const notificationDropdown = document.getElementById('notificationDropdownMenu');
@@ -226,8 +227,9 @@ document.addEventListener('click', function(event) {
 			notificationDropdown.style.display = 'none';
 			notificationDropdown.style.visibility = 'hidden';
 		}
-	}, 10);
-});
+		}, 10);
+	});
+}
 
 // Initialize on DOM ready
 if (document.readyState === 'loading') {

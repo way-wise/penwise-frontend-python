@@ -2,7 +2,7 @@
 <!-- Dashboard Header -->
 <header class="bg-[#F9F9FB]/90 backdrop-blur-sm sticky top-4 lg:top-6 flex items-center justify-between border border-[#E4E8EF] rounded-[16px] px-2 md:px-4 lg:px-6 py-2 md:py-4 lg:py-5 mb-6 lg:mb-12 z-30 overflow-visible">
   <!-- Mobile Menu Button -->
-  <button id="dashboardMobileMenuBtn" onclick="openDashboardSidebar(); return false;" class="lg:hidden md:p-2 p-1 hover:bg-gray-100 rounded-lg transition-colors">
+  <button id="dashboardMobileMenuBtn" onclick="if(typeof openDashboardSidebar === 'function') { openDashboardSidebar(); } else { var s = document.getElementById('dashboardSidebar'); var o = document.getElementById('dashboardSidebarOverlay'); if(s) { s.classList.remove('-translate-x-full'); if(o) o.classList.remove('hidden'); document.body.style.overflow = 'hidden'; } } return false;" class="lg:hidden md:p-2 p-1 hover:bg-gray-100 rounded-lg transition-colors">
     <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>

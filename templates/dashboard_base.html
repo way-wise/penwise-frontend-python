@@ -131,37 +131,39 @@
       };
       
       // Close dropdowns when clicking outside (with slight delay to allow toggle to complete)
-      if (!window.clickOutsideTimeout) {
+      // Only set up if not already set up by script.js
+      if (!window.dropdownClickHandlerSetup) {
+        window.dropdownClickHandlerSetup = true;
         window.clickOutsideTimeout = null;
+        document.addEventListener('click', function(event) {
+          // Clear any pending timeout
+          if (window.clickOutsideTimeout) {
+            clearTimeout(window.clickOutsideTimeout);
+          }
+          
+          // Small delay to allow toggle function to complete first
+          window.clickOutsideTimeout = setTimeout(function() {
+            var userDropdown = document.getElementById('userDropdownMenu');
+            var userDropdownContainer = document.getElementById('userProfileDropdown');
+            var notificationDropdown = document.getElementById('notificationDropdownMenu');
+            var notificationDropdownContainer = document.getElementById('notificationDropdown');
+            
+            var clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
+            var clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
+            
+            if (userDropdown && !clickedInsideUser && !userDropdown.classList.contains('hidden')) {
+              userDropdown.classList.add('hidden');
+              userDropdown.style.display = 'none';
+              userDropdown.style.visibility = 'hidden';
+            }
+            if (notificationDropdown && !clickedInsideNotification && !notificationDropdown.classList.contains('hidden')) {
+              notificationDropdown.classList.add('hidden');
+              notificationDropdown.style.display = 'none';
+              notificationDropdown.style.visibility = 'hidden';
+            }
+          }, 10);
+        });
       }
-      document.addEventListener('click', function(event) {
-        // Clear any pending timeout
-        if (window.clickOutsideTimeout) {
-          clearTimeout(window.clickOutsideTimeout);
-        }
-        
-        // Small delay to allow toggle function to complete first
-        window.clickOutsideTimeout = setTimeout(function() {
-          var userDropdown = document.getElementById('userDropdownMenu');
-          var userDropdownContainer = document.getElementById('userProfileDropdown');
-          var notificationDropdown = document.getElementById('notificationDropdownMenu');
-          var notificationDropdownContainer = document.getElementById('notificationDropdown');
-          
-          var clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
-          var clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
-          
-          if (userDropdown && !clickedInsideUser && !userDropdown.classList.contains('hidden')) {
-            userDropdown.classList.add('hidden');
-            userDropdown.style.display = 'none';
-            userDropdown.style.visibility = 'hidden';
-          }
-          if (notificationDropdown && !clickedInsideNotification && !notificationDropdown.classList.contains('hidden')) {
-            notificationDropdown.classList.add('hidden');
-            notificationDropdown.style.display = 'none';
-            notificationDropdown.style.visibility = 'hidden';
-          }
-        }, 10);
-      });
     </script>
     {% block extra_css %}{% endblock %}
   </head>
