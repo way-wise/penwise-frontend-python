@@ -89,15 +89,32 @@ function toggleUserDropdown(e) {
 	const notificationDropdown = document.getElementById('notificationDropdownMenu');
 	
 	// Close notification dropdown if open
-	if (notificationDropdown && !notificationDropdown.classList.contains('hidden')) {
+	if (notificationDropdown) {
 		notificationDropdown.classList.add('hidden');
+		notificationDropdown.style.display = 'none';
+		notificationDropdown.style.visibility = 'hidden';
 	}
 	
 	// Toggle user dropdown
 	if (dropdown) {
-		const isHidden = dropdown.classList.contains('hidden');
-		dropdown.classList.toggle('hidden');
-		console.log('User dropdown toggled, isHidden:', isHidden);
+		const isHidden = dropdown.classList.contains('hidden') || dropdown.style.display === 'none';
+		
+		if (isHidden) {
+			// Show dropdown - forcefully remove hidden class
+			dropdown.classList.remove('hidden');
+			// Also remove from className string as fallback
+			dropdown.className = dropdown.className.replace(/\bhidden\b/g, '');
+			dropdown.style.display = 'block';
+			dropdown.style.visibility = 'visible';
+			dropdown.style.opacity = '1';
+			console.log('User dropdown shown. Classes:', dropdown.className, 'Display:', dropdown.style.display);
+		} else {
+			// Hide dropdown
+			dropdown.classList.add('hidden');
+			dropdown.style.display = 'none';
+			dropdown.style.visibility = 'hidden';
+			console.log('User dropdown hidden');
+		}
 	} else {
 		console.error('User dropdown menu not found');
 	}
@@ -114,15 +131,32 @@ function toggleNotificationDropdown(e) {
 	const userDropdown = document.getElementById('userDropdownMenu');
 	
 	// Close user dropdown if open
-	if (userDropdown && !userDropdown.classList.contains('hidden')) {
+	if (userDropdown) {
 		userDropdown.classList.add('hidden');
+		userDropdown.style.display = 'none';
+		userDropdown.style.visibility = 'hidden';
 	}
 	
 	// Toggle notification dropdown
 	if (notificationDropdown) {
-		const isHidden = notificationDropdown.classList.contains('hidden');
-		notificationDropdown.classList.toggle('hidden');
-		console.log('Notification dropdown toggled, isHidden:', isHidden);
+		const isHidden = notificationDropdown.classList.contains('hidden') || notificationDropdown.style.display === 'none';
+		
+		if (isHidden) {
+			// Show dropdown - forcefully remove hidden class
+			notificationDropdown.classList.remove('hidden');
+			// Also remove from className string as fallback
+			notificationDropdown.className = notificationDropdown.className.replace(/\bhidden\b/g, '');
+			notificationDropdown.style.display = 'block';
+			notificationDropdown.style.visibility = 'visible';
+			notificationDropdown.style.opacity = '1';
+			console.log('Notification dropdown shown. Classes:', notificationDropdown.className, 'Display:', notificationDropdown.style.display);
+		} else {
+			// Hide dropdown
+			notificationDropdown.classList.add('hidden');
+			notificationDropdown.style.display = 'none';
+			notificationDropdown.style.visibility = 'hidden';
+			console.log('Notification dropdown hidden');
+		}
 	} else {
 		console.error('Notification dropdown menu not found');
 	}
@@ -153,27 +187,40 @@ function initDropdowns() {
 	console.log('Dropdowns initialized');
 }
 
-// Close dropdowns when clicking outside
+// Close dropdowns when clicking outside (with slight delay to allow toggle to complete)
+let clickOutsideTimeout;
 document.addEventListener('click', function(event) {
-	const userDropdown = document.getElementById('userDropdownMenu');
-	const userDropdownContainer = document.getElementById('userProfileDropdown');
-	const notificationDropdown = document.getElementById('notificationDropdownMenu');
-	const notificationDropdownContainer = document.getElementById('notificationDropdown');
-	
-	// Check if click is inside user dropdown container
-	const clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
-	// Check if click is inside notification dropdown container
-	const clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
-	
-	// Close user dropdown if clicking outside
-	if (userDropdown && !clickedInsideUser) {
-		userDropdown.classList.add('hidden');
+	// Clear any pending timeout
+	if (clickOutsideTimeout) {
+		clearTimeout(clickOutsideTimeout);
 	}
 	
-	// Close notification dropdown if clicking outside
-	if (notificationDropdown && !clickedInsideNotification) {
-		notificationDropdown.classList.add('hidden');
-	}
+	// Small delay to allow toggle function to complete first
+	clickOutsideTimeout = setTimeout(function() {
+		const userDropdown = document.getElementById('userDropdownMenu');
+		const userDropdownContainer = document.getElementById('userProfileDropdown');
+		const notificationDropdown = document.getElementById('notificationDropdownMenu');
+		const notificationDropdownContainer = document.getElementById('notificationDropdown');
+		
+		// Check if click is inside user dropdown container
+		const clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
+		// Check if click is inside notification dropdown container
+		const clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
+		
+		// Close user dropdown if clicking outside
+		if (userDropdown && !clickedInsideUser && !userDropdown.classList.contains('hidden')) {
+			userDropdown.classList.add('hidden');
+			userDropdown.style.display = 'none';
+			userDropdown.style.visibility = 'hidden';
+		}
+		
+		// Close notification dropdown if clicking outside
+		if (notificationDropdown && !clickedInsideNotification && !notificationDropdown.classList.contains('hidden')) {
+			notificationDropdown.classList.add('hidden');
+			notificationDropdown.style.display = 'none';
+			notificationDropdown.style.visibility = 'hidden';
+		}
+	}, 10);
 });
 
 // Initialize on DOM ready

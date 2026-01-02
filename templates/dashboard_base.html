@@ -32,11 +32,36 @@
         }
         var dropdown = document.getElementById('userDropdownMenu');
         var notificationDropdown = document.getElementById('notificationDropdownMenu');
-        if (notificationDropdown && !notificationDropdown.classList.contains('hidden')) {
+        
+        // Close notification dropdown if open
+        if (notificationDropdown) {
           notificationDropdown.classList.add('hidden');
+          notificationDropdown.style.display = 'none';
+          notificationDropdown.style.visibility = 'hidden';
         }
+        
+        // Toggle user dropdown
         if (dropdown) {
-          dropdown.classList.toggle('hidden');
+          var isHidden = dropdown.classList.contains('hidden') || dropdown.style.display === 'none';
+          
+          if (isHidden) {
+            // Show dropdown - forcefully remove hidden class
+            dropdown.classList.remove('hidden');
+            // Also remove from className string as fallback
+            dropdown.className = dropdown.className.replace(/\bhidden\b/g, '');
+            dropdown.style.display = 'block';
+            dropdown.style.visibility = 'visible';
+            dropdown.style.opacity = '1';
+            console.log('User dropdown shown. Classes:', dropdown.className, 'Display:', dropdown.style.display);
+          } else {
+            // Hide dropdown
+            dropdown.classList.add('hidden');
+            dropdown.style.display = 'none';
+            dropdown.style.visibility = 'hidden';
+            console.log('User dropdown hidden');
+          }
+        } else {
+          console.error('User dropdown element not found');
         }
       };
       
@@ -47,30 +72,68 @@
         }
         var notificationDropdown = document.getElementById('notificationDropdownMenu');
         var userDropdown = document.getElementById('userDropdownMenu');
-        if (userDropdown && !userDropdown.classList.contains('hidden')) {
+        
+        // Close user dropdown if open
+        if (userDropdown) {
           userDropdown.classList.add('hidden');
+          userDropdown.style.display = 'none';
+          userDropdown.style.visibility = 'hidden';
         }
+        
+        // Toggle notification dropdown
         if (notificationDropdown) {
-          notificationDropdown.classList.toggle('hidden');
+          var isHidden = notificationDropdown.classList.contains('hidden') || notificationDropdown.style.display === 'none';
+          
+          if (isHidden) {
+            // Show dropdown - forcefully remove hidden class
+            notificationDropdown.classList.remove('hidden');
+            // Also remove from className string as fallback
+            notificationDropdown.className = notificationDropdown.className.replace(/\bhidden\b/g, '');
+            notificationDropdown.style.display = 'block';
+            notificationDropdown.style.visibility = 'visible';
+            notificationDropdown.style.opacity = '1';
+            console.log('Notification dropdown shown. Classes:', notificationDropdown.className, 'Display:', notificationDropdown.style.display);
+          } else {
+            // Hide dropdown
+            notificationDropdown.classList.add('hidden');
+            notificationDropdown.style.display = 'none';
+            notificationDropdown.style.visibility = 'hidden';
+            console.log('Notification dropdown hidden');
+          }
+        } else {
+          console.error('Notification dropdown element not found');
         }
       };
       
-      // Close dropdowns when clicking outside
+      // Close dropdowns when clicking outside (with slight delay to allow toggle to complete)
+      var clickOutsideTimeout;
       document.addEventListener('click', function(event) {
-        var userDropdown = document.getElementById('userDropdownMenu');
-        var userDropdownContainer = document.getElementById('userProfileDropdown');
-        var notificationDropdown = document.getElementById('notificationDropdownMenu');
-        var notificationDropdownContainer = document.getElementById('notificationDropdown');
-        
-        var clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
-        var clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
-        
-        if (userDropdown && !clickedInsideUser) {
-          userDropdown.classList.add('hidden');
+        // Clear any pending timeout
+        if (clickOutsideTimeout) {
+          clearTimeout(clickOutsideTimeout);
         }
-        if (notificationDropdown && !clickedInsideNotification) {
-          notificationDropdown.classList.add('hidden');
-        }
+        
+        // Small delay to allow toggle function to complete first
+        clickOutsideTimeout = setTimeout(function() {
+          var userDropdown = document.getElementById('userDropdownMenu');
+          var userDropdownContainer = document.getElementById('userProfileDropdown');
+          var notificationDropdown = document.getElementById('notificationDropdownMenu');
+          var notificationDropdownContainer = document.getElementById('notificationDropdown');
+          
+          var clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
+          var clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
+          
+          if (userDropdown && !clickedInsideUser && !userDropdown.classList.contains('hidden')) {
+            userDropdown.classList.add('hidden');
+            userDropdown.style.display = 'none';
+            userDropdown.style.visibility = 'hidden';
+          }
+          if (notificationDropdown && !clickedInsideNotification && !notificationDropdown.classList.contains('hidden')) {
+            notificationDropdown.classList.add('hidden');
+            notificationDropdown.style.display = 'none';
+            notificationDropdown.style.visibility = 'hidden';
+          }
+        }, 10);
       });
     </script>
     {% block extra_css %}{% endblock %}
@@ -80,8 +143,8 @@
     {% include 'includes/dashboard_sidebar.html' with active_page=active_page %}
     
     <!-- Main Content Area -->
-    <main class="min-h-screen flex-1">
-      <div class="p-4 lg:p-6">
+    <main class="min-h-screen flex-1 overflow-visible">
+      <div class="p-4 lg:p-6 overflow-visible">
         {% include 'includes/dashboard_header.html' %}
         {% block content %}{% endblock %}
       </div>
