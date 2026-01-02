@@ -22,6 +22,57 @@
         },
       };
     </script>
+    <!-- Dropdown functions - must be available before header renders -->
+    <script>
+      // Define dropdown functions immediately to ensure they're available
+      window.toggleUserDropdown = function(e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        var dropdown = document.getElementById('userDropdownMenu');
+        var notificationDropdown = document.getElementById('notificationDropdownMenu');
+        if (notificationDropdown && !notificationDropdown.classList.contains('hidden')) {
+          notificationDropdown.classList.add('hidden');
+        }
+        if (dropdown) {
+          dropdown.classList.toggle('hidden');
+        }
+      };
+      
+      window.toggleNotificationDropdown = function(e) {
+        if (e) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+        var notificationDropdown = document.getElementById('notificationDropdownMenu');
+        var userDropdown = document.getElementById('userDropdownMenu');
+        if (userDropdown && !userDropdown.classList.contains('hidden')) {
+          userDropdown.classList.add('hidden');
+        }
+        if (notificationDropdown) {
+          notificationDropdown.classList.toggle('hidden');
+        }
+      };
+      
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function(event) {
+        var userDropdown = document.getElementById('userDropdownMenu');
+        var userDropdownContainer = document.getElementById('userProfileDropdown');
+        var notificationDropdown = document.getElementById('notificationDropdownMenu');
+        var notificationDropdownContainer = document.getElementById('notificationDropdown');
+        
+        var clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
+        var clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
+        
+        if (userDropdown && !clickedInsideUser) {
+          userDropdown.classList.add('hidden');
+        }
+        if (notificationDropdown && !clickedInsideNotification) {
+          notificationDropdown.classList.add('hidden');
+        }
+      });
+    </script>
     {% block extra_css %}{% endblock %}
   </head>
 
