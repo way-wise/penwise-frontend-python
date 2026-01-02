@@ -192,15 +192,17 @@ function initDropdowns() {
 }
 
 // Close dropdowns when clicking outside (with slight delay to allow toggle to complete)
-let clickOutsideTimeout;
+if (!window.clickOutsideTimeout) {
+	window.clickOutsideTimeout = null;
+}
 document.addEventListener('click', function(event) {
 	// Clear any pending timeout
-	if (clickOutsideTimeout) {
-		clearTimeout(clickOutsideTimeout);
+	if (window.clickOutsideTimeout) {
+		clearTimeout(window.clickOutsideTimeout);
 	}
 	
 	// Small delay to allow toggle function to complete first
-	clickOutsideTimeout = setTimeout(function() {
+	window.clickOutsideTimeout = setTimeout(function() {
 		const userDropdown = document.getElementById('userDropdownMenu');
 		const userDropdownContainer = document.getElementById('userProfileDropdown');
 		const notificationDropdown = document.getElementById('notificationDropdownMenu');
@@ -258,6 +260,10 @@ function closeDashboardSidebar() {
 		document.body.style.overflow = '';
 	}
 }
+
+// Expose dashboard sidebar functions globally
+window.openDashboardSidebar = openDashboardSidebar;
+window.closeDashboardSidebar = closeDashboardSidebar;
 
 // Create mobile menu if it doesn't exist
 function createMobileMenuIfMissing() {

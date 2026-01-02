@@ -65,6 +65,31 @@
         }
       };
       
+      // Dashboard sidebar functions
+      window.openDashboardSidebar = function() {
+        var sidebar = document.getElementById('dashboardSidebar');
+        var overlay = document.getElementById('dashboardSidebarOverlay');
+        if (sidebar) {
+          sidebar.classList.remove('-translate-x-full');
+          if (overlay) {
+            overlay.classList.remove('hidden');
+          }
+          document.body.style.overflow = 'hidden';
+        }
+      };
+      
+      window.closeDashboardSidebar = function() {
+        var sidebar = document.getElementById('dashboardSidebar');
+        var overlay = document.getElementById('dashboardSidebarOverlay');
+        if (sidebar) {
+          sidebar.classList.add('-translate-x-full');
+          if (overlay) {
+            overlay.classList.add('hidden');
+          }
+          document.body.style.overflow = '';
+        }
+      };
+      
       window.toggleNotificationDropdown = function(e) {
         if (e) {
           e.preventDefault();
@@ -106,15 +131,17 @@
       };
       
       // Close dropdowns when clicking outside (with slight delay to allow toggle to complete)
-      var clickOutsideTimeout;
+      if (!window.clickOutsideTimeout) {
+        window.clickOutsideTimeout = null;
+      }
       document.addEventListener('click', function(event) {
         // Clear any pending timeout
-        if (clickOutsideTimeout) {
-          clearTimeout(clickOutsideTimeout);
+        if (window.clickOutsideTimeout) {
+          clearTimeout(window.clickOutsideTimeout);
         }
         
         // Small delay to allow toggle function to complete first
-        clickOutsideTimeout = setTimeout(function() {
+        window.clickOutsideTimeout = setTimeout(function() {
           var userDropdown = document.getElementById('userDropdownMenu');
           var userDropdownContainer = document.getElementById('userProfileDropdown');
           var notificationDropdown = document.getElementById('notificationDropdownMenu');
