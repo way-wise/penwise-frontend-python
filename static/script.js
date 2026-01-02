@@ -1,3 +1,9 @@
+// Prevent script from running multiple times
+if (window.penwiseScriptLoaded) {
+	console.warn('script.js already loaded, skipping duplicate execution');
+} else {
+	window.penwiseScriptLoaded = true;
+
 // ===================================
 // MOBILE MENU - Simple and Reliable
 // ===================================
@@ -78,9 +84,13 @@ function closeMobileMenu() {
 	document.body.style.overflow = '';
 }
 
-// Expose mobile menu functions globally
-window.openMobileMenu = openMobileMenu;
-window.closeMobileMenu = closeMobileMenu;
+// Expose mobile menu functions globally (only if not already defined by inline script)
+if (typeof window.openMobileMenu === 'undefined') {
+	window.openMobileMenu = openMobileMenu;
+}
+if (typeof window.closeMobileMenu === 'undefined') {
+	window.closeMobileMenu = closeMobileMenu;
+}
 
 // Global function for user dropdown toggle
 function toggleUserDropdown(e) {
@@ -166,9 +176,20 @@ function toggleNotificationDropdown(e) {
 	}
 }
 
-// Make functions globally accessible
-window.toggleUserDropdown = toggleUserDropdown;
-window.toggleNotificationDropdown = toggleNotificationDropdown;
+// Make functions globally accessible (only if not already defined by inline script)
+// If already defined, keep the inline version (it loads first and is more reliable)
+if (typeof window.toggleUserDropdown === 'undefined') {
+	window.toggleUserDropdown = toggleUserDropdown;
+} else {
+	// Keep the inline version, don't override
+	console.log('toggleUserDropdown already defined by inline script, keeping it');
+}
+if (typeof window.toggleNotificationDropdown === 'undefined') {
+	window.toggleNotificationDropdown = toggleNotificationDropdown;
+} else {
+	// Keep the inline version, don't override
+	console.log('toggleNotificationDropdown already defined by inline script, keeping it');
+}
 
 // Initialize dropdown functionality when DOM is ready
 function initDropdowns() {
@@ -214,20 +235,28 @@ if (!window.dropdownClickHandlerSetup) {
 		// Check if click is inside notification dropdown container
 		const clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
 		
-		// Close user dropdown if clicking outside
-		if (userDropdown && !clickedInsideUser && !userDropdown.classList.contains('hidden')) {
-			userDropdown.classList.add('hidden');
-			userDropdown.style.display = 'none';
-			userDropdown.style.visibility = 'hidden';
+		// Only close if dropdown is actually visible and click is outside
+		if (userDropdown && !clickedInsideUser) {
+			const isVisible = !userDropdown.classList.contains('hidden') && userDropdown.style.display !== 'none' && userDropdown.style.display !== '';
+			if (isVisible) {
+				userDropdown.classList.add('hidden');
+				userDropdown.style.display = 'none';
+				userDropdown.style.visibility = 'hidden';
+				userDropdown.style.opacity = '0';
+			}
 		}
 		
-		// Close notification dropdown if clicking outside
-		if (notificationDropdown && !clickedInsideNotification && !notificationDropdown.classList.contains('hidden')) {
-			notificationDropdown.classList.add('hidden');
-			notificationDropdown.style.display = 'none';
-			notificationDropdown.style.visibility = 'hidden';
+		// Only close if dropdown is actually visible and click is outside
+		if (notificationDropdown && !clickedInsideNotification) {
+			const isVisible = !notificationDropdown.classList.contains('hidden') && notificationDropdown.style.display !== 'none' && notificationDropdown.style.display !== '';
+			if (isVisible) {
+				notificationDropdown.classList.add('hidden');
+				notificationDropdown.style.display = 'none';
+				notificationDropdown.style.visibility = 'hidden';
+				notificationDropdown.style.opacity = '0';
+			}
 		}
-		}, 10);
+		}, 50);
 	});
 }
 
@@ -263,9 +292,13 @@ function closeDashboardSidebar() {
 	}
 }
 
-// Expose dashboard sidebar functions globally
-window.openDashboardSidebar = openDashboardSidebar;
-window.closeDashboardSidebar = closeDashboardSidebar;
+// Expose dashboard sidebar functions globally (only if not already defined by inline script)
+if (typeof window.openDashboardSidebar === 'undefined') {
+	window.openDashboardSidebar = openDashboardSidebar;
+}
+if (typeof window.closeDashboardSidebar === 'undefined') {
+	window.closeDashboardSidebar = closeDashboardSidebar;
+}
 
 // Create mobile menu if it doesn't exist
 function createMobileMenuIfMissing() {

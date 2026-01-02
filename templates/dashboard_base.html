@@ -38,26 +38,30 @@
           notificationDropdown.classList.add('hidden');
           notificationDropdown.style.display = 'none';
           notificationDropdown.style.visibility = 'hidden';
+          notificationDropdown.style.opacity = '0';
         }
         
         // Toggle user dropdown
         if (dropdown) {
-          var isHidden = dropdown.classList.contains('hidden') || dropdown.style.display === 'none';
+          var isHidden = dropdown.classList.contains('hidden') || dropdown.style.display === 'none' || dropdown.style.display === '';
           
           if (isHidden) {
-            // Show dropdown - forcefully remove hidden class
+            // Show dropdown - forcefully remove hidden class and inline style
             dropdown.classList.remove('hidden');
-            // Also remove from className string as fallback
             dropdown.className = dropdown.className.replace(/\bhidden\b/g, '');
             dropdown.style.display = 'block';
             dropdown.style.visibility = 'visible';
             dropdown.style.opacity = '1';
-            console.log('User dropdown shown. Classes:', dropdown.className, 'Display:', dropdown.style.display);
+            dropdown.style.pointerEvents = 'auto';
+            // Force a reflow to ensure styles are applied
+            dropdown.offsetHeight;
+            console.log('User dropdown shown. Classes:', dropdown.className, 'Display:', dropdown.style.display, 'Visibility:', dropdown.style.visibility);
           } else {
             // Hide dropdown
             dropdown.classList.add('hidden');
             dropdown.style.display = 'none';
             dropdown.style.visibility = 'hidden';
+            dropdown.style.opacity = '0';
             console.log('User dropdown hidden');
           }
         } else {
@@ -103,26 +107,30 @@
           userDropdown.classList.add('hidden');
           userDropdown.style.display = 'none';
           userDropdown.style.visibility = 'hidden';
+          userDropdown.style.opacity = '0';
         }
         
         // Toggle notification dropdown
         if (notificationDropdown) {
-          var isHidden = notificationDropdown.classList.contains('hidden') || notificationDropdown.style.display === 'none';
+          var isHidden = notificationDropdown.classList.contains('hidden') || notificationDropdown.style.display === 'none' || notificationDropdown.style.display === '';
           
           if (isHidden) {
-            // Show dropdown - forcefully remove hidden class
+            // Show dropdown - forcefully remove hidden class and inline style
             notificationDropdown.classList.remove('hidden');
-            // Also remove from className string as fallback
             notificationDropdown.className = notificationDropdown.className.replace(/\bhidden\b/g, '');
             notificationDropdown.style.display = 'block';
             notificationDropdown.style.visibility = 'visible';
             notificationDropdown.style.opacity = '1';
-            console.log('Notification dropdown shown. Classes:', notificationDropdown.className, 'Display:', notificationDropdown.style.display);
+            notificationDropdown.style.pointerEvents = 'auto';
+            // Force a reflow to ensure styles are applied
+            notificationDropdown.offsetHeight;
+            console.log('Notification dropdown shown. Classes:', notificationDropdown.className, 'Display:', notificationDropdown.style.display, 'Visibility:', notificationDropdown.style.visibility);
           } else {
             // Hide dropdown
             notificationDropdown.classList.add('hidden');
             notificationDropdown.style.display = 'none';
             notificationDropdown.style.visibility = 'hidden';
+            notificationDropdown.style.opacity = '0';
             console.log('Notification dropdown hidden');
           }
         } else {
@@ -151,17 +159,26 @@
             var clickedInsideUser = userDropdownContainer && userDropdownContainer.contains(event.target);
             var clickedInsideNotification = notificationDropdownContainer && notificationDropdownContainer.contains(event.target);
             
-            if (userDropdown && !clickedInsideUser && !userDropdown.classList.contains('hidden')) {
-              userDropdown.classList.add('hidden');
-              userDropdown.style.display = 'none';
-              userDropdown.style.visibility = 'hidden';
+            // Only close if dropdown is actually visible and click is outside
+            if (userDropdown && !clickedInsideUser) {
+              var isVisible = !userDropdown.classList.contains('hidden') && userDropdown.style.display !== 'none' && userDropdown.style.display !== '';
+              if (isVisible) {
+                userDropdown.classList.add('hidden');
+                userDropdown.style.display = 'none';
+                userDropdown.style.visibility = 'hidden';
+                userDropdown.style.opacity = '0';
+              }
             }
-            if (notificationDropdown && !clickedInsideNotification && !notificationDropdown.classList.contains('hidden')) {
-              notificationDropdown.classList.add('hidden');
-              notificationDropdown.style.display = 'none';
-              notificationDropdown.style.visibility = 'hidden';
+            if (notificationDropdown && !clickedInsideNotification) {
+              var isVisible = !notificationDropdown.classList.contains('hidden') && notificationDropdown.style.display !== 'none' && notificationDropdown.style.display !== '';
+              if (isVisible) {
+                notificationDropdown.classList.add('hidden');
+                notificationDropdown.style.display = 'none';
+                notificationDropdown.style.visibility = 'hidden';
+                notificationDropdown.style.opacity = '0';
+              }
             }
-          }, 10);
+          }, 50);
         });
       }
     </script>
