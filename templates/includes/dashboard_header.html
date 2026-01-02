@@ -1,19 +1,19 @@
 {% load static %}
 <!-- Dashboard Header -->
-<header class="bg-[#F9F9FB]/90 backdrop-blur-sm sticky top-4 lg:top-6 flex items-center justify-between border border-[#E4E8EF] rounded-[16px] px-4 lg:px-6 py-4 lg:py-5 mb-6 lg:mb-12 z-30 overflow-visible">
+<header class="bg-[#F9F9FB]/90 backdrop-blur-sm sticky top-4 lg:top-6 flex items-center justify-between border border-[#E4E8EF] rounded-[16px] px-2 md:px-4 lg:px-6 py-2 md:py-4 lg:py-5 mb-6 lg:mb-12 z-30 overflow-visible">
   <!-- Mobile Menu Button -->
-  <button id="dashboardMobileMenuBtn" onclick="openDashboardSidebar(); return false;" class="lg:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
+  <button id="dashboardMobileMenuBtn" onclick="openDashboardSidebar(); return false;" class="lg:hidden md:p-2 p-1 hover:bg-gray-100 rounded-lg transition-colors">
     <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
     </svg>
   </button>
   
-  <div class="flex items-center gap-4 ml-auto overflow-visible">
+  <div class="flex items-center md:gap-4 gap-1 sm:gap-2 ml-auto overflow-visible">
     <span class="text-gray-700 text-sm lg:text-base">Hi 👋 <span class="font-semibold">Firoz Bari</span></span>
     
     <!-- Notification Dropdown -->
     <div class="relative overflow-visible" id="notificationDropdown">
-      <button onclick="toggleNotificationDropdown(event); return false;" class="p-2 hover:bg-gray-100 rounded-lg transition-colors relative">
+      <button onclick="toggleNotificationDropdown(event); return false;" class="md:p-2 p-1 hover:bg-gray-100 rounded-lg transition-colors relative">
         <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
         </svg>
@@ -21,8 +21,8 @@
       </button>
       
       <!-- Notification Dropdown Menu -->
-      <div id="notificationDropdownMenu" class="hidden absolute right-0 mt-2 w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-[100] max-h-96 overflow-y-auto" style="display: none;">
-        <div class="p-4 border-b border-gray-200">
+      <div id="notificationDropdownMenu" class="hidden absolute right-0 mt-2 w-[220px] md:w-80 bg-white rounded-lg shadow-lg border border-gray-200 z-[100] max-h-96 overflow-y-auto" style="display: none;">
+        <div class="md:p-4 p-2 border-b border-gray-200">
           <h3 class="text-sm font-semibold text-gray-900">Notifications</h3>
         </div>
         <div class="py-2">
@@ -70,7 +70,7 @@
     
     <!-- User Profile Dropdown -->
     <div class="relative overflow-visible" id="userProfileDropdown">
-      <button onclick="toggleUserDropdown(event); return false;" class="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-lg transition-colors">
+      <button onclick="toggleUserDropdown(event); return false;" class="flex items-center gap-2 md:p-2 p-1 hover:bg-gray-100 rounded-lg transition-colors">
         <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
           <span class="text-white text-sm font-semibold">FB</span>
         </div>

@@ -78,6 +78,10 @@ function closeMobileMenu() {
 	document.body.style.overflow = '';
 }
 
+// Expose mobile menu functions globally
+window.openMobileMenu = openMobileMenu;
+window.closeMobileMenu = closeMobileMenu;
+
 // Global function for user dropdown toggle
 function toggleUserDropdown(e) {
 	if (e) {
