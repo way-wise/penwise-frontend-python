@@ -31,6 +31,63 @@
         },
       };
     </script>
+    <!-- Mobile menu functions - must be available before navbar renders -->
+    <script>
+      // Define mobile menu functions immediately to ensure they're available
+      window.openMobileMenu = function() {
+        // Try to find elements immediately - use multiple methods
+        var menu = document.getElementById('mobileMenu');
+        if (!menu) menu = document.querySelector('#mobileMenu');
+        if (!menu) menu = document.querySelector('[id="mobileMenu"]');
+        
+        var overlay = document.getElementById('mobileMenuOverlay');
+        if (!overlay) overlay = document.querySelector('#mobileMenuOverlay');
+        if (!overlay) overlay = document.querySelector('[id="mobileMenuOverlay"]');
+        
+        // If still not found, the element doesn't exist - fail silently
+        if (!menu) {
+          return;
+        }
+        
+        // Show menu
+        menu.classList.remove('translate-x-full');
+        menu.style.display = 'block';
+        menu.style.visibility = 'visible';
+        
+        // Show overlay
+        if (overlay) {
+          overlay.classList.remove('hidden');
+          overlay.style.display = 'block';
+          overlay.style.opacity = '1';
+          overlay.style.pointerEvents = 'auto';
+          overlay.style.visibility = 'visible';
+        }
+        
+        // Prevent body scroll
+        document.body.style.overflow = 'hidden';
+      };
+      
+      window.closeMobileMenu = function() {
+        var menu = document.getElementById('mobileMenu') || document.querySelector('#mobileMenu');
+        var overlay = document.getElementById('mobileMenuOverlay') || document.querySelector('#mobileMenuOverlay');
+        
+        if (!menu) return;
+        
+        // Hide menu
+        menu.classList.add('translate-x-full');
+        
+        // Hide overlay
+        if (overlay) {
+          overlay.classList.add('hidden');
+          overlay.style.display = 'none';
+          overlay.style.opacity = '0';
+          overlay.style.pointerEvents = 'none';
+        }
+        
+        // Restore body scroll
+        document.body.style.overflow = '';
+      };
+    </script>
     {% block extra_css %}{% endblock %}
   </head>
 

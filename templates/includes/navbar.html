@@ -79,7 +79,7 @@
 
 			<button
 				id="mobileMenuBtn"
-				onclick="if(typeof openMobileMenu === 'function') { openMobileMenu(); } else { var m = document.getElementById('mobileMenu'); var o = document.getElementById('mobileMenuOverlay'); if(m) { m.classList.remove('translate-x-full'); m.style.display = 'block'; m.style.visibility = 'visible'; if(o) { o.classList.remove('hidden'); o.style.display = 'block'; o.style.opacity = '1'; o.style.pointerEvents = 'auto'; o.style.visibility = 'visible'; } document.body.style.overflow = 'hidden'; } } return false;"
+				onclick="openMobileMenu(); return false;"
 				class="lg:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-gray-100 transition-colors duration-200 relative z-[101]"
 			>
 				<span
