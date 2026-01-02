@@ -1,6 +1,42 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.template.exceptions import TemplateDoesNotExist
 from django.http import Http404
+
+# Mapping of step numbers to template names
+NEW_PROJECT_STEPS = {
+    1: 'new-project',
+    2: 'review-idea',
+    3: 'narrative-development',
+    4: 'detailed-plan',
+    5: 'chapter-view',
+    6: 'export',  # You may need to create this template
+}
+
+def new_project_step(request, step):
+    """Handle new project creation steps with numbered URLs"""
+    if step not in NEW_PROJECT_STEPS:
+        raise Http404(f"Step {step} not found. Valid steps are 1-{len(NEW_PROJECT_STEPS)}")
+    
+    template_name = f"{NEW_PROJECT_STEPS[step]}.html"
+    
+    context = {
+        'active_page': 'new-project',
+        'current_step': step,
+        'total_steps': len(NEW_PROJECT_STEPS),
+        'step_names': {
+            1: 'Idea',
+            2: 'Review Idea',
+            3: 'Story Draft',
+            4: 'Detailed Plan',
+            5: 'Create Chapter',
+            6: 'Export',
+        }
+    }
+    
+    try:
+        return render(request, template_name, context)
+    except TemplateDoesNotExist:
+        raise Http404(f"Template for step {step} not found")
 
 def render_page(request, page_name='index'):
     # Sanitize page_name to prevent directory traversal? 

@@ -1,0 +1,141 @@
+{% load static %}
+{% with current_step|default:1 as step %}
+{% with total_steps|default:6 as total %}
+<!-- Progress Steps - Desktop -->
+<div class="hidden lg:flex items-center justify-between mb-8 overflow-x-auto">
+  <a href="/new-projects/1/" class="flex items-center gap-2 {% if step >= 1 %}cursor-pointer{% else %}cursor-not-allowed opacity-60{% endif %}">
+    {% if step > 1 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+    {% else %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">1</div>
+    {% endif %}
+    <span class="text-sm font-medium text-gray-700">Idea</span>
+  </a>
+  <div class="flex-1 h-0.5 {% if step >= 2 %}bg-black{% else %}bg-gray-200{% endif %} mx-2"></div>
+  <a href="/new-projects/2/" class="flex items-center gap-2 {% if step >= 2 %}cursor-pointer{% else %}cursor-not-allowed opacity-60{% endif %}">
+    {% if step > 2 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+    {% elif step == 2 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">2</div>
+    {% else %}
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">2</div>
+    {% endif %}
+    <span class="text-sm font-medium {% if step >= 2 %}text-gray-700{% else %}text-gray-600{% endif %}">Review Idea</span>
+  </a>
+  <div class="flex-1 h-0.5 {% if step >= 3 %}bg-black{% else %}bg-gray-200{% endif %} mx-2"></div>
+  <a href="/new-projects/3/" class="flex items-center gap-2 {% if step >= 3 %}cursor-pointer{% else %}cursor-not-allowed opacity-60{% endif %}">
+    {% if step > 3 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+    {% elif step == 3 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">3</div>
+    {% else %}
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">3</div>
+    {% endif %}
+    <span class="text-sm font-medium {% if step >= 3 %}text-gray-700{% else %}text-gray-600{% endif %}">Story Draft</span>
+  </a>
+  <div class="flex-1 h-0.5 {% if step >= 4 %}bg-black{% else %}bg-gray-200{% endif %} mx-2"></div>
+  <a href="/new-projects/4/" class="flex items-center gap-2 {% if step >= 4 %}cursor-pointer{% else %}cursor-not-allowed opacity-60{% endif %}">
+    {% if step > 4 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+    {% elif step == 4 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">4</div>
+    {% else %}
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">4</div>
+    {% endif %}
+    <span class="text-sm font-medium {% if step >= 4 %}text-gray-700{% else %}text-gray-600{% endif %}">Detailed Plan</span>
+  </a>
+  <div class="flex-1 h-0.5 {% if step >= 5 %}bg-black{% else %}bg-gray-200{% endif %} mx-2"></div>
+  <a href="/new-projects/5/" class="flex items-center gap-2 {% if step >= 5 %}cursor-pointer{% else %}cursor-not-allowed opacity-60{% endif %}">
+    {% if step > 5 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+    {% elif step == 5 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">5</div>
+    {% else %}
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">5</div>
+    {% endif %}
+    <span class="text-sm font-medium {% if step >= 5 %}text-gray-700{% else %}text-gray-600{% endif %}">Create Chapter</span>
+  </a>
+  <div class="flex-1 h-0.5 {% if step >= 6 %}bg-black{% else %}bg-gray-200{% endif %} mx-2"></div>
+  <a href="/new-projects/6/" class="flex items-center gap-2 {% if step >= 6 %}cursor-pointer{% else %}cursor-not-allowed opacity-60{% endif %}">
+    {% if step == 6 %}
+      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">6</div>
+    {% else %}
+      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">6</div>
+    {% endif %}
+    <span class="text-sm font-medium {% if step >= 6 %}text-gray-700{% else %}text-gray-600{% endif %}">Export</span>
+  </a>
+</div>
+
+<!-- Progress Steps - Mobile -->
+<div class="lg:hidden mb-6">
+  <div class="flex items-center justify-center gap-2 mb-4">
+    <div class="w-8 h-8 rounded-full {% if step >= 1 %}bg-black text-white{% else %}bg-gray-200 text-gray-600{% endif %} flex items-center justify-center font-semibold text-sm">
+      {% if step > 1 %}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      {% else %}
+        1
+      {% endif %}
+    </div>
+    <div class="flex-1 h-0.5 {% if step >= 2 %}bg-black{% else %}bg-gray-200{% endif %}"></div>
+    <div class="w-8 h-8 rounded-full {% if step >= 2 %}bg-black text-white{% else %}bg-gray-200 text-gray-600{% endif %} flex items-center justify-center font-semibold text-sm">
+      {% if step > 2 %}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      {% else %}
+        2
+      {% endif %}
+    </div>
+    <div class="flex-1 h-0.5 {% if step >= 3 %}bg-black{% else %}bg-gray-200{% endif %}"></div>
+    <div class="w-8 h-8 rounded-full {% if step >= 3 %}bg-black text-white{% else %}bg-gray-200 text-gray-600{% endif %} flex items-center justify-center font-semibold text-sm">
+      {% if step > 3 %}
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+        </svg>
+      {% else %}
+        3
+      {% endif %}
+    </div>
+    <div class="flex-1 h-0.5 {% if step >= 4 %}bg-black{% else %}bg-gray-200{% endif %}"></div>
+    <div class="w-8 h-8 rounded-full {% if step >= 4 %}bg-black text-white{% else %}bg-gray-200 text-gray-600{% endif %} flex items-center justify-center font-semibold text-sm">4</div>
+    <div class="flex-1 h-0.5 {% if step >= 5 %}bg-black{% else %}bg-gray-200{% endif %}"></div>
+    <div class="w-8 h-8 rounded-full {% if step >= 5 %}bg-black text-white{% else %}bg-gray-200 text-gray-600{% endif %} flex items-center justify-center font-semibold text-sm">5</div>
+    <div class="flex-1 h-0.5 {% if step >= 6 %}bg-black{% else %}bg-gray-200{% endif %}"></div>
+    <div class="w-8 h-8 rounded-full {% if step >= 6 %}bg-black text-white{% else %}bg-gray-200 text-gray-600{% endif %} flex items-center justify-center font-semibold text-sm">6</div>
+  </div>
+  <p class="text-center text-sm text-gray-600">
+    Step {{ step }} of {{ total }}: 
+    {% if step == 1 %}Idea
+    {% elif step == 2 %}Review Idea
+    {% elif step == 3 %}Story Draft
+    {% elif step == 4 %}Detailed Plan
+    {% elif step == 5 %}Create Chapter
+    {% elif step == 6 %}Export
+    {% endif %}
+  </p>
+</div>
+{% endwith %}
+{% endwith %}
+

@@ -5,50 +5,7 @@
 
 {% block content %}
 <div class="max-w-5xl mx-auto">
-  <!-- Progress Steps - Desktop -->
-  <div class="hidden lg:flex items-center justify-between mb-8 overflow-x-auto">
-    <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center font-semibold">1</div>
-      <span class="text-sm font-medium text-gray-700">Idea</span>
-    </div>
-    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
-    <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">2</div>
-      <span class="text-sm font-medium text-gray-600">Review Idea</span>
-    </div>
-    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
-    <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">3</div>
-      <span class="text-sm font-medium text-gray-600">Story Draft</span>
-    </div>
-    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
-    <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">4</div>
-      <span class="text-sm font-medium text-gray-600">Detailed Plan</span>
-    </div>
-    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
-    <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">5</div>
-      <span class="text-sm font-medium text-gray-600">Create Chapter</span>
-    </div>
-    <div class="flex-1 h-0.5 bg-gray-200 mx-2"></div>
-    <div class="flex items-center gap-2">
-      <div class="w-10 h-10 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold">6</div>
-      <span class="text-sm font-medium text-gray-600">Export</span>
-    </div>
-  </div>
-
-  <!-- Progress Steps - Mobile -->
-  <div class="lg:hidden mb-6">
-    <div class="flex items-center justify-center gap-2 mb-4">
-      <div class="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center font-semibold text-sm">1</div>
-      <div class="flex-1 h-0.5 bg-gray-200"></div>
-      <div class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold text-sm">2</div>
-      <div class="flex-1 h-0.5 bg-gray-200"></div>
-      <div class="w-8 h-8 rounded-full bg-gray-200 text-gray-600 flex items-center justify-center font-semibold text-sm">3</div>
-    </div>
-    <p class="text-center text-sm text-gray-600">Step 1 of 6: Idea</p>
-  </div>
+  {% include 'includes/new_project_progress.html' with current_step=1 total_steps=6 %}
 
   <!-- Page Header -->
   <div class="mb-6 lg:mb-8">
@@ -271,8 +228,8 @@
 
     <!-- Submit Button -->
     <div class="flex flex-col items-center">
-      <button type="submit" class="w-full max-w-md px-6 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-semibold text-lg mb-2">
-        Create your first book
+      <button type="submit" onclick="event.preventDefault(); window.location.href='/new-projects/2/';" class="w-full max-w-md px-6 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors font-semibold text-lg mb-2">
+        Continue to Review Idea
       </button>
       <p class="text-sm text-gray-500">Estimated time: 5 minutes</p>
     </div>

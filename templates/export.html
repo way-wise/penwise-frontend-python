@@ -1,0 +1,215 @@
+{% extends 'dashboard_base.html' %}
+{% load static %}
+
+{% block title %}Export - Penwise{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto">
+  {% include 'includes/new_project_progress.html' with current_step=6 total_steps=6 %}
+
+  <!-- Page Header -->
+  <div class="mb-6 lg:mb-8 text-center">
+    <h1 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-2">Export Your Book</h1>
+    <p class="text-sm lg:text-base text-gray-600">Download your completed book in various formats</p>
+  </div>
+
+  <!-- Export Options -->
+  <div class="space-y-6">
+    <!-- Book Information Card -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-4">Book Information</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <p class="text-sm text-gray-600 mb-1">Title</p>
+          <p class="text-base font-semibold text-gray-900">The King of Peel Street</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600 mb-1">Genre</p>
+          <p class="text-base font-semibold text-gray-900">Crime</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600 mb-1">Total Chapters</p>
+          <p class="text-base font-semibold text-gray-900">24</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-600 mb-1">Total Words</p>
+          <p class="text-base font-semibold text-gray-900">178,326</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Export Format Options -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Choose Export Format</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- PDF Format -->
+        <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-black transition-colors cursor-pointer">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">PDF</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">PDF Document</h3>
+          <p class="text-sm text-gray-600 mb-4">Standard format for reading and printing</p>
+          <button onclick="exportBook('pdf')" class="w-full px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+            Export as PDF
+          </button>
+        </div>
+
+        <!-- DOCX Format -->
+        <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-black transition-colors cursor-pointer">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">DOCX</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Word Document</h3>
+          <p class="text-sm text-gray-600 mb-4">Editable format for Microsoft Word</p>
+          <button onclick="exportBook('docx')" class="w-full px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+            Export as DOCX
+          </button>
+        </div>
+
+        <!-- EPUB Format -->
+        <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-black transition-colors cursor-pointer">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">EPUB</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">EPUB Format</h3>
+          <p class="text-sm text-gray-600 mb-4">E-book format for e-readers</p>
+          <button onclick="exportBook('epub')" class="w-full px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+            Export as EPUB
+          </button>
+        </div>
+
+        <!-- TXT Format -->
+        <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-black transition-colors cursor-pointer">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">TXT</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Plain Text</h3>
+          <p class="text-sm text-gray-600 mb-4">Simple text format</p>
+          <button onclick="exportBook('txt')" class="w-full px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+            Export as TXT
+          </button>
+        </div>
+
+        <!-- HTML Format -->
+        <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-black transition-colors cursor-pointer">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">HTML</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">HTML Document</h3>
+          <p class="text-sm text-gray-600 mb-4">Web-friendly format</p>
+          <button onclick="exportBook('html')" class="w-full px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+            Export as HTML
+          </button>
+        </div>
+
+        <!-- Markdown Format -->
+        <div class="border-2 border-gray-200 rounded-lg p-6 hover:border-black transition-colors cursor-pointer">
+          <div class="flex items-center justify-between mb-4">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <span class="px-2 py-1 bg-gray-100 text-gray-700 text-xs font-semibold rounded">MD</span>
+          </div>
+          <h3 class="font-semibold text-gray-900 mb-2">Markdown</h3>
+          <p class="text-sm text-gray-600 mb-4">Markdown format for documentation</p>
+          <button onclick="exportBook('md')" class="w-full px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors font-semibold text-sm">
+            Export as Markdown
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Export Settings -->
+    <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+      <h2 class="text-xl font-semibold text-gray-900 mb-6">Export Settings</h2>
+      <div class="space-y-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-sm font-medium text-gray-900">Include Table of Contents</h3>
+            <p class="text-xs text-gray-600 mt-1">Add a table of contents page</p>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" checked class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+          </label>
+        </div>
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-sm font-medium text-gray-900">Include Page Numbers</h3>
+            <p class="text-xs text-gray-600 mt-1">Add page numbers to the document</p>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" checked class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+          </label>
+        </div>
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-sm font-medium text-gray-900">Include Cover Page</h3>
+            <p class="text-xs text-gray-600 mt-1">Add a cover page with book title</p>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" checked class="sr-only peer">
+            <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-black rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-black"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-col items-center space-y-4">
+      <button onclick="window.location.href='/project-list/';" class="w-full max-w-md px-6 py-4 bg-gray-200 text-gray-900 rounded-full hover:bg-gray-300 transition-colors font-semibold text-lg">
+        Back to Project List
+      </button>
+      <p class="text-sm text-gray-500">Your book is ready to export!</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+  function exportBook(format) {
+    // Show loading state
+    const button = event.target;
+    const originalText = button.textContent;
+    button.textContent = 'Exporting...';
+    button.disabled = true;
+    
+    // Simulate export process (replace with actual export logic)
+    setTimeout(function() {
+      alert(`Your book is being exported as ${format.toUpperCase()}. This is a demo - in production, the file would download automatically.`);
+      button.textContent = originalText;
+      button.disabled = false;
+    }, 1500);
+  }
+</script>
+{% endblock %}
+
